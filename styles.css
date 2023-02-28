@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #fdfcb0;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  color: #EEEEEE;
+  font-size: 2.1em;
+  padding: 0.3em 0.3em 0.3em 0.9em;
+}
+
+/* Header */
+header {
+  background-color: #a51515;
+  color: #f3adad;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.75em 0;
+}
+
+header li {
+  font-size: 1.2em;
+  padding: 0 2em;
+}
+
+header a {
+  color: #eecaca;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: #ffffff;
+  /* border-bottom: 2px solid #ffffff; */
+  transition: 0.2s;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  padding: 1.5em;
+  background-color: #fdfcb0;
+  color: #2e2106;
+  margin: 1em;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+main .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #f3a033;
+  border-radius: 1em;
+}
+
+main img {
+  width: 10em;
+  margin-top: 1.2em;
+  border-radius: 0.3em;
+}
+
+main .img-3:hover > .img-3 {
+  width: 1em;
+  transition: 1s;
+}
+
+main h2 {
+  margin-top: 2em;
+}
+
+main h3 {
+  margin: 1em 0;
+}
+
+main p {
+  margin: 1em 0;
+}
+
+aside {
+  padding: 1.5em;
+  background-color: #4e1717;
+  color: #EEEEEE;
+  margin: 2em;
+  width: 30%;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+aside li {
+  margin: 1em 0;
+}
+
+/* Footer */
+footer {
+  background-color: #380606;
+  color: #EEEEEE;
+}
+
+footer h3 {
+  padding: 1.5em 0;
+  text-align: center;
+}
