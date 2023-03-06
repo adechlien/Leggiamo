@@ -15,6 +15,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 i {
   color: #EEEEEE;
   font-size: 2.1em;
@@ -23,7 +27,7 @@ i {
 
 /* Header */
 header {
-  background-color: #a51515;
+  background-color: #2F4858;
   color: #f3adad;
   display: flex;
   justify-content: space-between;
@@ -34,24 +38,25 @@ header ul {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0.75em 0;
+  padding: .25em 0;
 }
 
 header li {
   font-size: 1.2em;
-  padding: 0 2em;
+  padding: 0 1em;
 }
 
 header a {
-  color: #eecaca;
+  color: #caeee9;
   text-decoration: none;
-  transition: 0.3s;
+  border-radius: .25em;
+  padding: .25em .75em;
+  transition: 0.5s;
 }
 
 header a:hover {
   color: #ffffff;
-  /* border-bottom: 2px solid #ffffff; */
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 section {
@@ -62,28 +67,37 @@ section {
 main {
   padding: 1.5em;
   background-color: #fdfcb0;
-  color: #2e2106;
+  color: #2F4858;
   margin: 1em;
   text-align: center;
   border-radius: 0.5em;
 }
 
+main .main-presentation {
+  width: 70%;
+  margin: auto;
+}
+
 main .images {
+  margin: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: #f3a033;
+  background-color: #8CC67E;
   border-radius: 1em;
+  box-shadow: 0.1em 0.1em 0.625em #1d454e;
 }
 
 main img {
   width: 10em;
   margin-top: 1.2em;
   border-radius: 0.3em;
+  box-shadow: 0.1em 0.1em 0.625em #1d454e;
+  transition: 1s;
 }
 
-main .img-3:hover > .img-3 {
-  width: 1em;
+main img:hover {
+  transform: translateY(-.75em);
   transition: 1s;
 }
 
@@ -93,33 +107,24 @@ main h2 {
 
 main h3 {
   margin: 1em 0;
+  width: 10em;
 }
 
 main p {
   margin: 1em 0;
 }
 
-aside {
-  padding: 1.5em;
-  background-color: #4e1717;
-  color: #EEEEEE;
-  margin: 2em;
-  width: 30%;
-  text-align: center;
-  border-radius: 0.5em;
-}
-
-aside li {
-  margin: 1em 0;
+main a {
+  color: #1d454e;
 }
 
 /* Footer */
 footer {
-  background-color: #380606;
+  background-color: #1d454e;
   color: #EEEEEE;
 }
 
-footer h3 {
+footer h2 {
   padding: 1.5em 0;
   text-align: center;
 }
