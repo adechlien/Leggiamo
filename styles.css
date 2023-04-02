@@ -123,12 +123,13 @@ main a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 40%;
   margin: 0 auto 3em;
+  font-size: 1.1em;
 }
 
 .story p {
-  text-align: justify;
+  text-align: center;
 }
 
 .author {
@@ -136,7 +137,7 @@ main a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 40%;
   margin: auto;
   background-color: #b2e6a5;
   border-radius: 0.5em;
@@ -151,7 +152,9 @@ main a {
 
 .author img {
   box-shadow: none;
-  width: 100px;
+  border: 2px solid #2F4858;
+  width: 6.25em;
+  border-radius: 100%;
 }
 
 .author i {
