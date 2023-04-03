@@ -1,19 +1,39 @@
 // Sets all the information from JS to HTML
 document.addEventListener("DOMContentLoaded", function() {
   addHeader();
+  addFooter();
 });
 
 
-// Adds the header
+// Adds the header and the footer
 function addHeader() {
   const header = document.querySelector('#header');
-  header.innerHTML = `<i class="fa-solid fa-book-open-reader"></i>
+  header.innerHTML = `<div>
+                        <i class="fa-solid fa-book-open-reader"></i> 
+                        <p> Leggiamo </p>
+                      </div>
                       <ul>
                       <li> <a href=""> Terror </a> </li>
                           <li> <a href=""> Misterio </a> </li>
                           <li> <a href=""> Romance </a> </li>
                           <li> <a href=""> Humor </a> </li>
                       </ul>`;
+}
+
+function addFooter() {
+  const footer = document.querySelector('#footer');
+  footer.innerHTML = `<div class="logo">
+                        <img src="images/GY.png" alt="">
+                      </div>
+                      <div class="copyright">    
+                        <h3> Derechos de autor </h3>
+                        <p> Todas las historias son proporcionadas por los autores descritos en la misma, mientras que las portadas de las historias son creadas por Leonardo AI. </p>
+                      </div>
+                      <div class="contact">
+                        <h3> Contáctanos </h3>
+                        <p> <i class="fa-solid fa-envelope"></i> jhalejandro@uninorte.edu.co</p>
+                        <p> <i class="fa-solid fa-phone"></i> +57 324 3168468 </p>
+                      </div>`;
 }
 
 const imagen = document.querySelector('.enlace');
@@ -88,7 +108,6 @@ function addInformation(title, infos){
       // Injects the HTML code using the dictionary
       const story = document.querySelector('#story');
       story.innerHTML = `<h2> ${dict.title} </h2>
-                        <h3> ${dict.author} </h3>
                         <p class="text-description"> </p>`;
 
       // Description of the Author
