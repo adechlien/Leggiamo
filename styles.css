@@ -212,6 +212,19 @@ footer .contact p i {
 }
 
 @media only screen and (max-width: 768px) {
+  header i {
+    font-size: 3em;
+  }
+
+  header p {
+    font-size: 1.75em;
+  }
+
+  header li {
+    font-size: 1.5em;
+    padding: 0;
+  }
+  
   main img {
     width: 8em;
   }
@@ -236,8 +249,12 @@ footer .contact p i {
     margin: 1em 1.25em;
   }
 
+  footer p{
+    font-size: 1.25em;
+  }
+
   .story {
-    width: 70%;
+    width: 100%;
     font-size: 1.5em;
   }
 
@@ -261,7 +278,4 @@ footer .contact p i {
     font-size: 3em;
   }
 
-  footer p{
-    font-size: 1.25em;
-  }
 }
