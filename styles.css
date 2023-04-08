@@ -98,11 +98,6 @@ main .images {
   box-shadow: 0.1em 0.1em 0.625em #1d454e;
 }
 
-/* .story-structure {
-  display: flex;
-  align-items: flex-start;
-} */
-
 main img {
   width: 10em;
   margin-top: 1.2em;
@@ -202,7 +197,7 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 30%;
+  width: 35%;
 }
 
 footer .contact {
@@ -214,4 +209,59 @@ footer .contact {
 footer .contact p i {
   padding: .3em .3em .3em 0;
   font-size: 1.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  main img {
+    width: 8em;
+  }
+
+  main .main-presentation {
+    font-size: 1.25em;
+  }
+
+  main .images {
+    flex-wrap: wrap;
+  }
+
+  .images h3 {
+    font-size: 1.2em;
+  }
+
+  footer img {
+    width: 7em;
+  }
+
+  footer .copyright, .contact {
+    margin: 1em 1.25em;
+  }
+
+  .story {
+    width: 70%;
+    font-size: 1.5em;
+  }
+
+  .author {
+    width: 90%;
+  }
+
+  .author img {
+    width: 12em;
+  }
+
+  .author h3 {
+    font-size: 2em;
+  }
+
+  .author p {
+    font-size: 1.4em;
+  }
+
+  .author i {
+    font-size: 3em;
+  }
+
+  footer p{
+    font-size: 1.25em;
+  }
 }
