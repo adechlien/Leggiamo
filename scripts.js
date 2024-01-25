@@ -75,9 +75,11 @@ function applyColors() {
       link.style.color = lightMode ? lightColors.linkColor : darkColors.linkColor;
     });
   } else {
-    ad.style.backgroundColor = lightMode ? lightColors.linkBg : darkColors.linkBg;
-    ad.style.color = lightMode ? lightColors.linkColor : darkColors.linkColor;
-    meditation.style.color = lightMode ? lightColors.linkBg : darkColors.linkBg;
+    if (ad != null && meditation != null) {
+      ad.style.backgroundColor = lightMode ? lightColors.linkBg : darkColors.linkBg;
+      ad.style.color = lightMode ? lightColors.linkColor : darkColors.linkColor;
+      meditation.style.color = lightMode ? lightColors.linkBg : darkColors.linkBg;
+    }
   }
 }
 
