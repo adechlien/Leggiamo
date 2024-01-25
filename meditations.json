@@ -1,0 +1,30 @@
+{
+  "meditacion1": {
+    "title": "El no gozo por la espera del sufrimiento",
+    "text": "meditations/el-no-gozo-por-la-espera-del-sufrimiento.txt"
+  },
+  "meditation2": {
+    "title": "No es el deber ser",
+    "text": "meditations/no-es-el-deber-ser.txt"
+  },
+  "meditation3": {
+    "title": "Amargas memorias de una dulce amistad",
+    "text": "meditations/amargas-memorias-de-una-dulce-amistad.txt"
+  },
+  "meditation4": {
+    "title": "Soledad Citadina",
+    "text": "meditations/soledad-citadina.txt"
+  },
+  "meditation5": {
+    "title": "Anya",
+    "text": "meditations/anya.txt"
+  },
+  "meditation6": {
+    "title": "¿Qué hacemos después?",
+    "text": "meditations/que-hacemos-despues.txt"
+  },
+  "story1": {
+    "title": "Campesina: Entre Vacas y Desgracias",
+    "text": "stories/campesina1.txt"
+  }
+}

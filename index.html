@@ -4,48 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Leggiamo </title>
-    <link rel="icon" type="image/png" href="images/GY.ico">
-    <link rel="stylesheet" href="styles.css">
+    <title> Leggiamo | Read stories </title>
+    <link rel="icon" type="image/png" href="images/leggiamo-icon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6b69f5d989.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
 <body>
-    <header id="header"></header>
-        <main>
-            <h1> Bienvenido a Leggiamo </h1>
-            <div class="main-presentation">
-                <p> Aquí encontrarás una amplia selección de cuentos cortos de diferentes géneros y autores, para leer en cualquier momento y lugar. Desde historias de amor hasta misterios y aventuras, tenemos algo para cada gusto. </p>
-                <p> En nuestra página web, también encontrarás cuentos cortos de autores emergentes, lo que significa que siempre tendrás la oportunidad de descubrir nuevas y emocionantes voces literarias. </p>
-                <p> Así que siéntete libre de explorar nuestra página web y sumergirte en el mundo de la lectura de cuentos cortos. Estamos seguros de que encontrarás algo que te gustará y te mantendrá enganchado hasta la última página. ¡Disfruta de la lectura! </p>
-            </div>
-            <h2> Poema social </h2>
-            <div class="images">
-                <a href="historia.html?title=Odio la ciudad" class="enlace" id="link" target="_blank">
-                    <img class="img-1" src="images/odio-la-ciudad.png" alt="" loading="lazy">
-                    <h3> Odio la ciudad </h3>
-                </a>
-                <a href="historia.html?title=Solo queda escapar" class="enlace" id="link" target="_blank">
-                    <img class="img-1" src="images/solo-queda-escapar.png" alt="" loading="lazy">
-                    <h3> Solo queda escapar </h3>
-                </a>
-                <a href="historia.html?title=El trabajo es mi pasión" class="enlace" target="_blank">
-                    <img class="img-1" src="images/el-trabajo-es-mi-pasion.png" alt="" loading="lazy">
-                    <h3> El trabajo es mi pasión </h3>
-                </a>
-                <a href="historia.html?title=Razas encontradas" class="enlace" target="_blank">
-                    <img class="img-1" src="images/razas-encontradas.png" alt="" loading="lazy">
-                    <h3> Razas encontradas </h3>
-                </a>
-                <a href="historia.html?title=Aún me llaman señor" class="enlace" target="_blank">
-                    <img class="img-1" src="images/aun-me-llaman-senor.png" alt="" loading="lazy">
-                    <h3> Aún me llaman señor </h3>
-                </a>
-            </div>        
-        </main>
-    <footer id="footer"></footer>
-    <script src="scripts.js"></script>
+    <header id="header">
+        <nav>
+            <a href="/index.html">
+            <i class="ti ti-book"></i>
+                <span class="header-title">
+                    Leggiamo
+                </span>
+            </a>
+        </nav>
+        <i class="ti ti-brightness-half mode"></i>
+    </header>
+
+    <main class="landing-page">
+        <div class="welcoming">
+            <p>
+                En Leggiamo podrás leer historias y meditaciones escritas por mí. Sientete libre de navegar entre los múltiples pensamientos y mundos que genero a diario. 
+                <br><br>
+                Si quieres saber más sobre quien soy, ve hasta el final de la página donde podrás ver mis redes.
+            </p>
+        </div>
+        <div class="content">
+            <h2>Meditaciones</h2>
+            <a href="meditations.html?title=El no gozo por la espera del sufrimiento" class="meditation-item" rel="noopener">
+                El no gozo por la espera del sufrimiento
+            </a>
+            <a href="meditations.html?title=Amargas memorias de una dulce amistad" class="meditation-item" rel="noopener">
+                Amargas memorias de una dulce amistad
+            </a>
+            <!-- <a href="meditations.html?title=No es el deber ser" class="meditation-item" rel="noopener">
+                No es el Deber ser
+            </a> -->
+            <a href="meditations.html?title=Anya" class="meditation-item" rel="noopener">
+                Anya
+            </a>
+            <a href="meditations.html?title=Soledad Citadina" class="meditation-item" rel="noopener">
+                Soledad Citadina
+            </a>
+            <!-- <a href="meditations.html?title=" class="meditation-item" rel="noopener">
+                Aquello que merecemos
+            </a> -->
+            <!-- <a href="meditations.html?title=" class="meditation-item" rel="noopener">
+                Rostros
+            </a> -->
+            <a href="meditations.html?title=¿Qué hacemos después?" class="meditation-item" rel="noopener">
+                ¿Qué hacemos después?
+            </a>
+            <br>
+            <h2>Historias</h2>
+            <a href="meditations.html?title=Campesina: Entre Vacas y Desgracias" class="story-item" rel="noopener">
+                Campesina: Entre Vacas y Desgracias
+            </a>
+            <!-- <a href="meditations.html?title=" class="story-item" rel="noopener">
+                Habitación 88
+            </a> -->
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="logo">
+            <img src="images/leggiamo-icon.png" class="footer-logo" title="Leggiamo">
+            <p>Leggiamo 1.0. (29 Jan 2024) <br>Developed with <i class="ti ti-heart-filled"></i> by <span>YourFriendlyADC</span></p>
+        </div>
+        
+        <div class="social">
+            <a href="https://www.instagram.com/YourFriendlyADC/" target="_blank">
+                <i class="ti ti-brand-instagram"></i>
+            </a>
+            <a href="https://twitter.com/yourfriendlyadc" target="_blank">                        
+                <i class="ti ti-brand-x"></i>
+            </a>
+            <a href="https://www.pinterest.com/yourfriendlyadc/" target="_blank">                        
+                <i class="ti ti-brand-pinterest"></i>
+            </a>
+
+        </div>
+    </footer>
+    <script src="scripts.js" type="module"></script>
 </body>
 </html>

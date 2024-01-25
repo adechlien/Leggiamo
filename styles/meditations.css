@@ -1,0 +1,32 @@
+main .meditations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+main .meditations .advertisement {
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  position: relative;
+}
+
+main .meditations .advertisement .close {
+  font-size: 1.5rem;
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+}
+
+main .meditations .meditation {
+  text-align: start;
+}
+
+main .meditations .meditation span {
+  display: flex;
+  font-weight: 600;
+}
