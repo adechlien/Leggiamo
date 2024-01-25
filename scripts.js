@@ -75,7 +75,7 @@ function applyColors() {
       link.style.color = lightMode ? lightColors.linkColor : darkColors.linkColor;
     });
   } else {
-    if (location.href.includes('meditations.html') && location.href.includes('historia.html') && ad != null && meditation != null) {
+    if ((location.href.includes('meditations.html') || location.href.includes('historia.html')) && ad != null && meditation != null) {
       ad.style.backgroundColor = lightMode ? lightColors.linkBg : darkColors.linkBg;
       ad.style.color = lightMode ? lightColors.linkColor : darkColors.linkColor;
       meditation.style.color = lightMode ? lightColors.linkBg : darkColors.linkBg;
