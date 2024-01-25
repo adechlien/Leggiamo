@@ -21,7 +21,7 @@ const meditation = document.querySelector('.meditation');
 let lightMode = localStorage.getItem('lightMode') === 'true';
 
 // Advertisement
-if (!location.href.includes('index.html')) {
+if (location.href.includes('meditations.html') || location.href.includes('historia.html')) {
   CloseAd.addEventListener('click', function() {
     ad.style.display = 'none';
   });
