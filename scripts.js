@@ -67,7 +67,7 @@ function applyColors() {
   footer.style.color = colors.footer;
   footerLinks.forEach(link => (link.style.color = colors.footer));
 
-  if (location.href.includes('index.html')) {
+  if (!location.href.includes('meditations.html') && !location.href.includes('historia.html')) {
     main.style.color = lightMode ? lightColors.mainText : darkColors.mainText;
     mainTitle.forEach(title => (title.style.color = main.style.color));
     mainLinks.forEach(link => {
