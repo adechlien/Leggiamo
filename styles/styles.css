@@ -113,6 +113,16 @@ header nav a {
   background-color: #DEDBD2;
 }
 
+.landing-page .advertisement {
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  position: relative;
+  background-color: #f7b3b3;
+  color: #4A5759;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   display: flex;
