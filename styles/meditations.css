@@ -13,6 +13,8 @@ main .meditations .advertisement {
   border-radius: 1rem;
   font-weight: 600;
   position: relative;
+  background-color: #DEDBD2;
+  color: #4A5759;
 }
 
 main .meditations .advertisement .close {
@@ -25,6 +27,7 @@ main .meditations .advertisement .close {
 main .meditations .meditation {
   text-align: start;
   max-width: 860px;
+  color: #DEDBD2;
 }
 
 main .meditations .meditation span {

@@ -1,7 +1,7 @@
 import meditations from './meditations.json' assert {type: "json"};
 
 // General Items
-const modeButton = document.querySelector('.mode');
+// const modeButton = document.querySelector('.mode');
 const body = document.querySelector('body');
 const header = document.querySelector('#header nav');
 const headerIcon = document.querySelector('#header i');
@@ -91,13 +91,13 @@ function toggleDarkMode() {
   localStorage.setItem('lightMode', lightMode);
 
   // Apply the colors
-  applyColors();
+  // applyColors();
 }
 
-modeButton.addEventListener('click', toggleDarkMode);
+// modeButton.addEventListener('click', toggleDarkMode);
 
 // Apply the colors when the page loads
-applyColors();
+// applyColors();
 
 // Gets the currently URL
 let urlActual = window.location.href;
