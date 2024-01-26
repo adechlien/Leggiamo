@@ -24,6 +24,7 @@ main .meditations .advertisement .close {
 
 main .meditations .meditation {
   text-align: start;
+  max-width: 860px;
 }
 
 main .meditations .meditation span {
