@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="flex flex-col items-center h-screen">
+		<Header/>
+		<main class="flex flex-col justify-center items-center text-center sm:flex-row w-full gap-24">
+			<img src="/leggiamo-icon.png" class="hidden sm:flex sm:w-[180px]" alt="Logo">
+			<div>
+				<p class="text-2xl mb-4">{SITE_DESCRIPTION}</p>
+				<p>
+					Aquí podrás leer historias y meditaciones escritas por mí. Sientete libre de navegar entre los múltiples pensamientos y mundos que genero a diario. Para ello, ve a <span class="underline">Texts</span>
+					<br><br>
+					Si por el contrario, quieres saber un poco más de mí, ve a <span class="underline">About</span>.
+				</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
