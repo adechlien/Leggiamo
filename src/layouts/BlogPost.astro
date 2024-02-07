@@ -59,7 +59,7 @@ const { title, description, pubDate, type, updatedDate, heroImage } = Astro.prop
 		<main class="m-auto flex items-center">
 			<article class="m-auto">
 				<div class="hero-image flex justify-center">
-					{heroImage && <img class="w-[220px] h-[220px] rounded-full" src={heroImage} alt="" />}
+					{heroImage && <img class="w-[160px] h-[160px] rounded-full" src={heroImage} alt="" />}
 				</div>
 				<div class="prose">
 					<div class="title">
@@ -73,7 +73,7 @@ const { title, description, pubDate, type, updatedDate, heroImage } = Astro.prop
 								)
 							}
 						</div>
-						<h1 class="text-4xl sm:text-5xl text-[#233336]">{title}</h1>
+						<h1 class="text-3xl sm:text-3xl text-[#233336]">{title}</h1>
 						<hr />
 					</div>
 					<slot />
