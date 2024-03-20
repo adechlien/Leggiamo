@@ -2,7 +2,7 @@
 title: '¿Qué hacemos después?'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jan 25 2024'
-type: 'Poem'
+type: 'Poema'
 heroImage: '/icon-2.jpg'
 ---
 

@@ -2,7 +2,7 @@
 title: 'Dormir'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 14 2023'
-type: 'Poem'
+type: 'Poema'
 heroImage: '/icon-4.jpg'
 ---
 

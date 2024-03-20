@@ -2,7 +2,7 @@
 title: 'Amargas memorias de una dulce amistad'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 4 2023'
-type: 'Poem'
+type: 'Poema'
 heroImage: '/icon-6.jpg'
 ---
 

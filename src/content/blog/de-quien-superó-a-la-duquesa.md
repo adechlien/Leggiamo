@@ -2,7 +2,7 @@
 title: 'De quien superó a la duquesa'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Feb 06 2024'
-type: 'Poem'
+type: 'Poema'
 heroImage: '/icon-8.png'
 ---
 

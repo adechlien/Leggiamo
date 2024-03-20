@@ -2,7 +2,7 @@
 title: 'Campesina Vol.1: Entre vacas y desgracias.'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Feb 23 2023'
-type: 'Story'
+type: 'Historia'
 heroImage: '/campesina.png'
 ---
 

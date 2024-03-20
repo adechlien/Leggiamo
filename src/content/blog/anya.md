@@ -2,7 +2,7 @@
 title: 'Anya'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 15 2023'
-type: 'Poem'
+type: 'Poema'
 heroImage: '/icon-3.jpg'
 ---
 

@@ -2,7 +2,7 @@
 title: 'El joven con muchas pulseras'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Feb 17 2024'
-type: 'Story'
+type: 'Cuento'
 heroImage: '/icon-9.png'
 ---
 

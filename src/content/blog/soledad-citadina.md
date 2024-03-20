@@ -2,7 +2,7 @@
 title: 'Soledad Citadina'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 11 2023'
-type: 'Meditation'
+type: 'Poema'
 heroImage: '/icon-5.jpg'
 ---
 

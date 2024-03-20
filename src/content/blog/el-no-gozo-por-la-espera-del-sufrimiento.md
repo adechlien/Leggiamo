@@ -2,7 +2,7 @@
 title: 'El no gozo por la espera del sufrimiento'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 1 2023'
-type: 'Meditation'
+type: 'Meditación'
 heroImage: '/icon-7.jpg'
 ---
 
