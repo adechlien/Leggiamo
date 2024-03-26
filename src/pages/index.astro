@@ -10,15 +10,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="flex flex-col items-center h-screen">
+	<body class="flex flex-col justify-self-center justify-start items-center h-screen m-auto dark:bg-dark-bg bg-light-bg">
 		<Header/>
-		<main class="flex flex-col justify-center items-center text-center sm:flex-row w-full sm:gap-24">
-			<img src="/leggiamo-icon.png" class="flex w-40 sm:w-[180px]" alt="Logo">
-			<div>
-				<p class="text-2xl mb-4">{SITE_DESCRIPTION}</p>
-				<p>
-					Aquí podrás leer historias, poemas y meditaciones escritas por mí. Sientete libre de navegar entre los múltiples pensamientos y mundos que genero a diario. Si por el contrario, quieres saber un poco más de mí, ve a <a href="/about" class="underline text-[#4A5759]">About</a>.
-				</p>
+		<main class="flex flex-col justify-center items-center text-center sm:flex-row px-8 gap-4 sm:gap-12 dark:text-dark-text text-light-text m-auto">
+			<img src="/leggiamo-icon.png" class="flex w-48" alt="Logo">
+			<div class="flex flex-col justify-center items-center text-center gap-8">
+				<div>
+					<p class="text-2xl mb-1 sm:mb-0">{SITE_DESCRIPTION}</p>
+					<p>
+						Aquí podrás leer cuentos, poemas, meditaciones y críticas, todo escrito por mí.
+					</p>
+				</div>
+				<div class="flex justify-evenly w-full sm:w-auto gap-4 sm:gap-4 sm:justify-start">
+					<a href="/blog" class="dark:bg-dark-header bg-[#a9927d] dark:text-dark-header-text text-light-header-text text-center py-3 px-4 sm:px-6 rounded-2xl text-base w-full sm:w-auto">Textos</a>
+					<a href="/about" class="dark:bg-dark-header bg-[#a9927d] dark:text-dark-header-text text-light-header-text text-center py-3 px-4 sm:px-6 rounded-2xl text-base w-full sm:w-auto">Sobre mí</a>
+				</div>
 			</div>
 		</main>
 		<Footer />

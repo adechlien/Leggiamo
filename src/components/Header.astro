@@ -3,12 +3,16 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class="flex flex-row py-2 px-4 bg-[#4A5759] rounded-full sticky top-2 w-[95vw] mx-4 justify-between">
+<header class="flex flex-row py-1 px-4 w-[95%] dark:bg-dark-header bg-light-header rounded-full justify-between items-center mt-2 gap-4">
 	<nav class="flex flex-row justify-center items-center gap-4">
-		<i class="ti ti-ghost text-3xl flex text-[#c1e2e6]"></i>
-		<HeaderLink href="/" class="text-[#dedbd2] text-xl">Inicio</HeaderLink>
-		<HeaderLink href="/blog" class="text-[#dedbd2] text-xl">Textos</HeaderLink>
-		<HeaderLink href="/about" class="text-[#dedbd2] text-xl">Sobre mí</HeaderLink>
+		<i class="ti ti-heart-broken text-3xl flex dark:text-dark-header-text text-light-header-text"></i>
+		<HeaderLink href="/" class="dark:text-dark-header-text text-light-header-text text-lg">Inicio</HeaderLink>
+		<HeaderLink href="/blog" class="dark:text-dark-header-text text-light-header-text text-lg">Textos</HeaderLink>
+		<HeaderLink href="/about" class="dark:text-dark-header-text text-light-header-text text-lg">Sobre mí</HeaderLink>
 	</nav>
-	<i class="ti ti-lock text-3xl flex text-[#4A5759]"></i>
+	<label for="darkmode">
+		<i class="ti ti-circle-half-2 text-2xl flex dark:text-dark-header-text text-light-header-text cursor-pointer"></i>
+		<input type="checkbox" id="darkmode" class="absolute opacity-0">
+	</label>
+	<script src="../../scripts.js"></script>
 </header>

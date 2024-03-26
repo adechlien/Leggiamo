@@ -2,4 +2,4 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Leggiamo | Read texts';
-export const SITE_DESCRIPTION = 'Bienvenido a Leggiamo!';
+export const SITE_DESCRIPTION = 'Bienvenida/o a Leggiamo!';
