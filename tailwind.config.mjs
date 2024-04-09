@@ -8,7 +8,7 @@ export default {
 				// Light mode
 				'light-bg': '#fcf6ef',
 				'light-header': '#4a5759',
-				'light-text': '#43281c',
+				'light-text': '#A9927D',
 				'light-header-text': '#fcf6ef',
 
 				// Dark mode
