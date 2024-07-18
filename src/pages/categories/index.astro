@@ -1,0 +1,28 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="flex flex-col justify-self-center justify-start items-center h-screen m-auto dark:bg-dark-bg bg-light-bg">
+		<Header/>
+		<main class="flex flex-col justify-center items-center text-center sm:flex-row px-8 sm:px-12 gap-4 sm:gap-12 dark:text-dark-text text-light-text m-auto">
+			<div class="flex flex-col justify-center items-center text-center gap-8">
+			    <span class="text-3xl">Elige la Categoría...</span>
+				<div class="flex flex-col sm:flex-row justify-evenly w-full gap-4 sm:gap-4 sm:justify-start">
+					<a href="/categories/stories" class="flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-header-text dark:text-dark-header-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Cuentos cortos</a>
+					<!-- <a href="/categories/books" class="bg-transparent border-2 border-[#a9927d] dark:border-dark-header-text dark:text-dark-header-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Cuentos largos</a> -->
+					<a href="/categories/meditations" class="flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-header-text dark:text-dark-header-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Meditaciones</a>
+					<a href="/categories/poems" class="flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-header-text dark:text-dark-header-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Poemas</a>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

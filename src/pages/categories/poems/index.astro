@@ -1,0 +1,83 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../../components/FormattedDate.astro';
+
+
+let post = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+post = post.filter((post) => post.data.type === 'Poema');
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			ul {
+				display: grid;
+				gap: 1rem;
+				grid-template-columns: repeat(3, 1fr);
+				align-items: center;
+				justify-items: center;
+				list-style-type: none;
+				text-align: center ;
+				margin: 0;
+				padding: 0;
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li a {
+				display: flex;
+				flex-direction: column;
+			}
+			.title {
+				margin: 0;
+				line-height: 1;
+			}
+			.date {
+				margin: 0;
+			}
+			@media (max-width: 720px) {
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.5em;
+				}
+				ul li {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		</style>
+	</head>
+	<body class="flex flex-col items-center h-screen dark:bg-dark-bg bg-light-bg">
+		<Header />
+		<main class="sm:w-full dark:text-dark-text text-light-text">
+			<section class="flex flex-col items-center">
+				<ul class="flex flex-col items-center w-full">
+					{
+						post.map((post) => (
+							<li class="my-4">
+								<a href={`/blog/${post.slug}/`} class="text-sm flex gap-2 items-center">
+									<p class="date"><FormattedDate date={post.data.pubDate} /></p>
+									<img class="rounded-full w-32 sm:w-28" src={post.data.heroImage} alt="" />
+									<h4 class="title text-xl sm:w-full">{post.data.title}</h4>
+									<p class="type">{post.data.type}</p>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
