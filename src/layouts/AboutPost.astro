@@ -1,0 +1,63 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, type, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.title {
+				text-align: center;
+				line-height: 1;
+			}
+		</style>
+	</head>
+
+	<body class="gap-4 dark:bg-dark-bg bg-light-bg">
+		<Header />
+		<main class="flex items-center justify-center dark:text-dark-text text-light-text">
+			<article class="flex flex-col gap-4 m-2">
+			    <div class="portrait flex sm:flex-col justify-evenly items-center gap-2">
+					<div class="hero-image flex justify-center">
+						{heroImage && <img class="w-[160px] h-[160px] rounded-full" src={heroImage} alt="" />}
+					</div>
+
+					<div class="info flex flex-col gap-2 sm:justify-start text-justify">
+						<div class="title flex flex-col sm:gap-">
+						    <div class="date dark:text-dark-text text-light-text text-sm">
+				    			<FormattedDate date={pubDate} />
+				    			{
+				  				updatedDate && (
+				  					<div class="last-updated-on">
+				    						Last updated on <FormattedDate date={updatedDate} />
+				    				</div>
+				  				)
+				  			}
+							</div>
+							<h1 class="text-2xl sm:text-3xl">{title}</h1>
+						<!-- <hr /> -->
+						</div>
+
+						<div class="flex flex-row gap-2 justify-center items-center">
+						    <a href="https://letterboxd.com/adechlien/" class="dark:text-dark-text text-light-text" target="_blank"><i class="ti ti-brand-letterboxd text-3xl"></i></a>
+						    <a href="https://www.instagram.com/adechlien/" class="dark:text-dark-text text-light-text" target="_blank"><i class="ti ti-brand-instagram text-3xl"></i></a>
+						    <a href="https://www.pinterest.com/yourfriendlyadc/" class="dark:text-dark-text text-light-text" target="_blank"><i class="ti ti-brand-pinterest text-3xl"></i></a>
+						    <!-- <a href="https://twitter.com/yourfriendlyadc" class="dark:text-dark-text text-light-text" target="_blank"><i class="ti ti-brand-x text-3xl"></i></a> -->
+						</div>
+					</div>
+				</div>
+				<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
