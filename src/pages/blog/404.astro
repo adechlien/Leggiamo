@@ -1,0 +1,19 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+---
+
+<html lang="en">
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="flex flex-col justify-self-center justify-start items-center h-screen m-auto dark:bg-dark-bg bg-light-bg">
+		<main class="flex flex-col justify-center items-center text-center sm:flex-row px-8 gap-4 sm:gap-12 dark:text-dark-text text-light-text m-auto">
+			<div class="flex flex-col justify-center items-center text-center gap-8">
+				<div>
+					<p class="text-2xl font-medium mb-1 sm:mb-0">{SITE_DESCRIPTION}</p>
+					<p class="text-lg font-medium">Parece que no he programado esto aún...</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
