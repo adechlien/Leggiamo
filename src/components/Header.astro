@@ -3,15 +3,17 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header class="flex flex-row py-1 px-3 w-[95%] dark:bg-dark-header bg-light-header rounded-full justify-between items-center mt-2 gap-4 border-b-2 border-r-2 border-b-[#001604] border-r-[#001604]">
-	<nav class="flex flex-row justify-center items-center gap-4">
-		<i class="ti ti-writing text-2xl flex dark:text-dark-header-text text-light-header-text"></i>
-		<HeaderLink href="/" class="dark:text-dark-header-text text-light-header-text text-base font-medium">Inicio</HeaderLink>
-		<HeaderLink href="/blog" class="dark:text-dark-header-text text-light-header-text text-base font-medium">Textos</HeaderLink>
-		<HeaderLink href="/about" class="dark:text-dark-header-text text-light-header-text text-base font-medium">Sobre mí</HeaderLink>
+<header class="flex flex-row py-1 px-2 w-[95%] dark:bg-dark-header bg-light-header rounded-full justify-between items-center mt-2 gap-4">
+	<a href="/">
+	   <i class="ti ti-book text-xl flex dark:text-dark-header-text text-light-header-text"></i>
+	</a>
+	<nav class="flex flex-row justify-center items-center dark:text-dark-header-text text-light-header-text text-sm font-medium gap-4">
+		<HeaderLink href="/blog">Recientes</HeaderLink> |
+		<HeaderLink href="/categories">Categorías</HeaderLink> |
+		<HeaderLink href="/about">Sobre mí</HeaderLink>
 	</nav>
 	<label for="darkmode">
-		<i class="ti ti-circle-half-2 text-2xl flex dark:text-dark-header-text text-light-header-text cursor-pointer"></i>
+		<i class="ti ti-circle-half-2 text-xl flex dark:text-dark-header-text text-light-header-text cursor-pointer"></i>
 		<input type="checkbox" id="darkmode" class="absolute opacity-0">
 	</label>
 	<script src="../../scripts.js"></script>

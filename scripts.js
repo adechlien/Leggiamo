@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update the color theme
     setColorTheme();
   });
-});
 
+});
