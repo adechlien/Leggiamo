@@ -75,10 +75,10 @@ let post = (await getCollection('blog')).sort(
 						post.map((post) => (
 							<li class="my-4">
 								<a href={`/blog/${post.slug}/`} class="text-sm flex gap-2 items-center">
-									<p class="type">{post.data.type}</p>
+									<p class="date"><FormattedDate date={post.data.pubDate} /></p>
 									<img class="rounded-full w-32 sm:w-28" src={post.data.heroImage} alt="" />
 									<h4 class="title text-xl sm:w-full">{post.data.title}</h4>
-									<p class="date"><FormattedDate date={post.data.pubDate} /></p>
+									<p class="type">{post.data.type}</p>
 								</a>
 							</li>
 						))

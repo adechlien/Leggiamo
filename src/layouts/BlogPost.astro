@@ -39,7 +39,7 @@ const { title, description, pubDate, type, updatedDate, heroImage } = Astro.prop
 				<div class="hero-image flex justify-center">
 					{heroImage && <img class="w-[160px] h-[160px] rounded-full" src={heroImage} alt="" />}
 				</div>
-				<div class="text-justify">
+				<div class="text-left">
 					<div class="title">
 						<div class="date dark:text-dark-text text-light-text">
 							<FormattedDate date={pubDate} />
