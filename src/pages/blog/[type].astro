@@ -14,6 +14,7 @@ export function getStaticPaths() {
     { params: { type: 'Cuento largo' } },
     { params: { type: 'Meditación' } },
     { params: { type: 'Poema' } }
+    // { params: { type: 'Imparando Italiano' } }
   ];
 }
 
@@ -22,6 +23,8 @@ let post = (await getCollection('blog')).sort(
 ).filter((post) => post.data.type === type);
 
 let typeTitle = type;
+let typeDescription = '';
+let typeDescriptionEs = '';
 if (typeTitle === "Poema"){
   typeTitle = "Poemas";
 } else if (typeTitle === "Cuento corto"){
@@ -30,6 +33,10 @@ if (typeTitle === "Poema"){
   typeTitle = "Cuentos largos";
 } else if (typeTitle === "Meditación"){
   typeTitle = "Meditaciones";
+} else if (typeTitle === "Imparando Italiano"){
+  typeTitle = "Imparando Italiano";
+  typeDescription = "🇮🇹 Nessuno di questi testi è stato scritto per me. Darò solo la mia opinione su diversi temi che leggerò per migliorare il mio livello di italiano. Alla fine di ogni testo, scriverò alcune cose interessanti che ho tratto da essi.";
+  typeDescriptionEs = "🇪🇸 Ninguno de estos textos fue escrito por mí. Solo daré mi opinión sobre diferentes temas que leeré para mejorar mi nivel de italiano. Al final de cada texto, escribiré algunas cosas interesantes que he sacado de ellos.";
 }
 ---
 
@@ -81,6 +88,8 @@ if (typeTitle === "Poema"){
 		<main class="sm:w-full dark:text-dark-text text-light-text mb-auto">
 			<section class="flex flex-col items-center">
 			    <h1 class="text-light-header dark:text-dark-text text-2xl mb-4">{typeTitle}</h1>
+				<p class="text-light-header dark:text-dark-text text-md mb-4">{typeDescription}</p>
+				<p class="text-light-header dark:text-dark-text text-md mb-4">{typeDescriptionEs}</p>
 				<ul class="flex flex-col items-start w-full">
 					{
 						post.map((post) => (

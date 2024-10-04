@@ -4,15 +4,15 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header class="flex flex-row py-1 px-2 w-[95%] dark:bg-dark-header bg-light-header rounded-full justify-between items-center mt-2 gap-4">
-	<a href="/" class="flex sm:hidden">
+	<a href="/" class="flex sm:flex">
 	   <i class="ti ti-book text-xl flex dark:text-dark-header-text text-light-header-text"></i>
 	</a>
 	<nav class="flex flex-row justify-center items-center dark:text-dark-header-text text-light-header-text text-sm font-medium gap-4">
-    	<a href="/" class="hidden sm:flex">
+    	<a href="/" class="hidden sm:hidden">
     	   <i class="ti ti-book text-xl flex dark:text-dark-header-text text-light-header-text"></i>
     	</a>
-		<HeaderLink href="/blog">Recientes</HeaderLink>
-		<HeaderLink href="/categories">Categorías</HeaderLink>
+		<HeaderLink href="/blog">Recientes</HeaderLink> |
+		<HeaderLink href="/categories">Categorías</HeaderLink> |
 		<HeaderLink href="/about">Sobre mí</HeaderLink>
 	</nav>
 	<label for="darkmode">
