@@ -3,7 +3,7 @@ title: 'La nascita di Venere'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Aug 25 2024'
 type: 'Imparando Italiano'
-heroImage: '/venere.jpeg'
+heroImage: '/venere.webp'
 ---
 
 La Nascita di Venere, attualmente conservata nella Galleria degli Uffizi a Firenze, è un dipinto a tempera su tela di Sandro Botticelli, databile al 1482-1485 circa.

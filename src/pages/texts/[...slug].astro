@@ -1,0 +1,36 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('texts');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'texts'>;
+
+const post = Astro.props;
+const { title, pubDate, heroImage, type } = post.data;
+const { Content } = await post.render();
+---
+
+<Layout title={title}>
+	<article class="flex flex-col justify-center mt-8 mb-auto mx-auto">
+		<div class="hero-image flex justify-center">
+			<img class="w-[160px] h-[160px] rounded-full" src={heroImage} alt="" />
+		</div>
+		    <!-- <span>{type}</span> -->
+		<div class="text-left prose dark:text-dark-text text-light-text justify-center m-auto px-4">
+			<div class="title text-center pt-2">
+				<h1 class="text-3xl dark:text-dark-text text-light-text">{title}</h1>
+			</div>
+			<Content />
+			<div class="date font-semibold dark:text-dark-text text-light-text">
+				<FormattedDate date={pubDate}/>
+			</div>
+		</div>
+	</article>
+</Layout>

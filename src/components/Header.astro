@@ -1,23 +1,16 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
-<header class="flex flex-row py-1 px-2 w-[95%] dark:bg-dark-header bg-light-header rounded-full justify-between items-center mt-2 gap-4">
-	<a href="/" class="flex sm:flex">
-	   <i class="ti ti-book text-xl flex dark:text-dark-header-text text-light-header-text"></i>
+<header class="flex flex-row py-1 px-4 w-full rounded-full justify-between items-center mt-2 gap-4">
+	<a href="/" class="flex gap-1 items-center">
+	    <i class="ti ti-book text-xl flex dark:text-dark-text text-light-header-text"></i>
+		<span class="dark:text-dark-text text-light-header-text text-sm font-medium">Leggiamo</span>
 	</a>
-	<nav class="flex flex-row justify-center items-center dark:text-dark-header-text text-light-header-text text-sm font-medium gap-4">
-    	<a href="/" class="hidden sm:hidden">
-    	   <i class="ti ti-book text-xl flex dark:text-dark-header-text text-light-header-text"></i>
-    	</a>
-		<HeaderLink href="/blog">Recientes</HeaderLink> |
-		<HeaderLink href="/categories">Categorías</HeaderLink> |
-		<HeaderLink href="/about">Sobre mí</HeaderLink>
+	<nav class="flex flex-row justify-center items-center dark:text-dark-text text-light-header-text text-sm font-medium gap-2">
+		<HeaderLink href="/about">Sobre mí</HeaderLink> |
+		<button onclick=handleToggleClick() class="dark-button dark:text-dark-text text-light-header-text cursor-pointer" id="darkmode">
+		    <i class="ti ti-circle-half-2 text-xl flex dark:text-dark-text text-light-header-text cursor-pointer"></i>
+		</button>
 	</nav>
-	<label for="darkmode">
-		<i class="ti ti-circle-half-2 text-xl flex dark:text-dark-header-text text-light-header-text cursor-pointer"></i>
-		<input type="checkbox" id="darkmode" class="absolute opacity-0">
-	</label>
-	<script src="../../scripts.js"></script>
 </header>

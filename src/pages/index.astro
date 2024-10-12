@@ -1,32 +1,67 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { ViewTransitions } from 'astro:transitions';
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+// Escritos recientemente
+let post = (await getCollection('texts')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 4);
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<ViewTransitions />
-	</head>
-	<body class="flex flex-col justify-self-center justify-start items-center h-screen m-auto dark:bg-dark-bg bg-light-bg">
-		<Header/>
-		<main class="flex flex-col justify-center items-center text-center sm:flex-row px-8 gap-4 sm:gap-12 dark:text-dark-text text-light-text m-auto">
-			<div class="flex flex-col justify-center items-center text-center gap-8">
-				<div>
-					<p class="text-2xl font-medium mb-1 sm:mb-0">{SITE_DESCRIPTION}</p>
-					<p class="text-lg font-medium">Lee cuentos, poemas, meditaciones hechas por mí.</p>
-				</div>
-				<div class="flex flex-col sm:flex-row justify-evenly w-full gap-4 sm:gap-4 sm:justify-start">
-					<a href="/blog" class="bg-transparent border-2 border-[#a9927d] dark:border-dark-header-text dark:text-dark-header-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Recientes</a>
-					<a href="/categories" class="bg-transparent border-2 border-[#a9927d] dark:border-dark-header-text dark:text-dark-header-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Categorías</a>
-					<a href="/about" class="dark:bg-dark-header bg-[#a9927d] dark:text-dark-header-text text-light-header-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Sobre mí</a>
-				</div>
+<Layout title="Inicio">
+    <main class="w-full dark:text-dark-text text-light-text text-center px-4 gap-4 sm:gap-12 mt-8 sm:m-auto sm:my-16">
+		<div class="flex flex-col justify-center items-center text-center gap-8">
+			<div>
+				<p class="text-2xl font-medium mb-1 sm:mb-0">
+					Bienvenido a Leggiamo!
+				</p>
+				<p class="text-lg font-normal">
+					Lee textos de diferentes tipos escritos por mí.
+				</p>
 			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+
+			<div class="recents flex flex-col gap-6">
+			    <h2 class="text-xl font-medium">Escritos recientemente</h2>
+			    <ul class="flex flex-col sm:grid sm:grid-cols-4 items-start w-full gap-4 text-center justify-center">
+					{
+					post.map((post: any) => (
+						<li class="my-4 w-full text-center">
+							<a href={`/texts/${post.slug}/`} class="text-sm flex flex-col gap-1 items-center">
+								<img class="rounded-full w-32 sm:w-28" src={post.data.heroImage} alt="Text Image" />
+								<h4 class="title font-semibold text-center text-md sm:w-full truncate">{post.data.title}</h4>
+								<p class="type">{post.data.type}</p>
+							</a>
+						</li>
+						))
+					}
+				</ul>
+			</div>
+
+			<div class="w-full flex flex-col gap-6">
+                <h2 class="text-xl font-medium">Categorías</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-6 justify-start items-stretch w-full gap-4 sm:gap-4">
+                    <!-- <a href="/texts" class="col-span-1 sm:col-span-1 dark:bg-dark-header flex bg-[#a9927d] dark:text-dark-header-text text-light-bg text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full justify-center items-center">Recientes</a> -->
+                    <a href="/texts/cuentos-cortos" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Cuentos cortos</a>
+                    <a href="/texts/cuentos-largos" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Cuentos largos</a>
+                    <a href="/texts/poemas" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Poemas</a>
+                    <!-- <a href="/texts/imparando-italiano" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Imparando Italiano 🇮🇹</a> -->
+                    <a href="/texts/meditaciones" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Meditaciones</a>
+                </div>
+			</div>
+			<hr>
+			<div class="flex flex-col sm:flex-row gap-4">
+			    <p class="italic text-center sm:text-left border-2 border-[#a9927d] dark:border-dark-text p-3 rounded-3xl">
+			    	"Escribir es siempre esconder algo de manera que luego sea descubierto."
+			    	<br>
+			    	— <strong>Italo Calvino</strong>.
+			    </p>
+			    <p class="italic text-center sm:text-left border-2 border-[#a9927d] dark:border-dark-text p-3 rounded-3xl">
+			    	"El escritor debe escribir para ser leído."
+			    	<br>
+			    	— <strong>Jean-Paul Sartre</strong>.
+			    </p>
+			</div>
+		</div>
+	</main>
+</Layout>

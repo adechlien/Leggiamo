@@ -1,25 +1,122 @@
 ---
-import Layout from '../layouts/AboutPost.astro';
+import FormattedDate from "../components/FormattedDate.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Alejandro Hernández" type="" description="" pubDate={new Date('March 28 2003')} heroImage="/hero2.jpeg">
+<Layout title="Informacion">
+    <article class="flex flex-col gap-4 mt-8 mb-auto m-2 dark:text-dark-text text-light-text">
+      <div class="portrait flex sm:flex-col justify-evenly items-center gap-0 sm:gap-2">
+        <div class="hero-image flex justify-center">
+              <img class="w-32 h-32 sm:w-40 sm:h-40 rounded-full" src="/about/me.webp" alt=""/>
+        </div>
 
-	<p class="dark:text-dark-text text-light-text text-left">
-		Me apasiona la programación, el diseño, el cine, el tenis, la calistenia, la música, la lectura, la arquitectura, Spider-Man.
-		<br><br>
-		Me gusta el cine, mis peliculas favoritas son La La Land, Tick Tick Boom! y The Whale. Tengo un profundo amor-odio con Asteroid City, ya que a simple vista en la pelicula no sucede absolutamente nada entre que empieza y termina. Sin embargo su existencialismo es cautivante.
-		<br><br>
-		En menor medida, También me gustan las series, mis favoritas son Cómo sobrevivir soltero, Breaking Bad, Avatar y Peaky Blinders. A veces pienso que sólo yo entiendo la manera en que veo Cómo sobrevivir soltero y por qué tratando de lo que trata, es mi serie favorita. Quizá recuerde mal las demás. También me gustan los animes, aunque ya no me considere otaku, como en el pasado. Mis preferidos son Death Note, Saint Seiya y Shokugeki no Soma, de este último que a mis 11 años mi sueño fuese ser Chef. Ese sueño duró los mismo que las primeras tres temporadas del anime.
-		<br><br>
-		He escuchado muchos artistas y bandas de distintos géneros de música, los que aún perduran en las canciones que escucho a diario son Slipknot, Gorillaz, Falling in Reverse. Mis bandas favoritas en la actualidad son Rawayana y Motherflowers, mientras que mis artistas favoritos son J Balvin, Eminem, Juan Luis Guerra y Ricardo Arjona.
-		<br><br>
-		Mi comida favorita es la arepa asada con queso rayado, nata y mantequilla, luego el arroz con carne mechada, caraotas y guineo, mejor conocido como pabellón criollo, los bollos pelones y las carimañolas. Mis jugos favoritos son los de Mora, Parchita, Guayaba, Naranja y la limonada. Todos en agua.
-		<br><br>
-		He practicado Calistenia desde hace tres años, a causa de que mi PlayStation 4 se había dañado.
-		<br><br>
-		Me gusta Spider-Man, es mi superheroe favorito y puedo durar horas hablando de él. Eso es lo único que escribiré al respecto.
-		<br><br>
-		Por costumbre, primero echo la leche y luego el cereal. Las matemáticas son rojas, el español es azul, la física es morada y la química es verde.
-	</p>
+        <div class="info flex flex-col gap-2 sm:justify-start text-left">
+          <div class="title text-center flex flex-col">
+            <div class="date dark:text-dark-text text-light-header-text text-sm">
+              <FormattedDate date={new Date("March 28 2003")} />
+            </div>
+            <h1 class="text-xl sm:text-3xl text-light-header-text dark:text-dark-text font-medium">
+              Alejandro <br class="sm:hidden" /> Hernández
+            </h1>
+          </div>
 
+          <div class="flex flex-row gap-2 justify-center items-center">
+            <a href="https://letterboxd.com/adechlien/" class="dark:text-dark-text text-light-header-text" target="_blank"><i class="ti ti-brand-letterboxd text-3xl"></i></a>
+            <a href="https://www.instagram.com/adechlien/" class="dark:text-dark-text text-light-header-text" target="_blank"><i class="ti ti-brand-instagram text-3xl"></i></a>
+            <!-- <a href="https://www.pinterest.com/yourfriendlyadc/" class="dark:text-dark-text text-light-header-text" target="_blank"><i class="ti ti-brand-pinterest text-3xl"></i></a> -->
+            <a href="https://github.com/adechlien" class="dark:text-dark-text text-light-header-text" target="_blank"><i class="ti ti-brand-github text-3xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col dark:text-dark-text text-light-text text-left gap-4 mx-2">
+        <p>
+          En orden de saberse <strong>un poco más</strong> sobre mí, y con la
+          intención de convertir esta página en una especie de blog personal,
+          es menester informar acerca de mis gustos y pasatiempos.
+        </p>
+        <p>
+          Una de las cosas que más me gusta en el mundo es <strong>Spider-Man</strong>.
+          Soy un verdadero fan del mejor superhéroe de todos los tiempos. Me reservo
+          las razones por las cuáles me gusta tanto, pero quiero destacar mis
+          guionistas favoritos: <strong>Dan Slott</strong> y <strong>Stan Lee</strong>.
+          La mejor época de Spider-Man va desde que Dan tomó las riendas del guión
+          y trajo maravillas como <strong>"Ends of Earth"</strong>,
+          <strong>"Spider-Island"</strong> y <strong>"Superior Spider-Man"</strong>,
+          además de introducir un Peter Parker exitoso y muy distinto del típico
+          que muestran casi todas las adaptaciones. De Stan Lee, no hay mucho que decir,
+          es el creador del personaje, alguien que sentó las bases de lo que sigue
+          siendo hoy en día, por lo que siempre será recordado como uno de los más grandes.
+        </p>
+        <div class="w-full flex justify-evenly sm:justify-start flex-wrap gap-4 mb-4">
+            <img src="/about/spidey3.webp" class="rounded-3xl size-36 sm:size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/spidey2.webp" class="rounded-3xl size-36 sm:size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/spidey6.webp" class="rounded-3xl size-36 sm:size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/spidey5.webp" class="rounded-3xl size-36 sm:size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+        </div>
+        <p>
+          Me gusta el cine, mis peliculas favoritas son <strong>"La La Land"</strong>, <strong>"Tick Tick
+          Boom!"</strong>, <strong>"The Whale"</strong> y <strong>"La tumba de las luciérnagas"</strong>. Tengo un profundo
+          amor-odio con <strong>"Asteroid City"</strong>, ya que a simple vista en la pelicula no
+          sucede absolutamente nada entre que empieza y termina. Sin embargo su
+          existencialismo es cautivante. Para saber más de mis gustos cinéfilos está mi
+          <a href="https://letterboxd.com/adechlien/" class="dark:text-dark-text text-light-header-text" target="_blank"><strong>Letterboxd</strong></a>.
+        </p>
+        <div class="w-full flex justify-evenly sm:justify-start flex-wrap gap-4 mb-4">
+            <img src="/about/lalaland.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/jonathan.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/whale.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/fireflies.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/asteroid.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+        </div>
+        <p>
+          En menor medida, También me gustan las series, mis favoritas son <strong>"Cómo
+          sobrevivir soltero"</strong>, <strong>"Breaking Bad"</strong> y <strong>"Avatar"</strong>. A veces
+          pienso que sólo yo entiendo la manera en que veo "Cómo sobrevivir
+          soltero" y por qué tratando de lo que trata, es mi serie favorita.
+          Quizá recuerde mal a las demás.
+        </p>
+        <p>
+          También me gustan los animes, aunque ya
+          no me considere otaku, como en el pasado. Mis preferidos son <strong>"Death
+          Note"</strong>, <strong>"Los Caballeros del Zodiaco"</strong> y <strong>"Shokugeki no Soma"</strong>, de este último que a mis 11
+          años mi sueño fuese ser Chef. Ese sueño duró los mismo que las
+          primeras tres temporadas del anime.
+        </p>
+        <div class="w-full flex justify-evenly sm:justify-start flex-wrap gap-4 mb-4">
+            <img src="/about/sebas.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/heisenberg.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/aang.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/seiya.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+        </div>
+        <p>
+          He escuchado muchos artistas y bandas de distintos géneros de música.
+          Entre mis bandas favoritas están <strong>Motherflowers</strong> y
+          <strong>El Cuarteto de Nos</strong>. Si nos alejamos un poco están
+          <strong>Slipknot</strong>, <strong>Gorillaz</strong> y
+          <strong>Falling in Reverse</strong>, mientras que, entre mis
+          artistas favoritos están <strong>Ricardo Arjona</strong>,
+          <strong>Eminem</strong> y <strong>J Balvin</strong>.
+        </p>
+        <div class="w-full flex justify-evenly sm:justify-start flex-wrap gap-4 mb-4">
+            <img src="/about/rawayana.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/gorillaz.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/arjona.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+            <img src="/about/eminem.webp" class="rounded-3xl size-28 border-[3px] border-[#a9927d] dark:border-dark-text" alt="">
+        </div>
+        <p>
+          Mi comida favorita es la <strong>arepa asada con queso rayado, nata y
+          mantequilla</strong>, luego el arroz con carne mechada, caraotas y guineo,
+          ligera variación del <strong>pabellón criollo</strong>, los bollos pelones y las
+          carimañolas. Mis jugos favoritos son los de <strong>Mora, Parchita, Guayaba,
+          Naranja</strong> y la <strong>limonada</strong>. Todos en agua, no en leche.
+        </p>
+        <p>
+          Las matemáticas son <strong class="text-[#C11] dark:text-[#F98]">rojas</strong>, el español es
+          <strong class="text-[#11D] dark:text-[#89F]">azul</strong>, la física es
+          <strong class="text-[#B1B] dark:text-[#DBF]">morada</strong>,
+          la química es <strong class="text-[#191] dark:text-[#9F8]">verde</strong> e inglés es
+          <strong class="text-[#BB5] dark:text-[#FF8]">amarillo</strong>.
+        </p>
+      </div>
+    </article>
 </Layout>
