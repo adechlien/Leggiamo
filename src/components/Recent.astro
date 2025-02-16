@@ -6,7 +6,9 @@ import { getCollection } from 'astro:content';
 const posts = await getCollection('texts');
 
 // Ordenar por fecha de publicación (descendente, más reciente primero)
-const sortedPosts = posts.sort((a: any, b: any) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+const sortedPosts = posts.sort((a, b) => {
+    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+});
 
 // Obtener el más reciente
 const latestPost = sortedPosts[0];
