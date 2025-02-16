@@ -1,9 +1,11 @@
 ---
 title: '20 vueltas a la nada'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jan 31 2024'
 type: 'Poema'
-heroImage: '/icon-1.jpg'
+heroImage: '/vueltas.svg'
+pubDate: 'Jan 31 2024'
+editDate: 'Jan 31 2024'
+edition: 'Primera'
 ---
 
 El agua la pintan de azul pero es transparente<br>

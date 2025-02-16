@@ -15,14 +15,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en" class="">
+<html lang="en" class="bg-leg4">
 	<head>
 	    <!-- Global Metadata -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/ico" href="/leggiamo-icon.ico" />
+		<link rel="icon" type="image/svg" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 		<!-- Font preloads -->
 
@@ -51,14 +57,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<!-- View Transitions -->
 		<ViewTransitions />
 	</head>
-	<body class="font-ubuntu flex flex-col justify-between items-center bg-light-bg dark:bg-dark-bg max-w-[820px] min-h-screen text-left my-0 mx-auto">
+	<body class="font-ubuntu-c flex flex-col justify-between items-center gap-12 max-w-3xl min-h-screen text-left my-0 mx-auto">
 		<Header/>
 		<slot />
 		<Footer />
 	</body>
 </html>
 
-<script is:inline>
+<!-- <script is:inline>
     const theme = (() => {
       if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
         return localStorage.getItem("theme");
@@ -94,7 +100,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           .getElementById(".dark-button")
           .addEventListener("click", handleToggleClick);
     });
-</script>
+</script> -->
 
 <style is:global>
     /* Scrollbar */

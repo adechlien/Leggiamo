@@ -2,8 +2,9 @@
 title: 'Anya'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 15 2023'
+editDate: 'Dec 15 2023'
 type: 'Poema'
-heroImage: '/helado.jpg'
+heroImage: '/anya.svg'
 ---
 
 Ese no era yo. Llegaba temprano, me iba tarde. Siempre era atento, el segundo plato. No era el alma de las fiestas, hablaba mucho, pero no era interesante de escuchar.

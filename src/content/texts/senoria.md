@@ -2,8 +2,9 @@
 title: 'Señora'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Sep 6 2024'
+editDate: 'Sep 6 2024'
 type: 'Poema'
-heroImage: '/senoria.webp'
+heroImage: '/prueba.svg'
 ---
 
 ¿A qué viene tu sonrisa en respuesta y tus recuerdos precisos de mí?

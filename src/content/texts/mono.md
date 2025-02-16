@@ -2,8 +2,9 @@
 title: 'El mono y la peonía'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Oct 14 2024'
+editDate: 'Oct 14 2024'
 type: 'Cuento corto'
-heroImage: '/mono.webp'
+heroImage: '/mono.svg'
 ---
 
 El mono, perdido y deprimido, protegía a capa y espada la hermosa peonía que, días antes, su corazón, entre dudas y decepciones, se había topado.

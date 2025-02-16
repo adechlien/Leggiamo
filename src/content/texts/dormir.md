@@ -2,8 +2,9 @@
 title: 'Dormir'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 14 2023'
+editDate: 'Dec 14 2023'
 type: 'Meditación'
-heroImage: '/dormir.webp'
+heroImage: '/dormir.svg'
 ---
 
 Cuando duermo no pienso en nada, no obtengo nada, no aprendo, no disfruto. Todo se torna oscuro e insensible, lo mas parecido a perecer. Supongo que es el entrenamiento perfecto para cuando la acaricia de la mortalidad roce mi mejilla el día de mi partida.

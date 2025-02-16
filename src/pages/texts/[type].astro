@@ -10,14 +10,11 @@ export function getStaticPaths() {
     { params: { type: 'cuentos-largos' } },
     { params: { type: 'meditaciones' } },
     { params: { type: 'poemas' } },
-    { params: { type: 'imparando-italiano' } }
   ];
 }
 
 let typeTitle = type;
 let typeUrl = "";
-let typeDescription = '';
-let typeDescriptionEs = '';
 if (typeTitle === "poemas"){
   typeUrl = "Poema";
   typeTitle = "Poemas";
@@ -30,11 +27,6 @@ if (typeTitle === "poemas"){
 } else if (typeTitle === "meditaciones"){
   typeUrl = "Meditación";
   typeTitle = "Meditaciones";
-} else if (typeTitle === "imparando-italiano"){
-  typeUrl = "Imparando Italiano";
-  typeTitle = "Imparando Italiano";
-  typeDescription = "🇮🇹 Nessuno di questi testi è stato scritto per me. Darò solo la mia opinione su diversi temi che leggerò per migliorare il mio livello di italiano. Alla fine di ogni testo, scriverò alcune cose interessanti che ho tratto da essi.";
-  typeDescriptionEs = "🇪🇸 Ninguno de estos textos fue escrito por mí. Solo daré mi opinión sobre diferentes temas que leeré para mejorar mi nivel de italiano. Al final de cada texto, escribiré algunas cosas interesantes que he sacado de ellos.";
 }
 
 let posts = (await getCollection('texts'))
@@ -43,24 +35,28 @@ let posts = (await getCollection('texts'))
 ---
 
 <Layout title={typeTitle}>
-  <main class="w-full dark:text-dark-text text-light-text mt-8 mb-auto mx-auto">
-    <section class="flex flex-col items-center px-4">
-      <h1 class="text-light-header dark:text-dark-text text-2xl mb-4 font-medium">{typeTitle}</h1>
-      <p class="text-light-header dark:text-dark-text text-md mb-4">{typeDescription}</p>
-      <p class="text-light-header dark:text-dark-text text-md mb-4">{typeDescriptionEs}</p>
-      <ul class="flex flex-col sm:grid sm:grid-cols-3 items-start w-full gap-4 sm:gap-y-12 text-center justify-center">
-        {
-          posts.map((post) => (
-            <li class="my-4 sm:my-0 w-full text-center">
-              <a href={`/texts/${post.slug}/`} class="text-sm flex flex-col gap-1 items-center">
-                <p class="date"><FormattedDate date={post.data.pubDate} /></p>
-                <img class="rounded-full w-32 sm:w-28" src={post.data.heroImage} alt="" />
-                <h4 class="title text-center text-lg sm:w-full truncate">{post.data.title}</h4>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+  <main class="dark:text-lush2 text-light-text">
+    <section class="flex flex-col items-center px-4 gap-8">
+      <h1 class="text-3xl text-leg2 font-semibold font-ubuntu-c">{typeTitle}</h1>
+      <ul class="grid grid-cols-2 sm:grid sm:grid-cols-4 w-full gap-4 text-center justify-center">
+		{
+		posts.map((post: any) => (
+			<li class="w-full text-center">
+			    <a href={`/texts/${post.slug}/`} class="group relative text-sm flex flex-col gap-1 items-center">
+			        <div class="relative w-40">
+			    		<img class="rounded-md w-full" src={post.data.heroImage} alt="Text Image"/>
+			    		<div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
+			    		<div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
+			    	</div>
+                    <p class="date opacity-100 group-hover:opacity-0 transition-opacity duration-500 text-md sm:text-xs absolute font-normal top-1 px-1 text-white"><FormattedDate date={post.data.pubDate} /></p>
+                    <h4 class="title opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute px-3 bottom-1 font-semibold text-center text-md sm:text-xs sm:w-full text-white">
+			    	    {post.data.title}
+			    	</h4>
+			    </a>
+			</li>
+		))
+		}
+	</ul>
     </section>
   </main>
 </Layout>

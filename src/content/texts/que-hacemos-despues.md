@@ -2,8 +2,9 @@
 title: '¿Qué hacemos después?'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jan 25 2024'
+editDate: 'Jan 25 2024'
 type: 'Poema'
-heroImage: '/icon-2.jpg'
+heroImage: '/que-hacemos.svg'
 ---
 
 Como un corto suspiro a la orilla del mar respirando sus hojas con vigor gritó<br>

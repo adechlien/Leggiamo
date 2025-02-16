@@ -2,8 +2,9 @@
 title: 'Soledad Citadina'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 11 2023'
+editDate: 'Dec 11 2023'
 type: 'Meditación'
-heroImage: '/icon-5.jpg'
+heroImage: '/soledad.svg'
 ---
 
 Transporte público, hora pico y la suerte de un puesto en el lado de la ventana. Nada me recuerda tan claramente el mar de universos en el que estamos sumergidos.

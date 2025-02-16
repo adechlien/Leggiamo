@@ -2,8 +2,9 @@
 title: 'Indeciso por antonomasia'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Oct 4 2024'
+editDate: 'Oct 4 2024'
 type: 'Poema'
-heroImage: '/indeciso.webp'
+heroImage: '/indeciso.svg'
 ---
 
 Hoy me desperté tarde, ya perdí la cuenta de cuántos días llevo queriendo madrugar. Intenté nuevamente colocar dos cajas juntas y que se vieran bien, pero viniste tú, me cacheteaste con tu recuerdo. Las cajas, que eran de cartón, se mojaron con mis lágrimas. No lloraba por el dolor en la mejilla, lloraba por un dolor más interno. Una herida que llevaba desde hace años y que no había curado. Tu golpe la afectó.

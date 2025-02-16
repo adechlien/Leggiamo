@@ -1,9 +1,10 @@
 ---
 title: 'De quien superó a la duquesa'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 06 2024'
 type: 'Poema'
-heroImage: '/duquesa.webp'
+heroImage: '/duquesa.svg'
+pubDate: 'Feb 06 2024'
+editDate: 'Feb 06 2024'
+edition: 'Primera'
 ---
 
 Delirios de grandeza<br>

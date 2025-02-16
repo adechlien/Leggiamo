@@ -5,24 +5,17 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				// Light mode
-				'light-bg': '#fcf6ef',
-				'light-header': '#4a5759',
-				'light-text': '#A9927D',
-				'light-header-text': '#7D6852',
-
-				// Dark mode
-				// 'dark-bg': '#121B32',
-				// 'dark-text': '#98CCF3'
-
-				//Dark Mode Legacy
-				'dark-bg': '#22332B',
-				//'dark-header': '#152620',
-				//'dark-header-text': '#d8f3dc',
-				'dark-text': '#d8f3dc'
+			 // Boulevard
+        'leg1': '#B9D2BE',
+        'leg2': '#A6D2B8',
+        'leg3': '#8FC6A5',
+        'leg4': '#263A31',
 			},
 			fontFamily: {
         'ubuntu': ['Ubuntu', 'sans-serif'],
+        'ubuntu-c': ['Ubuntu Condensed', 'sans-serif'],
+        'unif': ["UnifrakturMaguntia", 'serif'],
+        'merriweather': ["Merriweather", 'serif'],
       }
 		},
 	},

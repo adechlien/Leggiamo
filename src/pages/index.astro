@@ -2,6 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
+import About from '../components/About.astro';
+import Recent from '../components/Recent.astro';
+import Categories from '../components/Categories.astro';
+import Quotes from '../components/Quotes.astro';
 
 // Escritos recientemente
 let post = (await getCollection('texts')).sort(
@@ -10,58 +14,13 @@ let post = (await getCollection('texts')).sort(
 ---
 
 <Layout title="Inicio">
-    <main class="w-full dark:text-dark-text text-light-text text-center px-4 gap-4 sm:gap-12 mt-8 sm:m-auto sm:my-16">
-		<div class="flex flex-col justify-center items-center text-center gap-8">
-			<div>
-				<p class="text-2xl font-medium mb-1 sm:mb-0">
-					Bienvenido a Leggiamo!
-				</p>
-				<p class="text-lg font-normal">
-					Lee textos de diferentes tipos escritos por mí.
-				</p>
-			</div>
-
-			<div class="recents flex flex-col gap-6">
-			    <h2 class="text-xl font-medium">Escritos recientemente</h2>
-			    <ul class="flex flex-col sm:grid sm:grid-cols-4 items-start w-full gap-4 text-center justify-center">
-					{
-					post.map((post: any) => (
-						<li class="my-4 w-full text-center">
-							<a href={`/texts/${post.slug}/`} class="text-sm flex flex-col gap-1 items-center">
-								<img class="rounded-full w-32 sm:w-28" src={post.data.heroImage} alt="Text Image" />
-								<h4 class="title font-semibold text-center text-md sm:w-full truncate mt-1">{post.data.title}</h4>
-								<p class="type">{post.data.type}</p>
-							</a>
-						</li>
-						))
-					}
-				</ul>
-			</div>
-
-			<div class="w-full flex flex-col gap-6">
-                <h2 class="text-xl font-medium">Categorías</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-6 justify-start items-stretch w-full gap-4 sm:gap-4">
-                    <!-- <a href="/texts" class="col-span-1 sm:col-span-1 dark:bg-dark-header flex bg-[#a9927d] dark:text-dark-header-text text-light-bg text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full justify-center items-center">Recientes</a> -->
-                    <a href="/texts/cuentos-cortos" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Cuentos cortos</a>
-                    <a href="/texts/cuentos-largos" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Cuentos largos</a>
-                    <a href="/texts/poemas" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Poemas</a>
-                    <!-- <a href="/texts/imparando-italiano" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Imparando Italiano 🇮🇹</a> -->
-                    <a href="/texts/meditaciones" class="col-span-1 sm:col-span-3 flex justify-center items-center bg-transparent border-2 border-[#a9927d] dark:border-dark-text dark:text-dark-text text-center py-3 px-4 sm:px-6 rounded-full text-base font-medium w-full">Meditaciones</a>
-                </div>
-			</div>
-			<hr>
-			<div class="flex flex-col sm:flex-row gap-4">
-			    <p class="italic text-center sm:text-left border-2 border-[#a9927d] dark:border-dark-text p-3 rounded-3xl">
-			    	"Escribir es siempre esconder algo de manera que luego sea descubierto."
-			    	<br>
-			    	— <strong>Italo Calvino</strong>.
-			    </p>
-			    <p class="italic text-center sm:text-left border-2 border-[#a9927d] dark:border-dark-text p-3 rounded-3xl">
-			    	"El escritor debe escribir para ser leído."
-			    	<br>
-			    	— <strong>Jean-Paul Sartre</strong>.
-			    </p>
-			</div>
-		</div>
+    <main class="flex flex-col justify-center items-center w-full text-center px-4 gap-16 sm:gap-12">
+		<p class="text-sm text-leg3 font-normal mx-10 font-unif">
+		    Donde deposito todo lo que siento y no sé cómo decir. Donde espero nunca llegues tú.
+		</p>
+		<Recent />
+		<Categories />
+		<Quotes />
+		<About />
 	</main>
 </Layout>

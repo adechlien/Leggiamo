@@ -1,9 +1,10 @@
 ---
 title: 'Escribo para quien no me quiere leer'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Oct 11 2024'
 type: 'Poema'
-heroImage: '/escribo.webp'
+heroImage: '/escribo.svg'
+pubDate: 'Oct 11 2024'
+editDate: 'Oct 11 2024'
+edition: 'Primera'
 ---
 
 Mientras me preparaba, me miré en el reflejo de la cuchara y me vi perfectamente. Era yo: deformado, trastornado, burlado, humillado. En mi máxima expresión, visto por mí mismo a través de un artefacto que reflejaba a la perfección lo más profundo de mi ser, solitario y olvidado.

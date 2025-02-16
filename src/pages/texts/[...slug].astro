@@ -13,23 +13,51 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'texts'>;
 
 const post = Astro.props;
-const { title, pubDate, heroImage, type } = post.data;
+const { title, heroImage, pubDate, editDate, edition } = post.data;
 const { Content } = await post.render();
+
+const getTimeAgo = (date : any) => {
+	const today = new Date();
+	const timeDiff = today.getTime() - date.getTime();
+	const daysAgo = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+	if (daysAgo < 1) return "hoy";
+	if (daysAgo === 1) return "hace 1 día";
+	if (daysAgo < 7) return `hace ${daysAgo} días`;
+	if (daysAgo < 30) return `hace ${Math.floor(daysAgo / 7)} semanas`;
+	if (daysAgo < 365) return `hace ${Math.floor(daysAgo / 30)} meses`;
+	if (daysAgo > 364 && daysAgo < (365*2+1)) return `hace 1 año`;
+	return `hace ${Math.floor(daysAgo / 365)} años`;
+};
 ---
 
 <Layout title={title}>
-	<article class="flex flex-col justify-center mt-8 mb-auto mx-auto">
+	<article class="flex flex-col justify-center gap-2">
 		<div class="hero-image flex justify-center">
-			<img class="w-[160px] h-[160px] rounded-full" src={heroImage} alt="" />
+			<img class="w-52 rounded-md" src={heroImage} alt="" />
 		</div>
-		    <!-- <span>{type}</span> -->
-		<div class="text-left prose dark:text-dark-text text-light-text justify-center m-auto px-4">
+		<div class="text-left prose justify-center m-auto px-4 text-leg3 font-merriweather">
 			<div class="title text-center pt-2">
-				<h1 class="text-3xl dark:text-dark-text text-light-text">{title}</h1>
+				<h1 class="text-4xl font-normal text-leg1 mx-8 font-ubuntu-c">{title}</h1>
 			</div>
 			<Content />
-			<div class="date font-semibold dark:text-dark-text text-light-text">
-				<FormattedDate date={pubDate}/>
+			<div class="date grid grid-cols-2 gap-4 font-ubuntu-c">
+                <div class="bg-leg2 text-leg4 flex flex-col p-3 rounded-md text-center">
+                    <span class="font-semibold text-base">Creación</span>
+                    <FormattedDate date={pubDate} format='short' />
+                    <span class="text-sm">
+                        {getTimeAgo(pubDate)}
+                    </span>
+                </div>
+                <div class="bg-leg2 text-leg4 flex flex-col p-3 rounded-md text-center">
+                    <span class="font-semibold text-base">Última edición</span>
+                    <span>
+                        <FormattedDate date={editDate} format='short' /> ({edition})
+                    </span>
+                    <span class="text-sm">
+                        {getTimeAgo(editDate)}
+                    </span>
+                </div>
 			</div>
 		</div>
 	</article>

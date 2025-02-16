@@ -1,0 +1,38 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('texts');
+
+// Ordenar por fecha de publicación (descendente, más reciente primero)
+const sortedPosts = posts.sort((a: any, b: any) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+
+// Obtener el más reciente
+const latestPost = sortedPosts[0];
+
+// Renderizar solo una parte del contenido
+const previewContent = latestPost.body.slice(0, 200) + '...';
+---
+
+<main class="flex flex-col gap-4">
+    <h2 class="text-2xl text-leg2 font-semibold">Texto más reciente</h2>
+
+    <article class="flex flex-col items-center gap-4">
+        <span class='text-leg3'>
+            <FormattedDate date={latestPost.data.pubDate} format='long' />
+        </span>
+
+        <img class="w-40 rounded-md" src={latestPost.data.heroImage} alt="Portada de {latestPost.data.title}" />
+
+        <h2 class="text-2xl font-normal text-leg1 mx-8">
+            {latestPost.data.title}
+        </h2>
+
+        <p class="text-left text-leg3 font-merriweather">
+            {previewContent}
+        </p>
+
+        <a href={`/texts/${latestPost.slug}`} class="text-leg3 font-ubuntu-c border-2 border-leg3 py-3 px-8 rounded-full">Leer más...</a>
+    </article>
+</main>
