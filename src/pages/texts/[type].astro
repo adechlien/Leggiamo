@@ -2,6 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
+
 const { type } = Astro.params;
 
 export function getStaticPaths() {
@@ -44,7 +46,7 @@ let posts = (await getCollection('texts'))
 			<li class="w-full text-center">
 			    <a href={`/texts/${post.slug}/`} class="group relative text-sm flex flex-col gap-1 items-center">
 			        <div class="relative w-40">
-			    		<img class="rounded-md w-full" src={post.data.heroImage} alt="Text Image"/>
+			    		<Image class="rounded-md w-full" src={post.data.heroImage} alt={post.data.title} width={160} height={226.275}/>
 			    		<div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
 			    		<div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
 			    	</div>

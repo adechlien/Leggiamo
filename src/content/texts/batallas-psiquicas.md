@@ -1,10 +1,9 @@
 ---
 title: 'Batallas psíquicas conmigo mismo'
-description: 'Lorem ipsum dolor sit amet'
+type: 'Meditación'
+heroImage: '/batallas.svg'
 pubDate: 'Feb 13 2025'
 editDate: 'Feb 13 2025'
-type: 'Meditación'
-heroImage: '/prueba.svg'
 edition: 'Primera'
 ---
 
