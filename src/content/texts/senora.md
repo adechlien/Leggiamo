@@ -5,6 +5,7 @@ heroImage: '/senora.svg'
 pubDate: 'Sep 6 2024'
 editDate: 'Sep 6 2024'
 edition: 'Primera'
+related: ['amargas-memorias-de-una-dulce-amistad', 'indeciso']
 ---
 
 ¿A qué viene tu sonrisa en respuesta y tus recuerdos precisos de mí?

@@ -1,10 +1,10 @@
 ---
 title: 'El mono y la peonía'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Oct 14 2024'
-editDate: 'Oct 14 2024'
 type: 'Cuento corto'
 heroImage: '/mono.svg'
+pubDate: 'Oct 14 2024'
+editDate: 'Feb 16 2025'
+edition: 'Segunda'
 ---
 
 El mono, perdido y deprimido, protegía a capa y espada la hermosa peonía que, días antes, su corazón, entre dudas y decepciones, se había topado.
@@ -25,4 +25,4 @@ En esos mismos días, en que la lluvia era el pan de cada día, la flor presenta
 
 Pasó el tiempo, y el mono se había vuelto un experto en el cuidado de su amada. Había aprendido cómo cuidarla en tiempos de lluvia y en tiempos de sequía. Sabía qué hojas remover, cada cuánto echarle agua, y hasta había removido algunas ramas de árboles cercanos para que, durante los días, el sol le diera lo mejor posible.
 
-Con el pasar de los años, el animal envejeció y murió. La planta, que incluso antes de la llegada del mono ya sabía sobrevivir a las adversidades de la vida, siguió floreciendo. Aunque ya no hubiese quien removiera sus hojas muertas ni la regara cuando no había lluvia, la peonía demostró que, así como antes del animal, ella sabía a la perfección cómo sobrevivir por sí sola. El mono nunca fue importante.
+Con el pasar de los años, el animal envejeció y murió. La planta, que incluso antes de la llegada del mono ya sabía sobrevivir a las adversidades de la vida, siguió floreciendo, aunque ya no hubiese quien removiera sus hojas muertas ni la regara cuando no había lluvia.

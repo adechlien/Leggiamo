@@ -39,8 +39,8 @@ let posts = (await getCollection('texts'))
 <Layout title={typeTitle}>
   <main class="dark:text-lush2 text-light-text">
     <section class="flex flex-col items-center px-4 gap-8">
-      <h1 class="text-3xl text-leg2 font-semibold font-ubuntu-c">{typeTitle}</h1>
-      <ul class="grid grid-cols-2 sm:grid sm:grid-cols-4 w-full gap-4 text-center justify-center">
+        <h1 class="text-3xl text-leg2 font-semibold font-ubuntu-c">{typeTitle}</h1>
+        <ul class="grid grid-cols-2 sm:grid sm:grid-cols-4 w-full gap-4 text-center justify-center">
 		{
 		posts.map((post: any) => (
 			<li class="w-full text-center">
@@ -58,7 +58,7 @@ let posts = (await getCollection('texts'))
 			</li>
 		))
 		}
-	</ul>
+		</ul>
     </section>
   </main>
 </Layout>

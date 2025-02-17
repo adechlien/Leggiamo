@@ -1,10 +1,10 @@
 ---
 title: 'El no gozo por la espera del sufrimiento'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Dec 1 2023'
-editDate: 'Dec 1 2023'
 type: 'Meditación'
 heroImage: '/no-gozo.svg'
+pubDate: 'Dec 1 2023'
+editDate: 'Dec 1 2023'
+edition: 'Primera'
 ---
 
 2:00 A.M. No logro conciliar el sueño. No estoy estresado, preocupado ni padezco insomnio; es solo un pequeño inconveniente el que no me deja descansar: hay un grillo en alguna parte de mi cuarto y no para de silenciar su estridulación y continuarla al poco rato.

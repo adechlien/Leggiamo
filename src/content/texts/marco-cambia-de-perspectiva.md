@@ -10,7 +10,7 @@ edition: 'Primera'
 
 Hace meses murió la gatita de mi casa, desde entonces a mi familia le ha costado aceptar su partida.
 
-Marco, el otro gato de la casa, la ha pasado muy tranquilo. Mi madre le preguntó cómo hacía. Él respondió que para él seguía viva, pero no de manera espiritual, viva de andar por ahí, corriendo, comiendo y durmiendo.
+Marco, el otro gato de la casa, la ha pasado muy tranquilo. Mi madre le preguntó cómo hacía. Él respondió que para él seguía viva, pero no de manera espiritual. Viva de andar por ahí, corriendo, comiendo y durmiendo.
 
 Esto no era posible, ella había sido enterrada un día de lluvia, mucho tiempo atrás. Él contestó que él no veía la verdad como nosotros, sino que veía su propia verdad, tal y como él quería que fuera para poder ser feliz y no cargar con esta correa atada al cuello que nos ahogaba a mi familia y a mí cada vez que la recordábamos.
 

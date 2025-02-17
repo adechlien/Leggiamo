@@ -17,7 +17,7 @@ Si de esa forma tú lo quieres<br>
 Más de mí no depende la tuya<br>
 Por lo grandiosa que eres<br>
 
-Dirigiendote hacía mi<br>
+Dirigiéndote hacía mi<br>
 Con tus ojos llenos de picardía<br>
 Esos bellos ojos que tienes<br>
-Y que me alientan noche y día<br>
+Que me alientan noche y día<br>

@@ -1,11 +1,11 @@
 ---
 title: 'Envejecer'
-description: 'Lorem ipsum dolor sit amet'
+type: 'Poema'
+heroImage: '/envejecer.svg'
 pubDate: 'Feb 7 2024'
 editDate: 'Dec 11 2024'
 edition: 'Segunda'
-type: 'Poema'
-heroImage: '/envejecer.svg'
+related: ['20-vueltas']
 ---
 
 Ya no corro hacia la frontera, ni visto de azul calórico. Ya no oprimo para escuchar, ni tomo medicinas por las tardes. Miles de historias en bucle pasaron por mi cabeza mientras la comida escaseaba y las oportunidades llegaban.

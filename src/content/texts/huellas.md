@@ -5,6 +5,7 @@ heroImage: '/huellas.svg'
 pubDate: 'Feb 14 2025'
 editDate: 'Feb 14 2025'
 edition: 'Primera'
+related: ['anya', '']
 ---
 
 Con el corazón en su apellido, ansiosa por el disfrute, por el gozo, por la algarabia ardiente y desaforada, inocente se quedó encerrada en su empaque, apartada del cariño que esperaba recibir. Verla dolió.

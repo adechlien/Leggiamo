@@ -12,6 +12,7 @@ const texts = defineCollection({
 		pubDate: z.coerce.date(),
 		editDate: z.coerce.date(),
 		edition: z.string().optional(),
+		related: z.array(z.string()).optional(),
 	}),
 });
 

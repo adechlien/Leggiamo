@@ -5,6 +5,7 @@ heroImage: '/rendicion.svg'
 pubDate: 'Feb 15 2025'
 editDate: 'Feb 15 2025'
 edition: 'Primera'
+related: ['20-vueltas', 'envejecer']
 ---
 
 Es dudar del tiempo, que tan largo ha sido, pero también tan vacío. Es decepcionarte de ti mismo porque lo único que has logrado es estar cada día más triste y decepcionado, y que cada vez te cueste más admitirlo.

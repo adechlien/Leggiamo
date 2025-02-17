@@ -1,10 +1,10 @@
 ---
 title: 'Rocas encalladas'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Dec 25 2024'
-editDate: 'Dec 25 2024'
 type: 'Meditación'
 heroImage: '/rocas.svg'
+pubDate: 'Dec 25 2024'
+editDate: 'Dec 25 2024'
+edition: 'Primera'
 ---
 
 Detrás, vendedores ambulantes anuncian coctel de camarón, raspaos, pastelitos, carpas que esperan por ser ocupadas. Al frente, el Mar Caribe.
