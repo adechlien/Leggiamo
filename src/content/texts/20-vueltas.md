@@ -1,6 +1,6 @@
 ---
 title: '20 vueltas a la nada'
-type: 'Poema'
+type: 'poemas'
 heroImage: '/vueltas.svg'
 pubDate: 'Jan 31 2024'
 editDate: 'Jan 31 2024'

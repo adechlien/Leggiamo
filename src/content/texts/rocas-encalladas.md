@@ -1,6 +1,6 @@
 ---
 title: 'Rocas encalladas'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/rocas.svg'
 pubDate: 'Dec 25 2024'
 editDate: 'Dec 25 2024'

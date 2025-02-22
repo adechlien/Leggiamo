@@ -1,6 +1,6 @@
 ---
 title: 'Huellas en la piel'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/huellas.svg'
 pubDate: 'Feb 14 2025'
 editDate: 'Feb 14 2025'

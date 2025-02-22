@@ -1,6 +1,6 @@
 ---
 title: 'El joven con muchas pulseras'
-type: 'Cuento corto'
+type: 'cuentos-cortos'
 heroImage: '/pulseras.svg'
 pubDate: 'Feb 17 2024'
 editDate: 'Feb 16 2025'

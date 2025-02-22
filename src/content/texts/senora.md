@@ -1,6 +1,6 @@
 ---
 title: 'Señora'
-type: 'Poema'
+type: 'poemas'
 heroImage: '/senora.svg'
 pubDate: 'Sep 6 2024'
 editDate: 'Sep 6 2024'

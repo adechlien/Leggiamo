@@ -1,6 +1,6 @@
 ---
 title: 'Reseña de "Memoria de mis putas tristes"'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/resena.svg'
 pubDate: 'Jun 9 2023'
 editDate: 'Jun 9 2023'

@@ -1,6 +1,6 @@
 ---
 title: 'La chica con anillo de mostacillas'
-type: 'Cuento corto'
+type: 'cuentos-cortos'
 heroImage: '/mostacillas.svg'
 pubDate: 'Jul 25 2024'
 editDate: 'Jul 25 2024'

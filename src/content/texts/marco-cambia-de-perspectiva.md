@@ -1,10 +1,9 @@
 ---
 title: 'Marco cambia de perspectiva'
-description: 'Lorem ipsum dolor sit amet'
+type: 'cuentos-cortos'
+heroImage: '/marco.svg'
 pubDate: 'Jul 05 2024'
 editDate: 'Jul 05 2024'
-type: 'Cuento corto'
-heroImage: '/marco.svg'
 edition: 'Primera'
 ---
 

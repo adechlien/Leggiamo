@@ -1,6 +1,6 @@
 ---
 title: 'Soledad Citadina'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/soledad.svg'
 pubDate: 'Dec 11 2023'
 editDate: 'Dec 11 2023'

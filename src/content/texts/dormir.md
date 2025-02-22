@@ -1,6 +1,6 @@
 ---
 title: 'Dormir'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/dormir.svg'
 pubDate: 'Dec 14 2023'
 editDate: 'Dec 14 2023'

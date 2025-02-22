@@ -1,10 +1,9 @@
 ---
 title: 'Carta de disculpa'
-description: 'Lorem ipsum dolor sit amet'
+type: 'meditaciones'
+heroImage: '/carta-disculpa.svg'
 pubDate: 'Jan 18 2025'
 editDate: 'Jan 18 2025'
-type: 'Meditación'
-heroImage: '/carta-disculpa.svg'
 edition: 'Primera'
 ---
 

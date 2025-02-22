@@ -11,7 +11,7 @@ const categories = [
     <h2 class="text-2xl text-leg2 font-semibold font-ubuntu-c">Categorías</h2>
     <div class="grid grid-cols-1 sm:grid-cols-6 justify-start items-stretch w-full gap-4 sm:gap-4">
         {categories.map((category) => (
-            <a href={`/texts/${category.slug}`} class="col-span-1 sm:col-span-3 flex justify-center items-center bg-leg2 text-leg4 text-center py-3 px-4 sm:px-6 rounded-full text-base font-normal w-full">
+            <a href={`/${category.slug}`} class="col-span-1 sm:col-span-3 flex justify-center items-center bg-leg2 text-leg4 text-center py-3 px-4 sm:px-6 rounded-full text-base font-normal w-full">
                 {category.name}
             </a>
         ))}

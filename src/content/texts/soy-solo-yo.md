@@ -1,6 +1,6 @@
 ---
 title: 'Soy solo yo'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/soy-solo-yo.svg'
 pubDate: 'Oct 13 2024'
 editDate: 'Oct 13 2024'

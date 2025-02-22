@@ -1,6 +1,6 @@
 ---
 title: 'Campesina Vol.1'
-type: 'Cuento largo'
+type: 'cuentos-largos'
 heroImage: '/campesina1.svg'
 pubDate: 'Feb 23 2023'
 editDate: 'Feb 16 2025'

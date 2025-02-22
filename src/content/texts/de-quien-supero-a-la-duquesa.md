@@ -1,6 +1,6 @@
 ---
 title: 'De quien superó a la duquesa'
-type: 'Poema'
+type: 'poemas'
 heroImage: '/duquesa.svg'
 pubDate: 'Feb 06 2024'
 editDate: 'Feb 06 2024'

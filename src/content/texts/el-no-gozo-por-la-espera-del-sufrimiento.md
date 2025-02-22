@@ -1,6 +1,6 @@
 ---
 title: 'El no gozo por la espera del sufrimiento'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/no-gozo.svg'
 pubDate: 'Dec 1 2023'
 editDate: 'Dec 1 2023'

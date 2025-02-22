@@ -1,6 +1,6 @@
 ---
 title: 'El estante'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/estante.svg'
 pubDate: 'Oct 23 2024'
 editDate: 'Oct 23 2024'

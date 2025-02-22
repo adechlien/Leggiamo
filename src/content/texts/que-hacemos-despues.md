@@ -1,6 +1,6 @@
 ---
 title: '¿Qué hacemos después?'
-type: 'Poema'
+type: 'poemas'
 heroImage: '/que-hacemos.svg'
 pubDate: 'Jan 25 2024'
 editDate: 'Jan 25 2024'

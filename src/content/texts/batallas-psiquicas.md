@@ -1,6 +1,6 @@
 ---
 title: 'Batallas psíquicas conmigo mismo'
-type: 'Meditación'
+type: 'meditaciones'
 heroImage: '/batallas.svg'
 pubDate: 'Feb 13 2025'
 editDate: 'Feb 13 2025'

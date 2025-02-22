@@ -15,12 +15,23 @@ const latestPost = sortedPosts[0];
 
 // Renderizar solo una parte del contenido
 const previewContent = latestPost.body.slice(0, 200) + '...';
+
+let typeUrl = "";
+if (latestPost.data.type === "poemas") {
+  typeUrl = "Poema";
+} else if (latestPost.data.type === "cuentos-cortos") {
+  typeUrl = "Cuento corto";
+} else if (latestPost.data.type === "cuentos-largos") {
+  typeUrl = "Cuento largo";
+} else if (latestPost.data.type === "meditaciones") {
+  typeUrl = "Meditación";
+}
 ---
 
 <main class="flex flex-col gap-4">
     <h2 class="text-2xl text-leg2 font-semibold">Texto más reciente</h2>
 
-    <article class="flex flex-col items-center gap-4">
+    <article class="flex flex-col items-center gap-1">
         <span class='text-leg3'>
             <FormattedDate date={latestPost.data.pubDate} format='long' />
         </span>
@@ -31,10 +42,14 @@ const previewContent = latestPost.body.slice(0, 200) + '...';
             {latestPost.data.title}
         </h2>
 
+        <span class='text-sm font-normal text-leg3 mx-8 mb-6'>
+            {typeUrl}
+        </span>
+
         <p class="text-left text-leg3 font-merriweather">
             {previewContent}
         </p>
 
-        <a href={`/texts/${latestPost.slug}`} class="text-leg3 font-ubuntu-c border-2 border-leg3 py-3 px-8 rounded-full">Leer más...</a>
+        <a href={`/${latestPost.data.type}/${latestPost.slug}`} class="text-leg3 font-ubuntu-c border-2 border-leg3 py-3 px-8 rounded-full">Leer más...</a>
     </article>
 </main>

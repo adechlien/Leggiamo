@@ -1,6 +1,6 @@
 ---
 title: 'Envejecer'
-type: 'Poema'
+type: 'poemas'
 heroImage: '/envejecer.svg'
 pubDate: 'Feb 7 2024'
 editDate: 'Dec 11 2024'

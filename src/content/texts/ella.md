@@ -1,6 +1,6 @@
 ---
 title: 'Ella'
-type: 'Poema'
+type: 'poemas'
 heroImage: '/ella.svg'
 pubDate: 'Apr 29 2024'
 editDate: 'Apr 29 2024'

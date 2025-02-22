@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
+
+const { type } = Astro.params;
+
+export async function getStaticPaths() {
+  const posts = await getCollection('texts');
+  const types = [...new Set(posts.map((post) => post.data.type))]; // Obtener tipos únicos
+  return types.map((type) => ({
+    params: { type },
+  }));
+}
+
+let typeTitle = "";
+if (type === "poemas") {
+  typeTitle = "Poemas";
+} else if (type === "cuentos-cortos") {
+  typeTitle = "Cuentos cortos";
+} else if (type === "cuentos-largos") {
+  typeTitle = "Cuentos largos";
+} else if (type === "meditaciones") {
+  typeTitle = "Meditaciones";
+}
+
+const posts = (await getCollection('texts'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .filter((post) => post.data.type === type);
+---
+
+<Layout title={typeTitle}>
+  <main class="dark:text-lush2 text-light-text">
+    <section class="flex flex-col items-center px-4 gap-8">
+      <h1 class="text-3xl text-leg2 font-semibold font-ubuntu-c">{typeTitle}</h1>
+      <ul class="grid grid-cols-2 sm:grid sm:grid-cols-4 w-full gap-4 text-center justify-center">
+        {posts.map((post: any) => (
+          <li class="w-full text-center">
+            <a href={`/${type}/${post.slug}/`} class="group relative text-sm flex flex-col gap-1 items-center">
+              <div class="relative w-40">
+                <Image class="rounded-md w-full" src={post.data.heroImage} alt={post.data.title} width={160} height={226.275} />
+                <div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
+                <div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
+              </div>
+              <p class="date opacity-100 group-hover:opacity-0 transition-opacity duration-500 text-md sm:text-xs absolute font-normal top-1 px-1 text-white">
+                <FormattedDate date={post.data.pubDate} />
+              </p>
+              <h4 class="title opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute px-3 bottom-1 font-semibold text-center text-md sm:text-xs sm:w-full text-white">
+                {post.data.title}
+              </h4>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </main>
+</Layout>

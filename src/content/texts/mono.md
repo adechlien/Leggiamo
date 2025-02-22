@@ -1,6 +1,6 @@
 ---
 title: 'El mono y la peonía'
-type: 'Cuento corto'
+type: 'cuentos-cortos'
 heroImage: '/mono.svg'
 pubDate: 'Oct 14 2024'
 editDate: 'Feb 16 2025'
