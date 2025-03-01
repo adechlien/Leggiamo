@@ -1,6 +1,6 @@
 ---
 title: 'Indeciso por antonomasia'
-type: 'poemas'
+type: 'meditaciones'
 heroImage: '/indeciso.svg'
 pubDate: 'Oct 4 2024'
 editDate: 'Oct 4 2024'

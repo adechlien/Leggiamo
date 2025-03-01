@@ -23,14 +23,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<link rel="icon" type="image/svg" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+		<!-- Font preloads -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-		<!-- Font preloads -->
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href={canonicalURL} />
@@ -57,7 +57,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<!-- View Transitions -->
 		<ViewTransitions />
 	</head>
-	<body class="font-ubuntu-c flex flex-col justify-between items-center gap-12 max-w-3xl min-h-screen text-left my-0 mx-auto">
+	<body class="font-ubuntu-c flex flex-col justify-start items-center gap-12 max-w-3xl min-h-screen text-left my-0 mx-auto">
 		<Header/>
 		<slot />
 		<Footer />

@@ -1,6 +1,6 @@
 ---
 title: 'Anya'
-type: 'poemas'
+type: 'meditaciones'
 heroImage: '/anya.svg'
 pubDate: 'Dec 15 2023'
 editDate: 'Dec 15 2023'

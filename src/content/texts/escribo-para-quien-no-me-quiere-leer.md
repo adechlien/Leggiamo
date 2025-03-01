@@ -1,6 +1,6 @@
 ---
 title: 'Escribo para quien no me quiere leer'
-type: 'poemas'
+type: 'meditaciones'
 heroImage: '/escribo.svg'
 pubDate: 'Oct 11 2024'
 editDate: 'Oct 11 2024'

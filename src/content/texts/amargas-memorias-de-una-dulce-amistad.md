@@ -1,6 +1,6 @@
 ---
 title: 'Amargas memorias de una dulce amistad'
-type: 'poemas'
+type: 'meditaciones'
 heroImage: '/memorias.svg'
 pubDate: 'Dec 4 2023'
 editDate: 'Dec 11 2024'
