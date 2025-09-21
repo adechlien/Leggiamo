@@ -1,20 +1,31 @@
 ---
-import HeaderLink from './HeaderLink.astro'
+import HeaderLink from "./HeaderLink.astro";
 ---
 
-<footer class="flex flex-col-reverse sm:flex-row w-full px-4 justify-between font-ubuntu text-leg3 items-center sm:items-end gap-4 my-4 mt-auto">
-    <!-- <div></div> -->
-    <div class='text-center sm:text-left'>
-        <span class="text-sm text-center font-medium">® Leggiamo</span>
-	    <p class="text-sm text-center font-medium">
-	       Desarrollado por <a href="https://adechlien.vercel.app" class="font-semibold" target="_blank">adechlien</a>
-		</p>
-    </div>
-	<!-- <HeaderLink href="/references.astro" class='text-lg self-end'>
+<footer class="flex w-full px-6 justify-between items-center mt-40 mb-10">
+  <!-- <div></div> -->
+  <div class="text-left text-base">
+    <span class="text-center font-bold">2023-2025 Leggiamo</span>
+    <p class="text-center font-medium">
+      Desarrollado por <a
+        href="https://adechlien.vercel.app"
+        class="font-semibold"
+        target="_blank">adechlien</a
+      >
+    </p>
+  </div>
+
+  <div class="">
+    <i class="ti ti-brand-instagram text-3xl"></i>
+    <i class="ti ti-brand-pinterest text-3xl"></i>
+    <i class="ti ti-brand-github text-3xl"></i>
+    <i class="ti ti-brand-letterboxd text-3xl"></i>
+  </div>
+  <!-- <HeaderLink href="/references.astro" class='text-lg self-end'>
 	   <i class="ti ti-circle-letter-r text-2xl"></i>
 	</HeaderLink> -->
-	<a href="https://www.buymeacoffee.com/adechlien" target="_blank" class="flex items-center gap-1 text-leg4 py-3 sm:my-2 px-5 font-ubuntu-c text-sm rounded-xl bg-leg3" aria-label="Buy me a coffee!">
+  <!-- <a href="https://www.buymeacoffee.com/adechlien" target="_blank" class="flex items-center gap-1 text-leg4 py-3 sm:my-2 px-5 font-ubuntu-c text-sm rounded-xl bg-leg3" aria-label="Buy me a coffee!">
         <img src="/buymeacoffee-logo.svg" alt="Buy Me A Coffee" id="bmac">
         <span class="font-semibold">Buy me a coffee!</span>
-    </a>
+    </a> -->
 </footer>

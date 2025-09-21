@@ -1,10 +1,10 @@
 ---
-title: 'Despertar es la pesadilla'
-type: 'poemas'
-heroImage: '/despertar-es-la-pesadilla.svg'
-pubDate: 'Feb 27 2025'
-editDate: 'Feb 27 2025'
-edition: 'Primera'
+title: "Despertar es la pesadilla"
+type: "still"
+heroImage: "/despertar-es-la-pesadilla.svg"
+pubDate: "Feb 27 2025"
+editDate: "Feb 27 2025"
+edition: "Primera"
 related: []
 ---
 

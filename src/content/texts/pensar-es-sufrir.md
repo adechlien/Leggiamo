@@ -1,10 +1,10 @@
 ---
-title: 'Pensar es sufrir'
-type: 'meditaciones'
-heroImage: '/pensar.svg'
-pubDate: 'Feb 24 2025'
-editDate: 'Feb 24 2025'
-edition: 'Primera'
+title: "Pensar es sufrir"
+type: "still"
+heroImage: "/pensar.svg"
+pubDate: "Feb 24 2025"
+editDate: "Feb 24 2025"
+edition: "Primera"
 related: []
 ---
 

@@ -1,15 +1,15 @@
 ---
-title: 'La chica con anillo de mostacillas'
-type: 'cuentos-cortos'
-heroImage: '/mostacillas.svg'
-pubDate: 'Jul 25 2024'
-editDate: 'Jul 25 2024'
-edition: 'Primera'
+title: "La chica con anillo de mostacillas"
+type: "colores"
+heroImage: "/mostacillas.svg"
+pubDate: "Jul 25 2024"
+editDate: "Jul 25 2024"
+edition: "Primera"
 ---
 
 Era alta, delgada y de cabello oscuro con un flequillo recto. Usaba lentes delgados y redondos que, junto a sus ojos color miel, resaltaban la belleza de su calavérico rostro de pómulos levantados y adornaban de lejos una sonrisa tan linda y penosa como el sol en el amanecer de un día lluvioso, que busca por donde asomarse, pero no lo logra. Sin embargo, dejando entrever una pizca de la hermosa ternura que puede llegar a desprender.
 
-La conocí en mi primer semestre de la universidad, pero no me empecé a fijar en ella hasta meses después, al darme cuenta de que cada semestre tenía una clase con ella. Siempre andaba sola, no hablaba con nadie. En las clases, si tenía que hacer una tarea en grupos, se juntaba con quien tenía al lado, no hablaba durante las clases, y era atenta a lo que decía el profesor.
+La conocí en mi primer semestre de la universidad, pero no me empecé a fijar en ella hasta meses después, al darme cuenta de que cada semestre teniamos una clase juntos. Siempre andaba sola, no hablaba con nadie. En las clases, si tenía que hacer una tarea en grupos, se juntaba con quien tenía al lado, no hablaba, era atenta a lo que decía el profesor.
 
 La forma en que se movía por los pasillos, en que entraba a las clases y se sentaba en su sitio, la hacía ver escurridiza, para nada tosca, como esa hija cohibida que debe encontrar la forma de ensordecer su andar para no llamar la atención y pasar desapercibida ante la ira de un padre abusivo.
 

@@ -1,19 +1,26 @@
 ---
 const categories = [
+  { name: "Lágrimas de Siddartha", slug: "lagrimas" },
+  { name: "Still Prefer Sentir", slug: "still" },
+  { name: "En las luces de colores", slug: "colores" },
   { name: "Meditaciones", slug: "meditaciones" },
   { name: "Poemas", slug: "poemas" },
   { name: "Cuentos cortos", slug: "cuentos-cortos" },
-  { name: "Cuentos largos", slug: "cuentos-largos" }
 ];
 ---
 
 <div class="w-full flex flex-col gap-4">
-    <h2 class="text-2xl text-leg2 font-semibold font-ubuntu-c">Categorías</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-6 justify-start items-stretch w-full gap-4 sm:gap-4">
-        {categories.map((category) => (
-            <a href={`/${category.slug}`} class="col-span-1 sm:col-span-3 flex justify-center items-center bg-leg2 text-leg4 text-center py-3 px-4 sm:px-6 rounded-full text-base font-normal w-full">
-                {category.name}
-            </a>
-        ))}
-    </div>
+  <h2 class="text-2xl font-bold text-left">Categorías</h2>
+  <div class="flex flex-col w-full gap-4">
+    {
+      categories.map((category) => (
+        <a
+          href={`/${category.slug}`}
+          class="flex justify-center items-center text-center py-2 px-2 rounded-full text-2xl font-normal font-bebas border-2 border-white/10"
+        >
+          {category.name}
+        </a>
+      ))
+    }
+  </div>
 </div>

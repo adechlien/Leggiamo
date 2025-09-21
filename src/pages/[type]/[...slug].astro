@@ -1,99 +1,138 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import { Image } from 'astro:assets';
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
-  const posts = await getCollection('texts');
+  const posts = await getCollection("texts");
   return posts.map((post) => ({
     params: { type: post.data.type, slug: post.slug },
     props: post,
   }));
 }
 
-type Props = CollectionEntry<'texts'>;
+type Props = CollectionEntry<"texts">;
 
 const post = Astro.props;
-const { title, type, heroImage, pubDate, editDate, edition, related = [] } = post.data;
+const {
+  title,
+  type,
+  heroImage,
+  pubDate,
+  editDate,
+  edition,
+  related = [],
+  color,
+} = post.data;
 const { Content } = await post.render();
+console.log(color);
+let typeTitle = "";
+if (type === "poemas") {
+  typeTitle = "Poemas";
+} else if (type === "cuentos-cortos") {
+  typeTitle = "Cuentos cortos";
+} else if (type === "meditaciones") {
+  typeTitle = "Meditaciones";
+} else if (type === "lagrimas") {
+  typeTitle = "Lágrimas de Siddartha";
+} else if (type === "colores") {
+  typeTitle = "En las luces de colores";
+} else if (type === "still") {
+  typeTitle = "Still Prefer Sentir";
+} else {
+  typeTitle = type; // Fallback al slug si no coincide con ningún tipo conocido
+}
 
 // Obtener colección de textos
-const allPosts = await getCollection('texts');
+const allPosts = await getCollection("texts");
 
 // Filtrar los posts relacionados
 const relatedPosts = related
   .map((slug: string) => allPosts.find((post) => post.slug === slug))
   .filter(Boolean); // Elimina los valores `undefined`
-
-const getTimeAgo = (date: any) => {
-  const today = new Date();
-  const timeDiff = today.getTime() - date.getTime();
-  const daysAgo = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-
-  if (daysAgo < 1) return "hoy";
-  if (daysAgo === 1) return "hace 1 día";
-  if (daysAgo < 7) return `hace ${daysAgo} días`;
-  if (daysAgo > 6 && daysAgo < 14) return "hace 1 semana";
-  if (daysAgo < 30) return `hace ${Math.floor(daysAgo / 7)} semanas`;
-  if (daysAgo > 29 && daysAgo < 60) return "hace 1 mes";
-  if (daysAgo < 365) return `hace ${Math.floor(daysAgo / 30)} meses`;
-  if (daysAgo > 364 && daysAgo < (365 * 2 + 1)) return `hace 1 año`;
-  return `hace ${Math.floor(daysAgo / 365)} años`;
-};
 ---
 
 <Layout title={title}>
-  <article class="flex flex-col justify-center gap-12 m-auto px-4">
-    <div class="flex flex-col justify-center items-center">
-      <div class="hero-image flex justify-center">
-        <img class="w-52 rounded-md" src={heroImage} alt="" />
-      </div>
-      <div class="text-left prose justify-center text-leg3 font-merriweather">
-        <div class="title text-center pt-2">
-          <h1 class="text-4xl font-normal text-leg1 mx-8 font-ubuntu-c">{title}</h1>
-        </div>
-        <Content />
-        <div class="date grid grid-cols-2 gap-4 font-ubuntu-c">
-          <div class="bg-leg2 text-leg4 flex flex-col p-3 rounded-md text-center">
-            <span class="font-semibold text-base">Creación</span>
-            <FormattedDate date={pubDate} format="short" />
-            <span class="text-sm">{getTimeAgo(pubDate)}</span>
-          </div>
-          <div class="bg-leg2 text-leg4 flex flex-col p-3 rounded-md text-center">
-            <span class="font-semibold text-base">Última edición</span>
-            <span>
-              <FormattedDate date={editDate} format="short" /> ({edition})
-            </span>
-            <span class="text-sm">{getTimeAgo(editDate)}</span>
-          </div>
-        </div>
+  <article class={`flex flex-col justify-center w-full`}>
+    <!-- Cover -->
+    <div class="relative">
+      <!-- Image -->
+      <img class="w-screen" src={heroImage} alt="" />
+      <div
+        class="w-full absolute bottom-0 h-72 bg-gradient-to-b from-[#00464300] to-[#004643FF]"
+      >
+        <!-- Gradient -->
       </div>
     </div>
-    <div class="flex flex-col gap-4">
-      <h2 class="text-2xl text-leg2 font-ubuntu-c">Textos relacionados</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {relatedPosts.length > 0 ? (
-          relatedPosts.map((post: any) => (
-            <li class="w-full text-center">
-              <a href={`/${post.data.type}/${post.slug}/`} class="group relative text-sm flex flex-col gap-1 items-center">
-                <div class="relative w-40">
-                  <Image class="rounded-md w-full" src={post.data.heroImage} alt={post.data.title} width={160} height={226.275} />
-                  <div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
-                  <div class="opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-md pointer-events-none"></div>
-                </div>
-                <p class="date opacity-100 group-hover:opacity-0 transition-opacity duration-500 text-md sm:text-xs absolute font-normal top-1 px-1 text-white">
-                  <FormattedDate date={post.data.pubDate} />
-                </p>
-                <h4 class="title opacity-100 group-hover:opacity-0 transition-opacity duration-500 absolute px-3 bottom-1 font-semibold text-center text-md sm:text-xs sm:w-full text-white">
-                  {post.data.title}
-                </h4>
-              </a>
-            </li>
-          ))
-        ) : (
-          <p class="text-leg3">No hay textos relacionados.</p>
-        )}
+
+    <!-- Title -->
+    <div class="flex flex-col mx-6 pb-2 border-b-2 border-white/50">
+      <h3 class="text-2xl capitalize">
+        {typeTitle}
+      </h3>
+      <h1 class="text-4xl font-bold">
+        {title}
+      </h1>
+      <div class="flex justify-between items-end text-lg">
+        <div class="flex items-center gap-1">
+          <i class="ti ti-pencil"></i>
+          <FormattedDate date={editDate} format="short" />
+        </div>
+        <!-- <button class="rounded-full px-3 py-1 bg-[#fff5]">Compartir</button> -->
+
+        <button
+          class="relative inline-flex items-center gap-2 rounded-full text-sm transition focus:outline-none"
+          aria-label="Compartir"
+        >
+          <!-- botón real -->
+          <span
+            class="relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/6 backdrop-blur-sm border border-white/10"
+          >
+            Compatir
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="mx-10 my-8 font-besley text-base">
+      <Content />
+    </div>
+
+    <!-- Related Posts -->
+    <div class="mx-6 flex flex-col gap-4">
+      <h2 class="text-2xl font-bold">Textos relacionados</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+        {
+          relatedPosts.length > 0 ? (
+            relatedPosts.map((post: any) => (
+              <li class="w-full text-center">
+                <a
+                  href={`/${post.data.type}/${post.slug}/`}
+                  class="text-sm flex gap-4 items-start"
+                >
+                  <img
+                    class="w-32 rounded-lg"
+                    src={post.data.heroImage}
+                    alt={post.data.title}
+                  />
+                  <div class="flex flex-col items-start text-left w-full">
+                    <p class="date text-lg font-normal text-white">
+                      <FormattedDate date={post.data.pubDate} />
+                    </p>
+                    <h2 class="title text-2xl w-full font-semibold text-white border-b-2 pb-2 mb-2 border-white font-bebas">
+                      {post.data.title}
+                    </h2>
+                    <h3 class="text-lg capitalize">{post.data.type}</h3>
+                  </div>
+                </a>
+              </li>
+            ))
+          ) : (
+            <p class="font-normal">No hay textos relacionados.</p>
+          )
+        }
       </ul>
     </div>
   </article>

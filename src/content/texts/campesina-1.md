@@ -1,10 +1,10 @@
 ---
-title: 'Campesina Vol.1'
-type: 'cuentos-largos'
-heroImage: '/campesina1.svg'
-pubDate: 'Feb 23 2023'
-editDate: 'Feb 16 2025'
-edition: 'Segunda'
+title: "Campesina Vol.1"
+type: "colores"
+heroImage: "/campesina1.svg"
+pubDate: "Feb 23 2023"
+editDate: "Feb 16 2025"
+edition: "Segunda"
 ---
 
 Entre vacas y desgracias

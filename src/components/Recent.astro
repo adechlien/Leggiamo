@@ -1,55 +1,72 @@
 ---
-import FormattedDate from './FormattedDate.astro';
+import FormattedDate from "./FormattedDate.astro";
 
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
-const posts = await getCollection('texts');
+const posts = await getCollection("texts");
 
 // Ordenar por fecha de publicación (descendente, más reciente primero)
 const sortedPosts = posts.sort((a, b) => {
-    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+  return (
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+  );
 });
 
-// Obtener el más reciente
-const latestPost = sortedPosts[0];
+// Tomar los 3 más recientes (o menos si no hay suficientes)
+const recentPosts = sortedPosts.slice(0, 3);
 
-// Renderizar solo una parte del contenido
-const previewContent = latestPost.body.slice(0, 200) + '...';
-
-let typeUrl = "";
-if (latestPost.data.type === "poemas") {
-  typeUrl = "Poema";
-} else if (latestPost.data.type === "cuentos-cortos") {
-  typeUrl = "Cuento corto";
-} else if (latestPost.data.type === "cuentos-largos") {
-  typeUrl = "Cuento largo";
-} else if (latestPost.data.type === "meditaciones") {
-  typeUrl = "Meditación";
-}
+// helper para mapear el tipo a texto legible
+const mapType = (type = "") => {
+  if (type === "poemas") return "Poema";
+  if (type === "cuentos-cortos") return "Cuento corto";
+  if (type === "meditaciones") return "Meditación";
+  if (type === "lagrimas") return "Lágrimas de Siddartha"; // Meditaciones
+  if (type === "colores") return "En las luces de colores"; // Cuentos
+  if (type === "still") return "Still Prefer Sentir"; // Poemas
+  return type;
+};
 ---
 
 <main class="flex flex-col gap-4">
-    <h2 class="text-2xl text-leg2 font-semibold">Texto más reciente</h2>
+  <h2 class="text-2xl font-bold text-left">Textos más recientes</h2>
 
-    <article class="flex flex-col items-center gap-1">
-        <span class='text-leg3'>
-            <FormattedDate date={latestPost.data.pubDate} format='long' />
-        </span>
-
-        <img class="w-40 rounded-md" src={latestPost.data.heroImage} alt="Portada de {latestPost.data.title}" />
-
-        <h2 class="text-2xl font-normal text-leg1 mx-8">
-            {latestPost.data.title}
-        </h2>
-
-        <span class='text-sm font-normal text-leg3 mx-8 mb-6'>
-            {typeUrl}
-        </span>
-
-        <p class="text-left text-leg3 font-merriweather">
-            {previewContent}
-        </p>
-
-        <a href={`/${latestPost.data.type}/${latestPost.slug}`} class="text-leg3 font-ubuntu-c border-2 border-leg3 py-3 px-8 mt-2 rounded-full">Leer más...</a>
-    </article>
+  <ul class="flex flex-col gap-6">
+    {
+      recentPosts.length > 0 ? (
+        recentPosts.map((post) => {
+          const previewContent = (post.body ?? "").slice(0, 125) + "...";
+          const typeUrl = mapType(post.data.type);
+          return (
+            <li>
+              <article>
+                <a
+                  href={`/${post.data.type}/${post.slug}`}
+                  class="flex text-sm gap-4 items-start"
+                >
+                  <img
+                    class="w-36 rounded-lg"
+                    src={post.data.heroImage}
+                    alt={post.data.title}
+                  />
+                  <div class="flex flex-col items-start text-left w-full">
+                    <h3 class="text-base capitalize font-normal">
+                      {typeUrl}
+                      <!-- ‧{" "}
+                      <FormattedDate date={post.data.pubDate} format="short" /> -->
+                    </h3>
+                    <h2 class="title text-2xl w-full font-bold text-white border-b-2 pb-2 mb-2 border-white font-bebas">
+                      {post.data.title}
+                    </h2>
+                    <p class="text-sm">{previewContent}</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          );
+        })
+      ) : (
+        <li class="text-sm text-white/80">No hay textos aún.</li>
+      )
+    }
+  </ul>
 </main>

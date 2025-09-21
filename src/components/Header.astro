@@ -1,16 +1,14 @@
 ---
-import HeaderLink from './HeaderLink.astro'
+// comps/Header.astro (o donde lo tengas)
+import HeaderLink from "./HeaderLink.astro";
 ---
 
-<header class="flex items-center p-6">
-	<HeaderLink href="/" class="flex gap-1 items-center text-leg2">
-	    <i class="ti ti-book text-xl"></i>
-		<span class="text-sm font-medium font-ubuntu">Leggiamo</span>
-	</HeaderLink>
-	<!-- <nav class="flex flex-row justify-center items-center dark:text-lush2 text-lush4 text-sm font-medium gap-2">
-		<HeaderLink href="/about">Sobre mí</HeaderLink> |
-		<button onclick=handleToggleClick() class="dark-button cursor-pointer" id="darkmode">
-		    <i class="ti ti-circle-half-2 text-xl flex cursor-pointer"></i>
-		</button>
-	</nav> -->
+<header class="absolute top-0 left-0 right-0 z-40 flex items-center p-6">
+  <HeaderLink
+    href="/"
+    class="flex gap-1 items-center rounded-full px-3 py-1 bg-[#fff5] text-white"
+  >
+    <i class="ti ti-book text-xl"></i>
+    <span class="text-sm font-medium font-ubuntu">Leggiamo</span>
+  </HeaderLink>
 </header>

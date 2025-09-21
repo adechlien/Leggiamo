@@ -1,26 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
-import About from '../components/About.astro';
-import Recent from '../components/Recent.astro';
-import Categories from '../components/Categories.astro';
-import Quotes from '../components/Quotes.astro';
-
-// Escritos recientemente
-let post = (await getCollection('texts')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 4);
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import About from "../components/About.astro";
+import Recent from "../components/Recent.astro";
+import Categories from "../components/Categories.astro";
+import Quotes from "../components/Quotes.astro";
 ---
 
 <Layout title="Inicio">
-    <main class="flex flex-col justify-center items-center w-full text-center px-4 gap-16 sm:gap-12">
-		<p class="text-sm text-leg3 font-normal mx-10 font-unif">
-		    Donde reside todo lo que siento y no sé cómo decir. Donde espero nunca llegues tú.
-		</p>
-		<Recent />
-		<Categories />
-		<Quotes />
-		<About />
-	</main>
+  <main
+    class="flex flex-col justify-center items-center w-full text-center mt-32 px-6 gap-16"
+  >
+    <p class="text-right text-3xl font-normal mx-4 font-tangerine">
+      "Donde reside todo lo que siento y no sé cómo decir.
+      <br />
+      Donde espero nunca llegues tú."
+      <br />
+      — Anónimo.
+    </p>
+    <Recent />
+    <Categories />
+    <!-- <Quotes /> -->
+    <!-- <About /> -->
+  </main>
 </Layout>
