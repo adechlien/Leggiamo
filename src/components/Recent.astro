@@ -36,22 +36,15 @@ const mapType = (type = "") => {
           return (
             <li>
               <article>
-                <a
-                  href={`/${post.data.type}/${post.slug}`}
-                  class="flex text-sm gap-4 items-start"
-                >
-                  <img
-                    class="w-36 rounded-lg"
-                    src={post.data.heroImage}
-                    alt={post.data.title}
-                  />
+                  <a href={`/${post.data.type}/${post.slug}`} class="flex text-sm gap-4 items-start">
+                    <img class="w-36 rounded-lg" src={post.data.heroImage} alt={post.data.title}/>
                   <div class="flex flex-col items-start text-left w-full">
                     <h3 class="text-base capitalize font-normal">
                       {typeUrl}
                       <!-- ‧{" "}
                       <FormattedDate date={post.data.pubDate} format="short" /> -->
                     </h3>
-                    <h2 class="title text-2xl w-full font-bold text-white border-b-2 pb-2 mb-2 border-white/25 font-bebas">
+                    <h2 class="title text-xl w-full font-bold text-white border-b-2 pb-2 mb-2 border-white/25 font-bebas">
                       {post.data.title}
                     </h2>
                     <p class="text-sm">{previewContent}</p>
