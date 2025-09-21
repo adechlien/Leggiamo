@@ -45,10 +45,10 @@ const posts = (await getCollection("texts"))
                 alt={post.data.title}
               />
               <div class="flex flex-col items-start text-left w-full">
-                <p class="date text-lg font-normal text-white">
+                <p class="date text-base font-normal text-white">
                   <FormattedDate date={post.data.pubDate} />
                 </p>
-                <h2 class="title text-2xl w-full font-semibold text-white border-b-2 pb-2 mb-2 border-white font-bebas">
+                <h2 class="title text-xl w-full font-semibold text-white border-b-2 pb-2 mb-2 border-white font-bebas">
                   {post.data.title}
                 </h2>
                 <!-- <div class="flex items-center">
