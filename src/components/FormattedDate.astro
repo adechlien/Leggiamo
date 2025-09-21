@@ -20,7 +20,8 @@ const formatDate = (date: Date, format: string) => {
     const parts = formatted.match(/(\d{1,2}) de (\w+) de (\d{4})/);
     if (parts) {
       const [, day, month, year] = parts;
-      return `${month.charAt(0).toUpperCase() + month.slice(1)} ${day}, ${year}`;
+      // return `${month.charAt(0).toUpperCase() + month.slice(1)} ${day}, ${year}`;
+      return `${month.charAt(0).toUpperCase() + month.slice(1)}, ${year}`;
     }
   }
 

@@ -34,13 +34,13 @@ const posts = (await getCollection("texts"))
     <h1 class="text-3xl font-semibold text-left">
       {typeTitle}
     </h1>
-    <ul class="flex flex-col w-full gap-12 text-center justify-center">
+    <ul class="flex flex-col w-full gap-6 text-center justify-center">
       {
         posts.map((post: any) => (
           <li class="w-full text-center">
             <a href={`/${type}/${post.slug}/`} class="flex gap-4 items-start">
               <img
-                class="w-40"
+                class="w-40 rounded-lg"
                 src={post.data.heroImage}
                 alt={post.data.title}
               />

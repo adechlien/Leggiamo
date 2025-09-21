@@ -36,7 +36,7 @@ if (type === "lagrimas") {
 } else if (type === "still") {
   typeTitle = "Still Prefer Sentir";
 } else {
-  typeTitle = type; // Fallback al slug si no coincide con ningún tipo conocido
+  typeTitle = type;
 }
 
 // Obtener colección de textos
@@ -77,22 +77,21 @@ const relatedPosts = related
       </h1>
       <div class="flex justify-between items-end text-lg">
         <div class="flex items-center gap-1">
-          <i class="ti ti-pencil"></i>
+          <!-- <i class="ti ti-pencil"></i> -->
           <FormattedDate date={editDate} format="short" />
         </div>
         <!-- <button class="rounded-full px-3 py-1 bg-[#fff5]">Compartir</button> -->
 
-        <button
+        <!-- <button
           class="relative inline-flex items-center gap-2 rounded-full text-sm transition focus:outline-none"
           aria-label="Compartir"
         >
-          <!-- botón real -->
           <span
             class="relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/6 backdrop-blur-sm border border-white/10"
           >
             Compatir
           </span>
-        </button>
+        </button> -->
       </div>
     </div>
 
@@ -109,23 +108,15 @@ const relatedPosts = related
           relatedPosts.length > 0 ? (
             relatedPosts.map((post: any) => (
               <li class="w-full text-center">
-                <a
-                  href={`/${post.data.type}/${post.slug}/`}
-                  class="text-sm flex gap-4 items-start"
-                >
-                  <img
-                    class="w-32 rounded-lg"
-                    src={post.data.heroImage}
-                    alt={post.data.title}
-                  />
+                  <a href={`/${post.data.type}/${post.slug}/`} class="text-sm flex gap-4 items-start">
+                      <img class="w-32 rounded-lg" src={post.data.heroImage} alt={post.data.title}/>
                   <div class="flex flex-col items-start text-left w-full">
                     <p class="date text-lg font-normal text-white">
-                      <FormattedDate date={post.data.pubDate} />
+                      <FormattedDate date={post.data.pubDate} format="long" />
                     </p>
                     <h2 class="title text-2xl w-full font-semibold text-white border-b-2 pb-2 mb-2 border-white font-bebas">
                       {post.data.title}
                     </h2>
-                    <h3 class="text-lg capitalize">{post.data.type}</h3>
                   </div>
                 </a>
               </li>
