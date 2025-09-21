@@ -1,11 +1,12 @@
 ---
-title: '20 vueltas a la nada'
-type: 'poemas'
-heroImage: '/vueltas.svg'
-pubDate: 'Jan 31 2024'
-editDate: 'Jan 31 2024'
-edition: 'Primera'
-related: ['rendicion', 'estante', 'envejecer']
+title: "20 vueltas a la nada"
+type: "still"
+heroImage: "/vueltas.svg"
+pubDate: "Jan 31 2024"
+editDate: "Jan 31 2024"
+edition: "Primera"
+related: ["rendicion", "estante", "envejecer"]
+color: "#847D62"
 ---
 
 El agua la pintan de azul pero es transparente<br>

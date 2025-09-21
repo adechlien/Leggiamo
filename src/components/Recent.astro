@@ -17,9 +17,6 @@ const recentPosts = sortedPosts.slice(0, 3);
 
 // helper para mapear el tipo a texto legible
 const mapType = (type = "") => {
-  if (type === "poemas") return "Poema";
-  if (type === "cuentos-cortos") return "Cuento corto";
-  if (type === "meditaciones") return "Meditación";
   if (type === "lagrimas") return "Lágrimas de Siddartha"; // Meditaciones
   if (type === "colores") return "En las luces de colores"; // Cuentos
   if (type === "still") return "Still Prefer Sentir"; // Poemas

@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import { Image } from "astro:assets";
 
@@ -26,15 +27,9 @@ const {
   color,
 } = post.data;
 const { Content } = await post.render();
-console.log(color);
+
 let typeTitle = "";
-if (type === "poemas") {
-  typeTitle = "Poemas";
-} else if (type === "cuentos-cortos") {
-  typeTitle = "Cuentos cortos";
-} else if (type === "meditaciones") {
-  typeTitle = "Meditaciones";
-} else if (type === "lagrimas") {
+if (type === "lagrimas") {
   typeTitle = "Lágrimas de Siddartha";
 } else if (type === "colores") {
   typeTitle = "En las luces de colores";
@@ -53,14 +48,20 @@ const relatedPosts = related
   .filter(Boolean); // Elimina los valores `undefined`
 ---
 
-<Layout title={title}>
-  <article class={`flex flex-col justify-center w-full`}>
+<Layout title={title} bg={color}>
+  <article
+    class="flex flex-col justify-center w-full"
+    style={`background-color: ${color}`}
+  >
     <!-- Cover -->
     <div class="relative">
       <!-- Image -->
       <img class="w-screen" src={heroImage} alt="" />
       <div
-        class="w-full absolute bottom-0 h-72 bg-gradient-to-b from-[#00464300] to-[#004643FF]"
+        class="w-full absolute bottom-0 h-72"
+        style={color
+          ? `background: linear-gradient(to bottom, ${color}00, ${color}FF);`
+          : ""}
       >
         <!-- Gradient -->
       </div>

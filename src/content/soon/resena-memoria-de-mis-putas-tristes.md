@@ -1,10 +1,10 @@
 ---
 title: 'Reseña de "Memoria de mis putas tristes"'
-type: 'meditaciones'
-heroImage: '/resena.svg'
-pubDate: 'Jun 9 2023'
-editDate: 'Jun 9 2023'
-edition: 'Primera'
+type: "lagrimas"
+heroImage: "/resena.svg"
+pubDate: "Jun 9 2023"
+editDate: "Jun 9 2023"
+edition: "Primera"
 ---
 
 Finalizando de leer esta, la última novela del maestro colombiano Gabriel García Márquez, me hallé frente a múltiples comentarios de personas, cuyo motivo de protesta deja en claro su total incomprensión del libro y todo aquello que el maestro quiso retratar en él.

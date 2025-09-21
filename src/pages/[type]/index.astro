@@ -2,7 +2,6 @@
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import { Image } from "astro:assets";
 
 const { type } = Astro.params;
 
@@ -15,13 +14,7 @@ export async function getStaticPaths() {
 }
 
 let typeTitle = "";
-if (type === "poemas") {
-  typeTitle = "Poemas";
-} else if (type === "cuentos-cortos") {
-  typeTitle = "Cuentos cortos";
-} else if (type === "meditaciones") {
-  typeTitle = "Meditaciones";
-} else if (type === "lagrimas") {
+if (type === "lagrimas") {
   typeTitle = "Lágrimas de Siddartha";
 } else if (type === "colores") {
   typeTitle = "En las luces de colores";
@@ -37,8 +30,8 @@ const posts = (await getCollection("texts"))
 ---
 
 <Layout title={typeTitle}>
-  <main class="flex flex-col items-center gap-8 mt-32 mx-6">
-    <h1 class="text-3xl font-semibold">
+  <main class="flex flex-col gap-8 mt-32 mx-6">
+    <h1 class="text-3xl font-semibold text-left">
       {typeTitle}
     </h1>
     <ul class="flex flex-col w-full gap-12 text-center justify-center">
@@ -47,7 +40,7 @@ const posts = (await getCollection("texts"))
           <li class="w-full text-center">
             <a href={`/${type}/${post.slug}/`} class="flex gap-4 items-start">
               <img
-                class="w-40 rounded-lg"
+                class="w-40"
                 src={post.data.heroImage}
                 alt={post.data.title}
               />
@@ -58,6 +51,16 @@ const posts = (await getCollection("texts"))
                 <h2 class="title text-2xl w-full font-semibold text-white border-b-2 pb-2 mb-2 border-white font-bebas">
                   {post.data.title}
                 </h2>
+                <!-- <div class="flex items-center">
+                  {Array.isArray(post.data.icons) && post.data.icons.length > 0
+                    ? post.data.icons.map((iconClass: any, idx: any) => (
+                        <i
+                          class={`${iconClass} text-4xl text-white/25`}
+                          aria-hidden="true"
+                        />
+                      ))
+                    : null}
+                </div> -->
               </div>
             </a>
           </li>

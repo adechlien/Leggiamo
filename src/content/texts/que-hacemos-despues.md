@@ -1,10 +1,12 @@
 ---
-title: '¿Qué hacemos después?'
-type: 'poemas'
-heroImage: '/que-hacemos.svg'
-pubDate: 'Jan 25 2024'
-editDate: 'Jan 25 2024'
-edition: 'Primera'
+title: "¿Qué hacemos después?"
+type: "still"
+heroImage: "/que-hacemos.svg"
+pubDate: "Jan 25 2024"
+editDate: "Jan 25 2024"
+edition: "Primera"
+related: []
+color: "#AB5B44"
 ---
 
 Como un corto suspiro a la orilla del mar respirando sus hojas con vigor gritó<br>
