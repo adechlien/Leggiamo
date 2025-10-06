@@ -1,7 +1,8 @@
 ---
 title: "Anya"
 type: "still"
-heroImage: "/anya.svg"
+heroImage: "/portrait/anya.svg"
+heroSmImage: "/landscape/anya.svg"
 pubDate: "Dec 15 2023"
 editDate: "Dec 15 2023"
 edition: "Primera"

@@ -1,7 +1,8 @@
 ---
 title: "El estante"
 type: "still"
-heroImage: "/estante.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Oct 23 2024"
 editDate: "Oct 23 2024"
 edition: "Primera"

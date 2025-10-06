@@ -6,48 +6,53 @@ import { getCollection } from "astro:content";
 const posts = await getCollection("texts");
 
 // Ordenar por fecha de publicación (descendente, más reciente primero)
-const sortedPosts = posts.sort((a, b) => {
+const sortedPosts = posts.sort((a: any, b: any) => {
   return (
     new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
   );
 });
 
 // Tomar los 3 más recientes (o menos si no hay suficientes)
-const recentPosts = sortedPosts.slice(0, 3);
+const recentPosts = sortedPosts.slice(0, 4);
 
 // helper para mapear el tipo a texto legible
 const mapType = (type = "") => {
   if (type === "lagrimas") return "Lágrimas de Siddartha"; // Meditaciones
   if (type === "colores") return "En las luces de colores"; // Cuentos
   if (type === "still") return "Still Prefer Sentir"; // Poemas
+  if (type === "placebo") return "Placebo Onírico";
   return type;
 };
 ---
 
-<main class="flex flex-col gap-4">
-  <h2 class="text-2xl font-bold text-left">Textos más recientes</h2>
+<main class="flex flex-col gap-4 sm:w-[500px] sm:mx-auto">
+  <h2 class="bg-black/25 backdrop-blur-md border border-white/20 rounded-xl text-2xl font-bold text-left px-2 py-1 pb-0 font-bebas">Recientes</h2>
 
-  <ul class="flex flex-col gap-6">
+  <ul class="flex flex-col gap-6 px-2">
     {
       recentPosts.length > 0 ? (
-        recentPosts.map((post) => {
-          const previewContent = (post.body ?? "").slice(0, 125) + "...";
+        recentPosts.map((post: any) => {
+          const previewContent = (post.body ?? "").replace("<br><br>", "");
           const typeUrl = mapType(post.data.type);
           return (
             <li>
               <article>
-                  <a href={`/${post.data.type}/${post.slug}`} class="flex text-sm gap-4 items-start">
-                    <img class="w-36 rounded-lg" src={post.data.heroImage} alt={post.data.title}/>
-                  <div class="flex flex-col items-start text-left w-full">
-                    <h3 class="text-base capitalize font-normal">
-                      {typeUrl}
-                      <!-- ‧{" "}
-                      <FormattedDate date={post.data.pubDate} format="short" /> -->
-                    </h3>
-                    <h2 class="title text-xl w-full font-bold text-white border-b-2 pb-2 mb-2 border-white/25 font-bebas">
-                      {post.data.title}
-                    </h2>
-                    <p class="text-sm">{previewContent}</p>
+                <a href={`/${post.data.type}/${post.slug}`} class="block">
+                  <div class="relative overflow-hidden rounded-xl aspect-[16/9] p-3 border border-white/10">
+                      <img src={post.data.heroSmImage} alt={post.data.title}
+                      class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
+                      loading="lazy"
+                    />
+
+                    <div class="flex flex-col bg-black/25 backdrop-blur-md border border-white/20 h-full p-2 rounded-xl">
+                      <h2 class="text-white font-bebas text-start text-xl border-b-2 border-b-white">
+                        {post.data.title}
+                      </h2>
+                      <p lang="es" class="text-sm leading-snug text-white/90 text-justify hyphens-auto line-clamp-4 sm:line-clamp-5 mt-2">{previewContent}</p>
+                      <p class="text-white text-base text-right mt-auto">
+                        {typeUrl}
+                      </p>
+                    </div>
                   </div>
                 </a>
               </article>

@@ -9,6 +9,7 @@ const texts = defineCollection({
     // Transform string to Date object
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
+    heroSmImage: z.string().optional(),
     pubDate: z.coerce.date(),
     editDate: z.coerce.date(),
     edition: z.string().optional(),

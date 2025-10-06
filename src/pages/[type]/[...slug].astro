@@ -7,7 +7,7 @@ import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   const posts = await getCollection("texts");
-  return posts.map((post) => ({
+  return posts.map((post: any) => ({
     params: { type: post.data.type, slug: post.slug },
     props: post,
   }));
@@ -20,6 +20,7 @@ const {
   title,
   type,
   heroImage,
+  heroSmImage,
   pubDate,
   editDate,
   edition,
@@ -35,6 +36,8 @@ if (type === "lagrimas") {
   typeTitle = "En las luces de colores";
 } else if (type === "still") {
   typeTitle = "Still Prefer Sentir";
+} else if (type === "placebo") {
+  typeTitle = "Placebo Onírico";
 } else {
   typeTitle = type;
 }
@@ -44,7 +47,7 @@ const allPosts = await getCollection("texts");
 
 // Filtrar los posts relacionados
 const relatedPosts = related
-  .map((slug: string) => allPosts.find((post) => post.slug === slug))
+  .map((slug: string) => allPosts.find((post: any) => post.slug === slug))
   .filter(Boolean); // Elimina los valores `undefined`
 ---
 
@@ -56,67 +59,57 @@ const relatedPosts = related
     <!-- Cover -->
     <div class="relative">
       <!-- Image -->
-      <img class="w-screen" src={heroImage} alt="" />
-      <div
-        class="w-full absolute bottom-0 h-72"
-        style={color
-          ? `background: linear-gradient(to bottom, ${color}00, ${color}FF);`
-          : ""}
-      >
+      <img class="w-screen sm:hidden flex" src={heroImage} alt="" />
+      <img class="w-screen hidden sm:flex" src={heroSmImage} alt="" />
+      <div class="w-full absolute bottom-0 h-72 sm:h-32" style={color ? `background: linear-gradient(to bottom, ${color}00, ${color}FF);`: ""}>
         <!-- Gradient -->
       </div>
     </div>
 
     <!-- Title -->
-    <div class="flex flex-col mx-6 pb-2 border-b-2 border-white/50">
-      <h3 class="text-2xl capitalize">
+    <div class="flex flex-col pb-2 mt-12 border-b-2 border-white/50 mx-4 sm:w-[500px] sm:mx-auto">
+      <h3 class="text-xl capitalize">
         {typeTitle}
       </h3>
-      <h1 class="text-4xl font-bold">
+      <h1 class="text-4xl font-bold mb-1">
         {title}
       </h1>
-      <div class="flex justify-between items-end text-lg">
+      <div class="bg-black/25 backdrop-blur-md border border-white/20 rounded-lg flex justify-between self-start text-base px-2">
         <div class="flex items-center gap-1">
-          <!-- <i class="ti ti-pencil"></i> -->
-          <FormattedDate date={editDate} format="short" />
+            <i class="ti ti-clock"></i>
+            <FormattedDate date={pubDate} format="long" />
         </div>
-        <!-- <button class="rounded-full px-3 py-1 bg-[#fff5]">Compartir</button> -->
-
-        <!-- <button
-          class="relative inline-flex items-center gap-2 rounded-full text-sm transition focus:outline-none"
-          aria-label="Compartir"
-        >
-          <span
-            class="relative inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/6 backdrop-blur-sm border border-white/10"
-          >
-            Compatir
-          </span>
-        </button> -->
       </div>
     </div>
 
     <!-- Content -->
-    <div class="mx-10 my-8 font-besley text-base">
+    <div class="m-8 font-besley text-base sm:w-[480px] sm:mx-auto text-justify hyphens-auto indent-1">
       <Content />
     </div>
 
     <!-- Related Posts -->
-    <div class="mx-6 flex flex-col gap-4">
-      <h2 class="text-2xl font-bold">Textos relacionados</h2>
-      <ul class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+    <div class="flex flex-col gap-4 pt-4 border-t-2 border-white/50 mx-4 sm:w-[500px] sm:mx-auto">
+      <h2 class="bg-black/25 backdrop-blur-md border border-white/20 rounded-xl text-2xl font-bold text-left px-2 py-1 pb-0 font-bebas">Textos relacionados</h2>
+      <ul class="flex flex-col gap-6 mx-2">
         {
           relatedPosts.length > 0 ? (
             relatedPosts.map((post: any) => (
               <li class="w-full text-center">
-                  <a href={`/${post.data.type}/${post.slug}/`} class="text-sm flex gap-4 items-start">
-                      <img class="w-32 rounded-lg" src={post.data.heroImage} alt={post.data.title}/>
-                  <div class="flex flex-col items-start text-left w-full">
-                    <p class="date text-lg font-normal text-white">
-                      <FormattedDate date={post.data.pubDate} format="long" />
-                    </p>
-                    <h2 class="title text-2xl w-full font-semibold text-white border-b-2 pb-2 mb-2 border-white font-bebas">
-                      {post.data.title}
-                    </h2>
+                <a href={`/${type}/${post.slug}/`} class="">
+                  <div class="relative overflow-hidden rounded-xl aspect-[3/1] border border-white/10">
+                      <img src={post.data.heroSmImage} alt={post.data.title}
+                      class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
+                      loading="lazy"/>
+
+                    <div class="flex flex-col justify-between h-full w-full p-3">
+                      <p class="bg-black/25 backdrop-blur-md border border-white/20 text-right self-end text-white text-sm p-1 px-2 rounded-lg font-bold">
+                        <FormattedDate date={post.data.pubDate} format="short"/>
+                      </p>
+
+                      <h2 class="bg-black/25 backdrop-blur-md border border-white/20 text-white font-bebas text-start p-1 px-2 pb-0 text-lg rounded-lg">
+                        {post.data.title}
+                      </h2>
+                    </div>
                   </div>
                 </a>
               </li>

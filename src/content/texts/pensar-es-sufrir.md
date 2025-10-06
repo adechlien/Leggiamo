@@ -1,7 +1,8 @@
 ---
 title: "Pensar es sufrir"
 type: "still"
-heroImage: "/pensar.png"
+heroImage: "/portrait/pensar.png"
+heroSmImage: "/landscape/pensar.png"
 pubDate: "Feb 24 2025"
 editDate: "Feb 24 2025"
 edition: "Primera"

@@ -1,7 +1,8 @@
 ---
 title: "Rocas encalladas"
 type: "lagrimas"
-heroImage: "/rocas.svg"
+heroImage: "/portrait/rocas.svg"
+heroSmImage: "/landscape/rocas.svg"
 pubDate: "Dec 25 2024"
 editDate: "Dec 25 2024"
 edition: "Primera"

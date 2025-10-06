@@ -1,7 +1,8 @@
 ---
 title: "Indeciso por antonomasia"
 type: "still"
-heroImage: "/indeciso.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Oct 4 2024"
 editDate: "Oct 4 2024"
 edition: "Primera"

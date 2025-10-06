@@ -1,7 +1,8 @@
 ---
 title: "El mono y la peonía"
 type: "colores"
-heroImage: "/mono.png"
+heroImage: "/portrait/mono.svg"
+heroSmImage: "/landscape/mono.svg"
 pubDate: "Oct 14 2024"
 editDate: "Feb 16 2025"
 edition: "Segunda"

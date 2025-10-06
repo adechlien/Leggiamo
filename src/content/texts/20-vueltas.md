@@ -1,7 +1,8 @@
 ---
 title: "20 vueltas a la nada"
 type: "still"
-heroImage: "/vueltas.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Jan 31 2024"
 editDate: "Jan 31 2024"
 edition: "Primera"

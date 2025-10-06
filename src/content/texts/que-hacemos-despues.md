@@ -1,7 +1,8 @@
 ---
 title: "¿Qué hacemos después?"
-type: "still"
-heroImage: "/que-hacemos.svg"
+type: "placebo"
+heroImage: "/portrait/que-hacemos.svg"
+heroSmImage: "/landscape/que-hacemos.svg"
 pubDate: "Jan 25 2024"
 editDate: "Jan 25 2024"
 edition: "Primera"

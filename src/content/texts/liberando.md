@@ -1,13 +1,13 @@
 ---
 title: "Enjaulando/Liberando el deseo"
 type: "lagrimas"
-heroImage: "/liberando.png"
+heroImage: "/portrait/liberando.png"
+heroSmImage: "/landscape/liberando.png"
 pubDate: "Sep 20 2025"
 editDate: "Sep 20 2025"
 edition: "Primera"
 related: []
 color: "#B55A5A"
-# icons: ["ti-mood-sad"]
 ---
 
 Y si mi mente se siente encerrada, es porque quiere preservar momentáneamente estos recuerdos, este saber del que depende mi dignidad, mi calma.

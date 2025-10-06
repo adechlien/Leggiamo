@@ -1,7 +1,8 @@
 ---
 title: "Ella"
 type: "still"
-heroImage: "/ella.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Apr 29 2024"
 editDate: "Apr 29 2024"
 edition: "Primera"

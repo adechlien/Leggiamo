@@ -1,7 +1,8 @@
 ---
 title: "El joven con muchas pulseras"
 type: "colores"
-heroImage: "/pulseras.svg"
+heroImage: "/portrait/pulseras.svg"
+heroSmImage: "/landscape/pulseras.svg"
 pubDate: "Feb 17 2024"
 editDate: "Feb 16 2025"
 edition: "Segunda"

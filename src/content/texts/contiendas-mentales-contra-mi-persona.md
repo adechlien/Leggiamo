@@ -1,7 +1,8 @@
 ---
 title: "Contiendas mentales contra mi persona"
 type: "still"
-heroImage: "/batallas.svg"
+heroImage: "/portrait/batallas.svg"
+heroSmImage: "/landscape/batallas.svg"
 pubDate: "Feb 13 2025"
 editDate: "Feb 13 2025"
 edition: "Primera"

@@ -1,7 +1,8 @@
 ---
 title: "Envejecer"
 type: "lagrimas"
-heroImage: "/envejecer.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Feb 7 2024"
 editDate: "Dec 11 2024"
 edition: "Segunda"

@@ -1,7 +1,8 @@
 ---
 title: "Soledad Citadina"
 type: "lagrimas"
-heroImage: "/soledad.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Dec 11 2023"
 editDate: "Dec 11 2023"
 edition: "Primera"

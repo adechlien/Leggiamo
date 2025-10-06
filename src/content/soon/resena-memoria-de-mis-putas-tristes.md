@@ -1,7 +1,8 @@
 ---
 title: 'Reseña de "Memoria de mis putas tristes"'
 type: "lagrimas"
-heroImage: "/resena.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Jun 9 2023"
 editDate: "Jun 9 2023"
 edition: "Primera"

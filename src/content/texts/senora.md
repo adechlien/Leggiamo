@@ -1,7 +1,8 @@
 ---
 title: "Señora"
 type: "lagrimas"
-heroImage: "/senora.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Sep 6 2024"
 editDate: "Sep 6 2024"
 edition: "Primera"

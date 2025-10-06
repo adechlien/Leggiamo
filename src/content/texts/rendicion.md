@@ -1,7 +1,8 @@
 ---
 title: "El suicidio es rendición"
 type: "lagrimas"
-heroImage: "/rendicion.svg"
+heroImage: "/portrait/rendicion.svg"
+heroSmImage: "/landscape/rendicion.svg"
 pubDate: "Feb 15 2025"
 editDate: "Feb 15 2025"
 edition: "Primera"

@@ -1,7 +1,8 @@
 ---
 title: "Soy solo yo"
 type: "still"
-heroImage: "/soy-solo-yo.svg"
+heroImage: "/portrait/placeholder.svg"
+heroSmImage: "/portrait/placeholder.svg"
 pubDate: "Oct 13 2024"
 editDate: "Oct 13 2024"
 edition: "Primera"

@@ -1,12 +1,13 @@
 ---
 title: "Marco cambia de perspectiva"
 type: "colores"
-heroImage: "/marco.svg"
+heroImage: "/portrait/marco.svg"
+heroSmImage: "/landscape/marco.svg"
 pubDate: "Jul 05 2024"
 editDate: "Jul 05 2024"
 edition: "Primera"
 related: []
-color: "#26263E"
+color: "#36364E"
 ---
 
 Hace meses murió la gatita de mi casa, desde entonces a mi familia le ha costado aceptar su partida.
