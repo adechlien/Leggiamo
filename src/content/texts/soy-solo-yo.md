@@ -1,8 +1,8 @@
 ---
 title: "Soy solo yo"
 type: "still"
-heroImage: "/portrait/placeholder.svg"
-heroSmImage: "/portrait/placeholder.svg"
+heroImage: "/portrait/soy-solo-yo.svg"
+heroSmImage: "/landscape/soy-solo-yo.svg"
 pubDate: "Oct 13 2024"
 editDate: "Oct 13 2024"
 edition: "Primera"
@@ -10,7 +10,7 @@ related: []
 color: "#201D12"
 ---
 
-Jeremías no habla si no hay alguien más presente. Incluso cuando hay alguien, es muy selectivo. Es como el alma de la fiesta, pero no llega ni a animador malpagado. A veces le digo que me deje hablar, que tengo cosas que decir, que quiero que la gente me escuche y me entienda. Él solo responde: "Cállate, tú no eres interesante".
+Jeremías no habla si no hay alguien más presente. Incluso cuando hay alguien, es muy selectivo. Es como el alma de la fiesta, pero no llega ni a animador malpagado. A veces le digo que me deje hablar, que tengo cosas que decir, que quiero que la gente me escuche y me entienda. Él solo responde: “Cállate, tú no eres interesante”.
 <br><br>
 En ocasiones me deja opinar sobre el asunto, pero en respuesta recibo lo que tantas veces me ha dicho: que mi opinión no importa. Con el tiempo, aprendí a dejarlo hablar, a dejar que se extendiera. Yo simplemente me quedaba detrás, observándolo, intentando aprender de su forma de ser, de hablar, de expresarse con los demás.
 <br><br>

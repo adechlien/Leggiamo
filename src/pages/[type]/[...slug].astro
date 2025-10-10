@@ -83,7 +83,7 @@ const relatedPosts = related
     </div>
 
     <!-- Content -->
-    <div class="m-8 font-besley text-base sm:w-[480px] sm:mx-auto text-justify hyphens-auto indent-1">
+    <div lang="es" class="article-body m-8 font-besley text-base sm:w-[480px] sm:mx-auto text-justify hyphens-auto">
       <Content />
     </div>
 
@@ -122,3 +122,25 @@ const relatedPosts = related
     </div>
   </article>
 </Layout>
+
+<style is:global>
+/* aplica a los p que vienen de <Content /> */
+.article-body p{
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;   /* Safari */
+  text-wrap: pretty;        /* opcional: mejor cortes */
+}
+
+/* Fallback para Safari: justifica la última línea también */
+.article-body p::after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+/* Si el navegador soporta text-align-last, úsalo y quita el fallback */
+@supports (text-align-last: justify){
+  .article-body p::after{ content: none; }
+}
+</style>

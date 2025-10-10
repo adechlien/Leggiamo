@@ -32,29 +32,41 @@ const mapType = (type = "") => {
     {
       recentPosts.length > 0 ? (
         recentPosts.map((post: any) => {
-          const previewContent = (post.body ?? "").replace("<br><br>", "");
+          const previewContent = (post.body ?? "").replace("<br>", " ").replace(/<\/?[^>]+>/g, "").replace(/\s+/g, " ").trim();
           const typeUrl = mapType(post.data.type);
           return (
             <li>
               <article>
-                <a href={`/${post.data.type}/${post.slug}`} class="block">
-                  <div class="relative overflow-hidden rounded-xl aspect-[16/9] p-3 border border-white/10">
-                      <img src={post.data.heroSmImage} alt={post.data.title}
-                      class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
-                      loading="lazy"
-                    />
+                  <a href={`/${post.data.type}/${post.slug}`} class="block">
+                    <div class="relative isolate overflow-hidden rounded-xl aspect-[16/9] border border-white/10">
+                      <img
+                        src={post.data.heroSmImage}
+                        alt={post.data.title}
+                        class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
+                        loading="lazy"
+                      />
 
-                    <div class="flex flex-col bg-black/25 backdrop-blur-md border border-white/20 h-full p-2 rounded-xl">
-                      <h2 class="text-white font-bebas text-start text-xl border-b-2 border-b-white">
-                        {post.data.title}
-                      </h2>
-                      <p lang="es" class="text-sm leading-snug text-white/90 text-justify hyphens-auto line-clamp-4 sm:line-clamp-5 mt-2">{previewContent}</p>
-                      <p class="text-white text-base text-right mt-auto">
-                        {typeUrl}
-                      </p>
+                      {/* Panel blur: posicionado, no h-full en flujo */}
+                      <div
+                        class="absolute inset-3 rounded-xl border border-white/20 bg-black/25
+                               backdrop-blur-md [-webkit-backdrop-filter:blur(12px)] [transform:translateZ(0)] will-change-transform"
+                      >
+                        <div class="flex h-full flex-col px-3 py-2 min-w-0">
+                          <h2 class="text-white font-bebas text-start text-xl min-w-0">
+                            {post.data.title}
+                          </h2>
+                          <p lang="es"
+                             class="my-1 text-sm leading-snug text-white text-justify hyphens-auto
+                                    [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical]
+                                    overflow-hidden min-w-0">
+                            {previewContent}
+                          </p>
+                          <p class="mt-auto text-white text-base text-right">{typeUrl}</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+
               </article>
             </li>
           );

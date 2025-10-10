@@ -3,11 +3,11 @@
 
 <svg
    width="210mm"
-   height="297mm"
-   viewBox="0 0 793.70081 1122.5197"
+   height="82mm"
+   viewBox="0 0 793.70081 309.92126"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    sodipodi:docname="soledad.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -26,9 +26,9 @@
      inkscape:document-units="mm"
      inkscape:zoom="0.48857296"
      inkscape:cx="125.8768"
-     inkscape:cy="554.67663"
+     inkscape:cy="554.67662"
      inkscape:window-width="1536"
-     inkscape:window-height="772"
+     inkscape:window-height="827"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -86,7 +86,7 @@
        x="-532.6535"
        y="350.88702" /><g
        id="g2"
-       transform="translate(23.539883,-26.608105)"><rect
+       transform="translate(23.539883,-374.6081)"><rect
          style="opacity:1;fill:#627a7d;fill-opacity:1;stroke:#020d1f;stroke-width:8.56704;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          id="rect11"
          width="373.5715"

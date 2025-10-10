@@ -9,32 +9,20 @@ interface Props {
   image?: string;
   bg?: string;
 }
-const {
-  title,
-  description,
-  image = "/texts-placeholder-1.jpg",
-  bg,
-} = Astro.props;
+const { title, description, image = "/texts-placeholder-1.jpg", bg } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html
-  lang="es"
-  class="text-white"
-  style={bg ? `background-color: ${bg};` : `background-color: #292E39`}
->
+<html lang="es" class="text-white" style={bg ? `background-color: ${bg};` : `background-color: #292E39`}>
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <link rel="icon" type="image/svg" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
 
     <!-- Font preloads -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -97,26 +85,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <!-- View Transitions -->
     <ViewTransitions />
   </head>
-  <body
-    class="font-bellota flex flex-col justify-between items-center min-h-screen"
-  >
+  <body class="font-bellota flex flex-col justify-between items-center min-h-screen">
     <Header />
     <slot />
     <Footer />
   </body>
 </html>
-
-<style is:global>
-  /* Scrollbar */
-  ::-webkit-scrollbar {
-    width: 0.75rem;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #6662;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom right, #9fccb5, #2f6674);
-  }
-</style>
