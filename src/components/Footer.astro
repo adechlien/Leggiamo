@@ -1,23 +1,20 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+const { theme = "text", fg } = Astro.props;
+const resolvedColor = fg ?? (theme === "home" ? "#202020" : "#FFF");
 ---
-
-<footer class="flex w-full px-6 justify-between items-center pt-40 pb-8 sm:w-[500px] sm:mx-auto sm:px-0">
+<footer
+  class="flex w-full px-6 justify-between items-center pt-40 pb-8 sm:w-[500px] sm:mx-auto sm:px-0"
+  style={`color: ${resolvedColor};`}
+>
   <div class="text-left text-base">
     <span class="text-center font-bold">2023-2025 Leggiamo</span>
     <p class="text-center font-medium">
-      Desarrollado por <a
+      Desarrollado por
+      <a
         href="https://adechlien.vercel.app"
         class="font-semibold"
-        target="_blank">adechlien</a
-      >
+        target="_blank"
+      >adechlien</a>
     </p>
   </div>
-
-  <!-- <div class="">
-    <i class="ti ti-brand-instagram text-3xl"></i>
-    <i class="ti ti-brand-pinterest text-3xl"></i>
-    <i class="ti ti-brand-github text-3xl"></i>
-    <i class="ti ti-brand-letterboxd text-3xl"></i>
-  </div> -->
 </footer>

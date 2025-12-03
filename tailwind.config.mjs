@@ -20,6 +20,7 @@ export default {
         besley: ["Besley", "serif"],
         tangerine: ["Tangerine", "cursive"],
         bebas: ["Bebas Neue", "cursive"],
+        staatliches: ["Staatliches", "cursive"],
       },
     },
   },
