@@ -1,6 +1,6 @@
 ---
 title: "Enjaulando/Liberando el deseo"
-type: "lagrimas"
+type: "still"
 heroImage: "/portrait/liberando.png"
 heroSmImage: "/landscape/liberando.png"
 pubDate: "Sep 20 2025"

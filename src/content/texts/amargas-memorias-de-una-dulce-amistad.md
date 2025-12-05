@@ -1,6 +1,6 @@
 ---
 title: "Amargas memorias de una dulce amistad"
-type: "lagrimas"
+type: "still"
 heroImage: "/portrait/memorias.png"
 heroSmImage: "/landscape/memorias.svg"
 pubDate: "Dec 4 2023"

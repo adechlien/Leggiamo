@@ -1,6 +1,6 @@
 ---
 title: "La chica con anillo de mostacillas"
-type: "lagrimas"
+type: "still"
 heroImage: "/portrait/mostacillas.svg"
 heroSmImage: "/landscape/mostacillas.svg"
 pubDate: "Jul 25 2024"

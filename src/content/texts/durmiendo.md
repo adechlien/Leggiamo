@@ -1,6 +1,6 @@
 ---
 title: "Durmiendo se me ocurren los mejores títulos"
-type: "lagrimas"
+type: "still"
 heroImage: "/portrait/durmiendo.svg"
 heroSmImage: "/landscape/durmiendo.svg"
 pubDate: "Feb 14 2025"

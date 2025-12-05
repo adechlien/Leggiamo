@@ -1,6 +1,6 @@
 ---
 title: "Escribo para quien no me quiere leer"
-type: "still"
+type: "lagrimas"
 heroImage: "/portrait/escribo.svg"
 heroSmImage: "/landscape/escribo.svg"
 pubDate: "Oct 11 2024"

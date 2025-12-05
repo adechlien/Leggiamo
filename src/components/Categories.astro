@@ -8,17 +8,16 @@ const categories = [
 ---
 
 <div class="w-full flex flex-col gap-4 sm:w-[500px] sm:mx-auto">
-  <h2 class="text-6xl font-bold text-left font-staatliches">Colecciones</h2>
+  <h2 class="text-5xl font-bold text-left font-staatliches">Colecciones</h2>
   <div class="grid grid-cols-2 w-full gap-4">
     {
       categories.map((category) => (
-
-  <a href={`/${category.slug}`} class="block">
-    <article class="overflow-hidden flex flex-col gap-1">
-      <img src={`/${category.slug}.svg`} alt="{title}" class="" />
-      <h3 class="font-staatliches text-lg text-center">{category.name}</h3>
-    </article>
-  </a>
+        <a href={`/${category.slug}`} class="block">
+            <article class="overflow-hidden flex flex-col gap-1">
+            <img src={`/${category.slug}.svg`} alt="{title}" class="" />
+            <h3 class="font-staatliches text-lg text-center">{category.name}</h3>
+            </article>
+        </a>
       ))
     }
   </div>

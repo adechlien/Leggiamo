@@ -1,6 +1,6 @@
 ---
 title: "Soy solo yo"
-type: "still"
+type: "lagrimas"
 heroImage: "/portrait/soy-solo-yo.svg"
 heroSmImage: "/landscape/soy-solo-yo.svg"
 pubDate: "Oct 13 2024"

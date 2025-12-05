@@ -7,7 +7,7 @@ pubDate: "Feb 06 2024"
 editDate: "Feb 06 2024"
 edition: "Primera"
 related: []
-color: "#653337"
+color: "#8C7C57"
 ---
 
 Delirios de grandeza, compartida y admirada, fluyes entre mil lagos, alegrando así al agua.

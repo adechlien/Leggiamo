@@ -12,10 +12,8 @@ const sortedPosts = posts.sort((a: any, b: any) => {
   );
 });
 
-// Tomar los 3 más recientes (o menos si no hay suficientes)
-const recentPosts = sortedPosts.slice(0, 4);
+const recentPosts = sortedPosts.slice(0, 5);
 
-// helper para mapear el tipo a texto legible
 const mapType = (type = "") => {
   if (type === "lagrimas") return "Lágrimas de Siddartha"; // Meditaciones
   if (type === "colores") return "En las luces de colores"; // Cuentos
@@ -26,7 +24,7 @@ const mapType = (type = "") => {
 ---
 
 <main class="flex flex-col gap-4 sm:w-[500px] sm:mx-auto">
-  <h2 class="text-6xl font-bold text-left font-staatliches">Recientes</h2>
+  <h2 class="text-5xl font-bold text-left font-staatliches">Recientes</h2>
   <ul class="flex flex-col gap-6">
     {
       recentPosts.length > 0 ? (
@@ -37,32 +35,27 @@ const mapType = (type = "") => {
             <li>
               <article>
                   <a href={`/${post.data.type}/${post.slug}`} class="block">
-                    <div class="relative isolate overflow-hidden rounded-xl aspect-[16/9] border border-white/10">
-                      <img
-                        src={post.data.heroSmImage}
-                        alt={post.data.title}
-                        class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
-                        loading="lazy"
-                      />
+                    <div class="relative isolate overflow-hidden rounded-xl aspect-[2/1] border border-white/10">
+                        <img src={post.data.heroSmImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none" loading="lazy"/>
 
-                      {/* Panel blur: posicionado, no h-full en flujo */}
-                      <div
-                        class="absolute inset-3 rounded-xl border border-white/20 bg-black/25
-                               backdrop-blur-md [-webkit-backdrop-filter:blur(12px)] [transform:translateZ(0)] will-change-transform"
-                      >
-                        <div class="flex h-full flex-col px-3 py-2 min-w-0">
-                          <h2 class="text-white font-bebas text-start text-xl min-w-0">
-                            {post.data.title}
-                          </h2>
-                          <p lang="es"
-                             class="my-1 text-sm leading-snug text-white text-justify hyphens-auto
-                                    [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical]
-                                    overflow-hidden min-w-0">
-                            {previewContent}
-                          </p>
-                          <p class="mt-auto text-white text-base text-right">{typeUrl}</p>
+                        <div class="absolute inset-0 bg-black/25 backdrop-blur-sm [-webkit-backdrop-filter:blur(12px)] [transform:translateZ(0)] will-change-transform">
+                            <div class="flex h-full flex-col px-3 py-2 min-w-0">
+                                <h2 class="text-white font-bebas text-start text-2xl min-w-0">
+                                    {post.data.title}
+                                </h2>
+                                <p lang="es" class="my-1 text-xs leading-snug text-white text-justify hyphens-auto [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical] overflow-hidden min-w-0">
+                                    {previewContent}
+                                </p>
+                                <p class="mt-auto text-white text-base font-black text-right">{typeUrl}</p>
+                            </div>
                         </div>
-                      </div>
+
+                      <!-- <div class="flex flex-col justify-end bg-black/20 backdrop-blur-sm border-t border-white/20 text-white font-bebas">
+                        <h2 class="text-start p-1 px-2 pb-0 text-xl rounded-t-lg">
+                          {post.data.title}
+                        </h2>
+                        <p class="text-end p-1 px-2 text-base rounded-b-lg">{typeUrl}</p>
+                      </div> -->
                     </div>
                   </a>
 

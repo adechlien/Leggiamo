@@ -6,10 +6,10 @@ heroSmImage: "/landscape/ir.svg"
 pubDate: "Nov 30 2025"
 editDate: "Nov 30 2025"
 edition: "Primera"
-related: []
-color: "#A1B3E0"
+related: ["liberando"]
+color: "#9AABD9"
 ---
-Llevo dos días que a donde voy siento el mismo olor. No estoy seguro si es menta o manzanilla. No sé diferenciarlos. Ambos me parecen lo mismo. Con ambos te recuerdo, te maldigo, te pienso, te deseo. Te celo sabiendo que no eres mía, y anhelo tus besos, aún cuando sé que se los das a otro. El olor a manzanilla a diario me maltrata, te trae a mi mente en brazos de quien amas. Y somos tres, porque ese a quien amas no soy yo.
+Llevo días que a donde voy siento el mismo olor. No estoy seguro si es menta o manzanilla. No sé diferenciarlos. Ambos me parecen lo mismo. Con ambos te recuerdo, te maldigo, te pienso, te deseo. Te celo sabiendo que no eres mía, y anhelo tus besos, aún cuando sé que se los das a otro. El olor a manzanilla a diario me maltrata, te trae a mi mente en brazos de quien amas. Y somos tres, porque ese a quien amas no soy yo.
 <br><br>
 Ahora esta ciudad huele a ti, a tus piernas bien formadas. A tus pechos que con solo pensar en ellos me hacen volverme loco de pensar en posar mi rostro sobre ellos. A tus cachetes, que tanto quisiera devorar a besos. A tus ojos, esos que no puedo ver viéndome porque no veo a quien hablo. A tu sonrisa que no es mía, a tu corazón que tampoco lo es.
 <br><br>

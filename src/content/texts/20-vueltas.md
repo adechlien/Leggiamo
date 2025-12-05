@@ -1,6 +1,6 @@
 ---
 title: "20 vueltas a la nada"
-type: "still"
+type: "lagrimas"
 heroImage: "/portrait/vueltas.svg"
 heroSmImage: "/landscape/vueltas.svg"
 pubDate: "Jan 31 2024"

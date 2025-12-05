@@ -1,6 +1,6 @@
 ---
 title: "untitled iv (Perdido el Segundo)"
-type: "lagrimas"
+type: "still"
 heroImage: "/portrait/untitled-iv.svg"
 heroSmImage: "/landscape/untitled-iv.svg"
 pubDate: "Apr 11 2025"
