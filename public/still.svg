@@ -3,8 +3,8 @@
 
 <svg
    width="780"
-   height="645.64697"
-   viewBox="0 0 23.4 19.369409"
+   height="480"
+   viewBox="0 0 23.4 14.4"
    fill="none"
    version="1.1"
    id="svg1"
@@ -29,8 +29,8 @@
      inkscape:deskcolor="#505050"
      showguides="false"
      inkscape:zoom="0.38981528"
-     inkscape:cx="-159.04969"
-     inkscape:cy="854.25075"
+     inkscape:cx="-160.33235"
+     inkscape:cy="854.25076"
      inkscape:window-width="1920"
      inkscape:window-height="963"
      inkscape:window-x="0"
@@ -40,20 +40,10 @@
        x="0"
        y="0"
        width="23.4"
-       height="19.36941"
+       height="14.4"
        id="page2"
        margin="0"
-       bleed="0" /></sodipodi:namedview><path
-     fill-rule="evenodd"
-     clip-rule="evenodd"
-     d="m 20.76885,2.6311016 c 1.113092,0 2.015355,0.902291 2.015355,2.015317 V 16.738263 c 0,1.112977 -0.902263,2.015351 -2.015355,2.015351 H 2.6311006 c -1.113027,0 -2.01530598,-0.902374 -2.01530598,-2.015351 V 2.6311016 c 0,-1.113027 0.90227898,-2.01530606 2.01530598,-2.01530606 h 6.045924 c 1.128558,0 1.8469354,0.47909706 2.5685214,1.38940606 0.01977,0.02511 0.06826,0.08747 0.121922,0.156645 0.07598,0.09794 0.16306,0.210131 0.193978,0.248396 0.03112,0.03874 0.05754,0.07077 0.07931,0.09724 0.08868,0.107787 0.101361,0.123416 0.06111,0.123625 z"
-     fill="#000000"
-     id="path620"
-     sodipodi:nodetypes="ssssssssscccccs"
-     style="fill:#b9c2a9;fill-opacity:1;stroke:#727d5f;stroke-width:1.23159;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-     inkscape:export-filename="leggiamo/public/colores.svg"
-     inkscape:export-xdpi="96"
-     inkscape:export-ydpi="96" /><style
+       bleed="0" /></sodipodi:namedview><style
      type="text/css"
      id="style1">
 	.st0{fill:#000000;}
@@ -64,7 +54,7 @@
 </style><g
      style="fill:#727d5f;fill-opacity:1"
      id="g594"
-     transform="matrix(0.33018556,0,0,0.33018556,7.7377726,6.2522686)"><path
+     transform="matrix(0.79244533,0,0,0.79244533,2.1906558,-2.377336)"><path
        fill-rule="evenodd"
        clip-rule="evenodd"
        d="M 2,8.60555 C 2,5.50969 4.50969,3 7.60555,3 8.71223,3 9.79414,3.32758 10.715,3.94145 L 12,4.79815 13.285,3.94145 C 14.2059,3.32758 15.2878,3 16.3944,3 19.4903,3 22,5.50969 22,8.60555 v 0.73827 c 0,1.96598 -0.781,3.85138 -2.1711,5.24148 l -5.7076,5.7076 c -1.1716,1.1716 -3.071,1.1716 -4.24262,0 L 4.1711,14.5853 C 2.78097,13.1952 2,11.3098 2,9.34382 Z"
