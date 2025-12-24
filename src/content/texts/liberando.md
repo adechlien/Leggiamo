@@ -2,7 +2,7 @@
 title: "Enjaulando/Liberando el deseo"
 type: "still"
 heroImage: "/portrait/liberando.png"
-heroSmImage: "/landscape/liberando.png"
+heroSmImage: "/portrait/liberando.png"
 pubDate: "Sep 20 2025"
 editDate: "Sep 20 2025"
 edition: "Primera"

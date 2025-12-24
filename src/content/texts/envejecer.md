@@ -1,13 +1,13 @@
 ---
 title: "Envejecer"
 type: "lagrimas"
-heroImage: "/portrait/envejecer.svg"
-heroSmImage: "/landscape/envejecer.svg"
+heroImage: "/portrait/envejecer.JPEG"
+heroSmImage: "/portrait/envejecer.JPEG"
 pubDate: "Feb 7 2024"
 editDate: "Dec 11 2024"
 edition: "Segunda"
 related: ["20-vueltas"]
-color: "#40403E"
+color: "#362618"
 ---
 
 Ya no corro hacia la frontera ni visto de azul calórico. Ya no oprimo para escuchar ni tomo medicinas por las tardes. Miles de historias en bucle pasaron por mi cabeza mientras la comida escaseaba y las oportunidades llegaban.

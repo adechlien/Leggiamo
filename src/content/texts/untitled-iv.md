@@ -2,7 +2,7 @@
 title: "untitled iv (Perdido el Segundo)"
 type: "still"
 heroImage: "/portrait/untitled-iv.svg"
-heroSmImage: "/landscape/untitled-iv.svg"
+heroSmImage: "/portrait/untitled-iv.svg"
 pubDate: "Apr 11 2025"
 editDate: "Apr 11 2025"
 edition: "Primera"

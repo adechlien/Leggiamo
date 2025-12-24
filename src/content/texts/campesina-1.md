@@ -1,13 +1,13 @@
 ---
 title: "Campesina Vol.1"
 type: "colores"
-heroImage: "/portrait/campesina1.svg"
-heroSmImage: "/landscape/campesina1.svg"
+heroImage: "/portrait/campesina.svg"
+heroSmImage: "/portrait/campesina.svg"
 pubDate: "Feb 23 2023"
 editDate: "Feb 16 2025"
 edition: "Segunda"
 related: []
-color: "#262422"
+color: "#000000"
 ---
 
 Entre vacas y desgracias

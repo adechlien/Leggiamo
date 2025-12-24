@@ -2,7 +2,7 @@
 title: "No me quiero ir"
 type: "still"
 heroImage: "/portrait/ir.png"
-heroSmImage: "/landscape/ir.svg"
+heroSmImage: "/portrait/ir.png"
 pubDate: "Nov 30 2025"
 editDate: "Nov 30 2025"
 edition: "Primera"

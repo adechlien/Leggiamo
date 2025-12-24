@@ -44,11 +44,11 @@ const posts = (await getCollection("texts"))
 ---
 
 <Layout title={typeTitle}>
-  <main class="flex flex-col gap-4 mt-32 px-4 w-full">
+  <main class="flex flex-col gap-4 mt-32 px-4 w-full sm:w-[500px] sm:mx-auto">
     <h1 class="text-3xl font-bold text-left font-bebas">
       {typeTitle}
     </h1>
-    <p class="text-right text-2xl font-normal font-tangerine sm:w-[500px] sm:mx-auto">
+    <p class="text-right text-2xl font-normal font-tangerine">
         {typeDescription}
     </p>
     <ul class="flex flex-col w-full gap-6 text-center justify-center">

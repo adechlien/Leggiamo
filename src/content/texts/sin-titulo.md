@@ -2,7 +2,7 @@
 title: "Sin título (Perdido el Primero)"
 type: "placebo"
 heroImage: "/portrait/sin-titulo.svg"
-heroSmImage: "/landscape/sin-titulo.svg"
+heroSmImage: "/portrait/sin-titulo.svg"
 pubDate: "Feb 26 2025"
 editDate: "Feb 26 2025"
 edition: "Primera"

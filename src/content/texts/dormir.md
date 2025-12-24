@@ -1,8 +1,8 @@
 ---
 title: "Dormir"
 type: "lagrimas"
-heroImage: "/portrait/dormir.svg"
-heroSmImage: "/landscape/dormir.svg"
+heroImage: "/portrait/dormir.JPEG"
+heroSmImage: "/portrait/dormir.JPEG"
 pubDate: "Dec 14 2023"
 editDate: "Dec 14 2023"
 edition: "Primera"

@@ -9,13 +9,13 @@ const categories = [
 
 <div class="w-full flex flex-col gap-4 sm:w-[480px] sm:mx-auto">
   <h2 class="text-5xl font-bold text-left font-staatliches">Colecciones</h2>
-  <div class="grid grid-cols-2 w-full gap-3">
+  <div class="flex flex-col w-full gap-4">
     {
       categories.map((category) => (
-        <a href={`/${category.slug}`} class="block">
-            <article class="overflow-hidden flex flex-col items-center gap-2 border-2 border-[#727D5F] py-1 px-2 rounded-lg bg-[#B9C2A9]">
-                <img src={`/${category.slug}.svg`} alt="{title}" class="max-w-20 pt-2" />
-                <h3 class="font-tangerine font-bold text-2xl text-center text-[#727D5F]">{category.name}</h3>
+        <a href={`/${category.slug}`} class="w-fit">
+            <article class="overflow-hidden flex flex-row items-center">
+                <!-- <img src={`/${catext-[#202020]tegory.slug}.svg`} alt="{title}" class="max-h-12 m-2" /> -->
+                <h3 class="font-staatliches font-bold text-xl text-center text-[#505050] pr-2">{category.name}</h3>
             </article>
         </a>
       ))
