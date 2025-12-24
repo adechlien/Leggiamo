@@ -1,13 +1,13 @@
 ---
 title: "Durmiendo se me ocurren los mejores títulos"
 type: "still"
-heroImage: "/portrait/durmiendo.svg"
-heroSmImage: "/landscape/durmiendo.svg"
+heroImage: "/portrait/durmiendo.JPEG"
+heroSmImage: "/portrait/durmiendo.JPEG"
 pubDate: "Feb 14 2025"
 editDate: "Feb 14 2025"
 edition: "Primera"
 related: []
-color: "#42417D"
+color: "#322420"
 ---
 
 El esfuerzo por el trabajo no fue esperadamente remunerado. Estaba acostado, aplastado, olvidado. La caricia de la añoranza me golpeó tan fuerte que creí que era verdad que estabas ahí, hasta que tu ausencia me despertó y me recordó una vez más, como hace cada día, que ya no estás. Que te fuiste, que nunca estuviste. Que quizá nunca estarás.

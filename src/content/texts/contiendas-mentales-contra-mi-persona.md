@@ -1,13 +1,13 @@
 ---
 title: "Contiendas mentales contra mi persona"
 type: "still"
-heroImage: "/portrait/batallas.svg"
-heroSmImage: "/landscape/batallas.svg"
+heroImage: "/portrait/contiendas.JPEG"
+heroSmImage: "/portrait/contiendas.JPEG"
 pubDate: "Feb 13 2025"
 editDate: "Feb 13 2025"
 edition: "Primera"
-related: ["senora", "indeciso", amargas-memorias-de-una-dulce-amistad]
-color: "#967073"
+related: ["senora", "indeciso", "amargas-memorias-de-una-dulce-amistad"]
+color: "#362618"
 ---
 
 Martillo mi cuerpo entero en silencio, inerte, con duda y desesperación. Con miedo, porque no me siento capaz de caminar, de hablar, de sonreír. Porque ya estoy cada vez más cansado de soportar mi propia existencia, porque no soy capaz de ser un estoico ni de abrazar el absurdo. No porque no quiera, sino por el maldito mosquito zumbando en el medio de la frente cada vez que estoy despierto, cada vez que pienso en ti, cada vez que pienso.

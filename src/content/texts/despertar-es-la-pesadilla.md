@@ -1,13 +1,13 @@
 ---
 title: "Despertar es la pesadilla"
 type: "still"
-heroImage: "/portrait/pesadilla.png"
-heroSmImage: "/portrait/pesadilla.png"
+heroImage: "/portrait/despertar.JPEG"
+heroSmImage: "/portrait/despertar.JPEG"
 pubDate: "Feb 27 2025"
 editDate: "Feb 27 2025"
 edition: "Primera"
 related: []
-color: "#594165"
+color: "#3C281E"
 ---
 
 Me pesan los ojos. No puede ser por llorar, aún no logro llorar a voluntad. Me pesan los ojos. Quizá sea por tanto mirarte. Por tanto ver tus cachetitos rosas, tus ojos pícaros, tu sedoso cabello, agujas letales que me hacen querer caer en la tentación de acariciarlo. Quizá observo mucho tu sonrisa. Me echo una siesta en ella, en la dulzura que transmite. Descanso en la ternura con la que envuelve mi malherido corazón.

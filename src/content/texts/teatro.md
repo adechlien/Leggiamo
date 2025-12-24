@@ -1,13 +1,13 @@
 ---
 title: "Teatro Matacandelas"
 type: "lagrimas"
-heroImage: "/portrait/teatro.svg"
-heroSmImage: "/landscape/teatro.svg"
+heroImage: "/portrait/teatro.JPEG"
+heroSmImage: "/portrait/teatro.JPEG"
 pubDate: "Oct 12 2025"
 editDate: "Oct 12 2025"
 edition: "Primera"
 related: []
-color: "#333D29"
+color: "#230E0E"
 ---
 
 ¡Qué lindura, qué belleza!

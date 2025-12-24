@@ -1,13 +1,13 @@
 ---
 title: "Huellas en la piel (Anya II)"
 type: "still"
-heroImage: "/portrait/huellas.svg"
-heroSmImage: "/landscape/huellas.svg"
+heroImage: "/portrait/huellas.JPEG"
+heroSmImage: "/portrait/huellas.JPEG"
 pubDate: "Feb 14 2025"
 editDate: "Feb 14 2025"
 edition: "Primera"
 related: ["anya"]
-color: "#2A2F43"
+color: "#61463B"
 ---
 
 Con el corazón en su apellido, ansiosa por el disfrute, por el gozo, por la algarabía ardiente y desaforada, inocente se quedó encerrada en su empaque, apartada del cariño que esperaba recibir. Verla dolió.

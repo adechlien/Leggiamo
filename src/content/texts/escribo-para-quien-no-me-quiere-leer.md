@@ -1,13 +1,13 @@
 ---
 title: "Escribo para quien no me quiere leer"
 type: "lagrimas"
-heroImage: "/portrait/escribo.svg"
-heroSmImage: "/landscape/escribo.svg"
+heroImage: "/portrait/escribo.JPEG"
+heroSmImage: "/portrait/escribo.JPEG"
 pubDate: "Oct 11 2024"
 editDate: "Oct 11 2024"
 edition: "Primera"
 related: []
-color: "#1B1A1A"
+color: "#7D4F23"
 ---
 
 Mientras me alistaba, me miré en el reflejo de la cuchara y me vi perfectamente. Era yo: deformado, trastornado, burlado, humillado. Era yo en mi máxima expresión, visto por mí mismo a través de un artefacto que reflejaba a la perfección lo más profundo de mi ser, solitario y olvidado.

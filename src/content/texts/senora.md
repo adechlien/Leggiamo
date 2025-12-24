@@ -1,13 +1,13 @@
 ---
 title: "Señora"
 type: "lagrimas"
-heroImage: "/portrait/senora.svg"
-heroSmImage: "/landscape/senora.svg"
+heroImage: "/portrait/senora.JPEG"
+heroSmImage: "/portrait/senora.JPEG"
 pubDate: "Sep 6 2024"
 editDate: "Sep 6 2024"
 edition: "Primera"
 related: ["amargas-memorias-de-una-dulce-amistad", "indeciso"]
-color: "#181818"
+color: "#73584B"
 ---
 
 ¿A qué viene tu sonrisa en respuesta y tus recuerdos precisos de mí?

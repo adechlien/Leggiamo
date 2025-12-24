@@ -1,13 +1,13 @@
 ---
 title: "El cielo (deténrayo)"
 type: "still"
-heroImage: "/portrait/cielo.svg"
-heroSmImage: "/landscape/cielo.svg"
+heroImage: "/portrait/cielo.JPEG"
+heroSmImage: "/portrait/cielo.JPEG"
 pubDate: "Oct 11 2025"
 editDate: "Oct 11 2025"
 edition: "Primera"
 related: []
-color: "#27313F"
+color: "#513C39"
 ---
 
 Entonces, sintió tranquilidad. Lo había aceptado finalmente. Allí comprendió que ni él mismo era dueño de su vida. Estaba finalmente flotando. A sus lados todo se tornó nublado, gaseoso. Verdaderamente insípido.

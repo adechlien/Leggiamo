@@ -1,13 +1,13 @@
 ---
 title: "El no gozo por la espera del sufrimiento"
 type: "lagrimas"
-heroImage: "/portrait/no-gozo.svg"
-heroSmImage: "/landscape/no-gozo.svg"
+heroImage: "/portrait/gozo.JPEG"
+heroSmImage: "/portrait/gozo.JPEG"
 pubDate: "Dec 1 2023"
 editDate: "Dec 1 2023"
 edition: "Primera"
 related: []
-color: "#365756"
+color: "#2B4371"
 ---
 
 2:00 A.M.

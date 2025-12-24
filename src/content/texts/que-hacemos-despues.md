@@ -1,13 +1,13 @@
 ---
 title: "¿Qué hacemos después?"
 type: "placebo"
-heroImage: "/portrait/que-hacemos.svg"
-heroSmImage: "/landscape/que-hacemos.svg"
+heroImage: "/portrait/despues.JPEG"
+heroSmImage: "/portrait/despues.JPEG"
 pubDate: "Jan 25 2024"
 editDate: "Jan 25 2024"
 edition: "Primera"
 related: []
-color: "#AB5B44"
+color: "#442E17"
 ---
 
 Como un corto suspiro a la orilla del mar respirando sus hojas con vigor gritó<br>

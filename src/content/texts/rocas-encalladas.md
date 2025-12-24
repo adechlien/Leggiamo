@@ -1,13 +1,13 @@
 ---
 title: "Rocas encalladas"
 type: "lagrimas"
-heroImage: "/portrait/rocas.svg"
-heroSmImage: "/landscape/rocas.svg"
+heroImage: "/portrait/rocas.JPEG"
+heroSmImage: "/portrait/rocas.JPEG"
 pubDate: "Dec 25 2024"
 editDate: "Dec 25 2024"
 edition: "Primera"
 related: []
-color: "#4F4131"
+color: "#9B744B"
 ---
 
 Detrás, vendedores ambulantes anuncian coctel de camarón, raspaos, pastelitos, carpas que esperan por ser ocupadas. Al frente, el Mar Caribe.

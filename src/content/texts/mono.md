@@ -1,12 +1,12 @@
 ---
 title: "El mono y la peonía"
 type: "colores"
-heroImage: "/portrait/mono.svg"
-heroSmImage: "/landscape/mono.svg"
+heroImage: "/portrait/mono.JPEG"
+heroSmImage: "/portrait/mono.JPEG"
 pubDate: "Oct 14 2024"
 editDate: "Feb 16 2025"
 edition: "Segunda"
-color: "#263A31"
+color: "#3F2F21"
 ---
 
 El mono, perdido y deprimido, protegía a capa y espada la hermosa peonía que, días antes, su corazón, entre dudas y decepciones, se había topado.

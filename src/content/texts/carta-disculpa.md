@@ -1,13 +1,13 @@
 ---
 title: "Carta de disculpa"
 type: "still"
-heroImage: "/portrait/carta-disculpa.svg"
-heroSmImage: "/landscape/carta-disculpa.svg"
+heroImage: "/portrait/carta.JPEG"
+heroSmImage: "/portrait/carta.JPEG"
 pubDate: "Jan 18 2025"
 editDate: "Jan 18 2025"
 edition: "Primera"
 related: []
-color: "#3F6879"
+color: "#292929"
 ---
 
 Lamento si te herí. Me disculpo por todas las cosas horribles que te decía en mi mente mientras te sonreía y me alegraba por todo lo que me contabas. Pero así debía ser.

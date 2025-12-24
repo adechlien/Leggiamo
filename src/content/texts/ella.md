@@ -1,13 +1,13 @@
 ---
 title: "Ella"
 type: "still"
-heroImage: "/portrait/ella.svg"
-heroSmImage: "/landscape/ella.svg"
+heroImage: "/portrait/ella.JPEG"
+heroSmImage: "/portrait/ella.JPEG"
 pubDate: "Apr 29 2024"
 editDate: "Apr 29 2024"
 edition: "Primera"
 related: []
-color: "#09245C"
+color: "#100A19"
 ---
 
 Cada día, el joven despertaba pensando, comía y se bañaba imaginando, se vestía anhelando llegar al sitio de recurrencia y verla, interactuar con su mirada, converger expresiones y transformarlas en un lazo que poco a poco lo iba llevando al borde de la locura.

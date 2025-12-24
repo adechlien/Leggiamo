@@ -1,13 +1,13 @@
 ---
 title: "Pensar es sufrir"
 type: "still"
-heroImage: "/portrait/pensar.png"
-heroSmImage: "/landscape/pensar.png"
+heroImage: "/portrait/pensar.JPEG"
+heroSmImage: "/portrait/pensar.JPEG"
 pubDate: "Feb 24 2025"
 editDate: "Feb 24 2025"
 edition: "Primera"
 related: []
-color: "#2D2C28"
+color: "#3A301C"
 ---
 
 Tengo un zumbido en mi oreja izquierda. Ya no escucho a Mosquito a causa de ello, escucho algo peor. Ya no escucho bien mi exterior. Cuando me hablan debo acercarme, leer labios, pedir que repitan.

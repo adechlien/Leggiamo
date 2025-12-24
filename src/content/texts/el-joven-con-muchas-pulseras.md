@@ -1,12 +1,12 @@
 ---
 title: "El joven con muchas pulseras"
 type: "colores"
-heroImage: "/portrait/pulseras.svg"
-heroSmImage: "/landscape/pulseras.svg"
+heroImage: "/portrait/pulseras.JPEG"
+heroSmImage: "/portrait/pulseras.JPEG"
 pubDate: "Feb 17 2024"
 editDate: "Feb 16 2025"
 edition: "Segunda"
-color: "#172338"
+color: "#8B8975"
 ---
 
 A las 2:47 de la madrugada, un fuerte golpe se estrelló contra la puerta principal. Decidí ignorarlo, pues tras tres días sin conciliar el sueño, por fin parecía que estaba a punto de tocarlo, pero no terminó siendo más que un roce.

@@ -1,13 +1,13 @@
 ---
 title: "Soledad Citadina"
 type: "lagrimas"
-heroImage: "/portrait/soledad.svg"
-heroSmImage: "/landscape/soledad.svg"
+heroImage: "/portrait/soledad2.JPEG"
+heroSmImage: "/portrait/soledad2.JPEG"
 pubDate: "Dec 11 2023"
 editDate: "Dec 11 2023"
 edition: "Primera"
 related: []
-color: "#223A3D"
+color: "#181221"
 ---
 
 Transporte público, hora pico y la suerte de un puesto en el lado de la ventana. Nada me recuerda tan claramente el mar de universos en el que estamos sumergidos.

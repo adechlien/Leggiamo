@@ -1,13 +1,13 @@
 ---
 title: "Anya"
 type: "still"
-heroImage: "/portrait/anya.svg"
-heroSmImage: "/landscape/anya.svg"
+heroImage: "/portrait/anya.JPEG"
+heroSmImage: "/portrait/anya.JPEG"
 pubDate: "Dec 15 2023"
 editDate: "Dec 15 2023"
 edition: "Primera"
 related: ["huellas"]
-color: "#787FA6"
+color: "#908F69"
 ---
 
 Ese no era yo. Llegaba temprano, me iba tarde. Siempre era atento, el segundo plato. No era el alma de las fiestas, hablaba mucho, pero no era interesante de escuchar.

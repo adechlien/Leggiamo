@@ -1,13 +1,13 @@
 ---
 title: "De quien superó a la duquesa"
 type: "still"
-heroImage: "/portrait/duquesa.svg"
-heroSmImage: "/landscape/duquesa.svg"
+heroImage: "/portrait/duquesa.JPEG"
+heroSmImage: "/portrait/duquesa.JPEG"
 pubDate: "Feb 06 2024"
 editDate: "Feb 06 2024"
 edition: "Primera"
 related: []
-color: "#8C7C57"
+color: "#6D563F"
 ---
 
 Delirios de grandeza, compartida y admirada, fluyes entre mil lagos, alegrando así al agua.
