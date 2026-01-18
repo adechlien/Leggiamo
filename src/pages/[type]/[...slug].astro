@@ -52,7 +52,6 @@ const relatedPosts = related
   .map((slug: string) => allPosts.find((post: any) => post.slug === slug))
   .filter(Boolean); // Elimina los valores `undefined`
 ---
-
 <Layout title={title} bg={color}>
   <main
     class="flex flex-col justify-center w-full max-w-[500px] sm:max-w-none"
@@ -72,6 +71,10 @@ const relatedPosts = related
         <div
           class="pointer-events-none absolute inset-x-0 bottom-0 h-20"
           style={color ? `background: linear-gradient(to bottom, rgba(0,0,0,0), ${color});` : ""}
+        ></div>
+        <div
+          class="pointer-events-none absolute inset-x-0 top-0 h-20"
+          style={color ? `background: linear-gradient(to top, rgba(0,0,0,0), ${color});` : ""}
         ></div>
       </div>
 
@@ -132,6 +135,32 @@ const relatedPosts = related
     </div>
 <Footer theme="text" />
   </main>
+
+  <!-- Scroll-to-top button -->
+    <button
+      type="button"
+      aria-label="Volver arriba"
+      class="fixed bottom-5 right-5 z-50 rounded-full px-4 py-3 text-white bg-black/30 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-black/40 transition opacity-0 pointer-events-none"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+        <i class="ti ti-chevron-up"></i>
+    </button>
+
+  <script is:inline>
+      (() => {
+        const btn = document.querySelector('[aria-label="Volver arriba"]');
+        if (!btn) return;
+
+        const toggle = () => {
+          const show = window.scrollY >= 300;
+          btn.classList.toggle("opacity-0", !show);
+          btn.classList.toggle("pointer-events-none", !show);
+        };
+
+        window.addEventListener("scroll", toggle, { passive: true });
+        toggle();
+      })();
+    </script>
 </Layout>
 
 <!-- <style is:global>
