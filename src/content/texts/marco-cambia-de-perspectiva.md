@@ -8,6 +8,7 @@ editDate: "Jul 05 2024"
 edition: "Primera"
 related: []
 color: "#34332C"
+featured: true
 ---
 
 Hace meses murió la gatita de mi casa, desde entonces a mi familia le ha costado aceptar su partida.

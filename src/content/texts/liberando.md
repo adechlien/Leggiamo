@@ -8,6 +8,7 @@ editDate: "Sep 20 2025"
 edition: "Primera"
 related: []
 color: "#B55A5A"
+featured: true
 ---
 
 Y si mi mente se siente encerrada, es porque quiere preservar momentáneamente estos recuerdos, este saber del que depende mi dignidad, mi calma.

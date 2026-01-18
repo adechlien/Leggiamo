@@ -8,6 +8,7 @@ editDate: "Oct 11 2024"
 edition: "Primera"
 related: []
 color: "#7D4F23"
+featured: true
 ---
 
 Mientras me alistaba, me miré en el reflejo de la cuchara y me vi perfectamente. Era yo: deformado, trastornado, burlado, humillado. Era yo en mi máxima expresión, visto por mí mismo a través de un artefacto que reflejaba a la perfección lo más profundo de mi ser, solitario y olvidado.

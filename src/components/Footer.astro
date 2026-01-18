@@ -1,20 +1,12 @@
 ---
 const { theme = "text", fg } = Astro.props;
-const resolvedColor = fg ?? (theme === "home" ? "#202020" : "#FFF");
 ---
-<footer
-  class="flex w-full px-6 justify-between items-center pt-40 pb-8 sm:w-[500px] sm:mx-auto sm:px-0"
-  style={`color: ${resolvedColor};`}
->
+<footer class="flex w-full sm:mx-auto px-6 sm:max-w-[1100px] sm:px-0 justify-between items-center pt-40 pb-8">
   <div class="text-left text-base">
-    <span class="text-center font-bold">2023-2025 Leggiamo</span>
+    <span class="text-center font-bold">2023-2026 Leggiamo</span>
     <p class="text-center font-medium">
       Desarrollado por
-      <a
-        href="https://adechlien.vercel.app"
-        class="font-semibold"
-        target="_blank"
-      >adechlien</a>
+      <a href="https://adechlien.vercel.app" class="font-semibold" target="_blank">adechlien</a>
     </p>
   </div>
 </footer>

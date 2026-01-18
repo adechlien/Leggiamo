@@ -15,6 +15,7 @@ const texts = defineCollection({
     edition: z.string().optional(),
     related: z.array(z.string()).optional(),
     color: z.string().optional(),
+    featured: z.boolean().optional(),
     // icons: z.array(z.string()).optional(),
   }),
 });

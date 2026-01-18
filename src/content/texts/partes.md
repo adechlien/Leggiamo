@@ -2,7 +2,7 @@
 title: "Para hallar partes de mí"
 type: "lagrimas"
 heroImage: "/portrait/partes.JPEG"
-heroSmImage: "/portrait/partes.jpeg"
+heroSmImage: "/portrait/partes.JPEG"
 pubDate: "Dec 5 2025"
 editDate: "Dec 5 2025"
 edition: "Primera"
@@ -18,3 +18,5 @@ Empiezo a verme en las pastas con queso, en el cartón ilustrado, lógico y relu
 Hallo frames de mis añoranzas en las vivencias de Juan, las trampas de Yoel, los gritos de Mario. En un “illo!” Bien tirao’, un “no me jodas, tío”, un “seeeguuuro” bien incrédulo.
 <br><br>
 Me veo cuando veo mis converse, mis camisas manga larga, mis libros, el buda en mi mesita de noche.
+<br><br>
+Me hallo en el reflejo de tu ojos, no en ellos.

@@ -38,6 +38,8 @@ if (type === "lagrimas") {
   typeTitle = "Still Prefer Sentir";
 } else if (type === "placebo") {
   typeTitle = "Placebo Onírico";
+} else if (type === "pintas") {
+    typeTitle = "Pintas de Gaudín";
 } else {
   typeTitle = type;
 }
@@ -52,8 +54,8 @@ const relatedPosts = related
 ---
 
 <Layout title={title} bg={color}>
-  <article
-    class="flex flex-col justify-center w-full"
+  <main
+    class="flex flex-col justify-center w-full max-w-[500px] sm:max-w-none"
     style={`background-color: ${color}`}
   >
       <!-- Cover -->
@@ -61,24 +63,21 @@ const relatedPosts = related
         <img
           src={heroImage}
           alt=""
-          class="
-            w-full h-auto
-            sm:absolute sm:inset-0 sm:w-full sm:h-full sm:object-cover
-          "
+          class="relative w-full min-h-[80vh] bg-cover"
           loading="eager"
           decoding="async"
         />
 
         <!-- Gradient encima (solo visual, no afecta ratio) -->
         <div
-          class="pointer-events-none absolute inset-x-0 bottom-0 h-32"
+          class="pointer-events-none absolute inset-x-0 bottom-0 h-20"
           style={color ? `background: linear-gradient(to bottom, rgba(0,0,0,0), ${color});` : ""}
         ></div>
       </div>
 
 
     <!-- Title -->
-    <div class="flex flex-col pb-2 mt-12 border-b-2 border-white/50 mx-4 sm:w-[500px] sm:mx-auto text-white">
+    <div class="flex flex-col pb-2 mt-12 border-b-2 border-white/50 mx-6 sm:w-[500px] sm:mx-auto text-white">
       <h3 class="text-xl capitalize">
         {typeTitle}
       </h3>
@@ -94,12 +93,12 @@ const relatedPosts = related
     </div>
 
     <!-- Content -->
-    <div lang="es" class=" m-8 font-besley text-base sm:w-[480px] sm:mx-auto text-justify hyphens-auto text-white">
+    <div lang="es" class="m-8 mx-10 font-besley text-base sm:w-[480px] sm:mx-auto text-justify hyphens-auto text-white">
       <Content />
     </div>
 
     <!-- Related Posts -->
-    <div class="flex flex-col gap-4 pt-4 border-t-2 border-white/50 mx-4 sm:w-[500px] sm:mx-auto">
+    <div class="flex flex-col gap-4 pt-4 border-t-2 border-white/50 mx-6 sm:w-[500px] sm:mx-auto">
       <h2 class="text-3xl font-bold text-left px-2 py-1 pb-0 font-bebas text-white">Textos relacionados</h2>
       <ul class="flex flex-col gap-6 mx-2">
         {
@@ -131,11 +130,11 @@ const relatedPosts = related
         }
       </ul>
     </div>
-  </article>
 <Footer theme="text" />
+  </main>
 </Layout>
 
-<style is:global>
+<!-- <style is:global>
 .article-body p{
   text-align: justify;
   hyphens: auto;
@@ -152,4 +151,4 @@ const relatedPosts = related
 @supports (text-align-last: justify){
   .article-body p::after{ content: none; }
 }
-</style>
+</style> -->

@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("texts");
+
+const years = Array.from(
+  new Set(posts.map((p: any) => new Date(p.data.pubDate).getFullYear()))
+).sort((a, b) => b - a);
+
+// Si aún no tienes ruta /year/[year], puedes dejar href="#" y luego lo conectas
+const yearHref = (y: number) => `/${y}/`;
+
+---
+
+<aside class="w-full flex flex-col gap-3">
+  <div class="flex flex-col gap-3">
+    <h2 class="text-4xl font-bold font-staatliches text-white">Historial</h2>
+    <div class="h-px bg-white/40"></div>
+  </div>
+
+  <ul class="flex flex-col gap-2 px-3">
+    {years.map((y) => (
+      <li>
+        <a
+          href={yearHref(y)}
+          class="text-white text-3xl sm:text-2xl font-staatliches tracking-wide hover:text-white/80 transition"
+        >
+          {y}
+        </a>
+      </li>
+    ))}
+  </ul>
+</aside>

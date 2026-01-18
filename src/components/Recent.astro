@@ -1,71 +1,86 @@
 ---
-import FormattedDate from "./FormattedDate.astro";
-
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("texts");
 
-// Ordenar por fecha de publicación (descendente, más reciente primero)
-const sortedPosts = posts.sort((a: any, b: any) => {
-  return (
+// Ordenar por fecha (más reciente primero)
+const sortedPosts = posts.sort(
+  (a: any, b: any) =>
     new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
-  );
-});
+);
 
-const recentPosts = sortedPosts.slice(0, 5);
+const recentPosts = sortedPosts.slice(0, 2);
 
 const mapType = (type = "") => {
-  if (type === "lagrimas") return "Lágrimas de Siddartha"; // Meditaciones
-  if (type === "colores") return "En las luces de colores"; // Cuentos
-  if (type === "still") return "Still Prefer Sentir"; // Poemas
+  if (type === "lagrimas") return "Lágrimas de Siddartha";
+  if (type === "colores") return "En las luces de colores";
+  if (type === "still") return "Still Prefer Sentir";
   if (type === "placebo") return "Placebo Onírico";
+  if (type === "pintas") return "Pintas de Gaudín";
   return type;
 };
+
+const cleanPreview = (html = "") =>
+  html
+    .replaceAll("<br>", " ")
+    .replace(/<\/?[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 ---
 
-<main class="flex flex-col gap-4 sm:w-[500px] sm:mx-auto">
-  <h2 class="text-5xl font-bold text-left font-staatliches">Recientes</h2>
-  <ul class="flex flex-col gap-6">
-    {
-      recentPosts.length > 0 ? (
-        recentPosts.map((post: any) => {
-          const previewContent = (post.body ?? "").replace("<br>", " ").replace(/<\/?[^>]+>/g, "").replace(/\s+/g, " ").trim();
-          const typeUrl = mapType(post.data.type);
-          return (
-            <li>
-              <article>
-                  <a href={`/${post.data.type}/${post.slug}`} class="block">
-                    <div class="relative isolate overflow-hidden rounded-xl aspect-[2/1] border border-white/10">
-                        <img src={post.data.heroSmImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none" loading="lazy"/>
+<section class="w-full min-w-0 flex flex-col gap-3">
+  <div class="flex flex-col gap-3">
+    <h2 class="text-4xl font-bold text-left font-staatliches text-white">
+      Recientes
+    </h2>
+    <div class="h-px bg-white/40"></div>
+  </div>
 
-                        <div class="absolute inset-0 bg-black/25 backdrop-blur-sm [-webkit-backdrop-filter:blur(12px)] [transform:translateZ(0)] will-change-transform">
-                            <div class="flex h-full flex-col px-3 py-2 min-w-0">
-                                <h2 class="text-white font-bebas text-start text-2xl min-w-0">
-                                    {post.data.title}
-                                </h2>
-                                <p lang="es" class="my-1 text-xs leading-snug text-white text-justify hyphens-auto [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical] overflow-hidden min-w-0">
-                                    {previewContent}
-                                </p>
-                                <p class="mt-auto text-white text-base font-black text-right">{typeUrl}</p>
-                            </div>
-                        </div>
+  {recentPosts.length > 0 ? (
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-3">
+      {recentPosts.map((post: any) => {
+        const previewContent = cleanPreview(post.body ?? "");
+        const typeLabel = mapType(post.data.type);
 
-                      <!-- <div class="flex flex-col justify-end bg-black/20 backdrop-blur-sm border-t border-white/20 text-white font-bebas">
-                        <h2 class="text-start p-1 px-2 pb-0 text-xl rounded-t-lg">
-                          {post.data.title}
-                        </h2>
-                        <p class="text-end p-1 px-2 text-base rounded-b-lg">{typeUrl}</p>
-                      </div> -->
-                    </div>
-                  </a>
+        return (
+          <li class="snap-start flex-none">
+            <a href={`/${post.data.type}/${post.slug}`} class="block group">
+              <div class="relative isolate overflow-hidden rounded-xl aspect-[2/1] w-full border border-white/10">
+                <img
+                  src={post.data.heroSmImage}
+                  alt={post.data.title}
+                  class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
+                  loading="lazy"
+                />
 
-              </article>
-            </li>
-          );
-        })
-      ) : (
-        <li class="text-sm text-white/80">No hay textos aún.</li>
-      )
-    }
-  </ul>
-</main>
+                {/* overlay */}
+                <div class="absolute inset-0 bg-black/25 backdrop-blur-sm [-webkit-backdrop-filter:blur(12px)] [transform:translateZ(0)]"></div>
+
+                {/* content */}
+                <div class="relative flex h-full flex-col px-3 py-3 min-w-0">
+                  <h3 class="text-white font-bebas text-start text-2xl leading-none">
+                    {post.data.title}
+                  </h3>
+
+                  <p
+                    lang="es"
+                    class="mt-2 text-xs leading-snug text-white/90 text-justify hyphens-auto
+                           [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical] overflow-hidden"
+                  >
+                    {previewContent}
+                  </p>
+
+                  <p class="mt-auto pt-2 text-white font-black text-right">
+                    {typeLabel}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  ) : (
+    <p class="mt-4 text-sm text-white/80">No hay textos aún.</p>
+  )}
+</section>

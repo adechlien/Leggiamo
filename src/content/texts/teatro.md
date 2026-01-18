@@ -8,6 +8,7 @@ editDate: "Oct 12 2025"
 edition: "Primera"
 related: []
 color: "#230E0E"
+featured: true
 ---
 
 ¡Qué lindura, qué belleza!

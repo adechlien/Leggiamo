@@ -8,6 +8,7 @@ editDate: "Oct 4 2024"
 edition: "Primera"
 related: ["senora", "amargas-memorias-de-una-dulce-amistad"]
 color: "#372216"
+featured: true
 ---
 
 Hoy me desperté tarde, ya perdí la cuenta de cuántos días llevo queriendo madrugar. Intenté nuevamente colocar dos cajas juntas y que se vieran bien, pero viniste tú, me cacheteaste con tu recuerdo, y las cajas, que eran de cartón, se mojaron con mis lágrimas. No lloraba por el dolor en la mejilla, lloraba por un dolor más interno. Una herida que llevaba desde hace años y que no había curado. Tu golpe la afectó.

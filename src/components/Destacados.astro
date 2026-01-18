@@ -1,0 +1,65 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("texts");
+
+// 1) intentamos destacados por frontmatter (featured: true)
+const featured = posts.filter((p: any) => p.data.featured === true);
+
+// 2) fallback: recientes
+const sorted = posts.sort(
+  (a: any, b: any) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+
+const featuredPosts = (featured.length ? featured : sorted)
+  .sort(
+    (a: any, b: any) =>
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+  )
+  .slice(0, 6);
+
+
+const mapType = (type = "") => {
+  if (type === "lagrimas") return "Lágrimas de Siddartha";
+  if (type === "colores") return "En las luces de colores";
+  if (type === "still") return "Still Prefer Sentir";
+  if (type === "placebo") return "Placebo Onírico";
+  if (type === "pintas") return "Pintas de Gaudín";
+  return type;
+};
+---
+
+<section class="w-full flex flex-col gap-3">
+  <div class="flex flex-col gap-3">
+    <h2 class="text-4xl font-bold font-staatliches text-white">Destacados</h2>
+    <div class="h-px bg-white/40"></div>
+  </div>
+
+  <ul class="flex flex-col sm:flex-row gap-4 px-3">
+    {featuredPosts.map((post: any) => (
+      <li class="w-full">
+        <a href={`/${post.data.type}/${post.slug}`} class="block">
+          <div class="relative isolate overflow-hidden rounded-xl aspect-[2/3] border border-white/10">
+            <img
+              src={post.data.heroSmImage}
+              alt={post.data.title}
+              class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
+              loading="lazy"
+            />
+
+            <div class="absolute inset-0 bg-black/20"></div>
+
+            <div class="absolute inset-x-0 bottom-0 p-2 bg-black/30 backdrop-blur-sm border-t border-white/10 flex flex-col gap-1">
+              <!-- <p class="text-white/80 text-base font-black text-left">
+                {mapType(post.data.type)}
+              </p> -->
+              <h3 class="text-white font-bebas truncate text-lg leading-none">
+                {post.data.title}
+              </h3>
+            </div>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
