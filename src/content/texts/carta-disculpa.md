@@ -1,8 +1,8 @@
 ---
 title: "Carta de disculpa"
 type: "still"
-heroImage: "/portrait/carta.JPEG"
-heroSmImage: "/portrait/carta.JPEG"
+heroImage: "/portrait/carta.jpg"
+heroSmImage: "/portrait/carta.jpg"
 pubDate: "Jan 18 2025"
 editDate: "Jan 18 2025"
 edition: "Primera"

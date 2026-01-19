@@ -7,7 +7,7 @@ pubDate: "Dec 14 2023"
 editDate: "Dec 14 2023"
 edition: "Primera"
 related: []
-color: "#1F2131"
+color: "#604125"
 ---
 
 Cuando duermo no pienso en nada, no obtengo nada, no aprendo, no disfruto. Todo se torna oscuro e insensible, lo mas parecido a perecer. Supongo que es el entrenamiento perfecto para cuando la caricia de la mortalidad roce mi mejilla el día de mi partida.

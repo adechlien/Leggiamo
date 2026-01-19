@@ -53,13 +53,14 @@ const posts = (await getCollection("texts"))
                   />
 
                   <div class="flex flex-col justify-between h-full w-full">
-                    <p class="bg-black/25 backdrop-blur-sm border border-white/20 text-right self-end text-white text-sm sm:text-sm p-1 px-2 rounded-b-lg rounded-r-none font-bold">
-                      {postTypeTitle}
-                    </p>
-
-                    <h2 class="bg-black/20 backdrop-blur-sm truncate border-t border-white/20 text-white font-bebas text-start p-2 pb-2 text-2xl sm:text-lg rounded-b-lg">
-                      {post.data.title}
-                    </h2>
+                    <div class="absolute inset-x-0 bottom-0 p-2 bg-black/30 backdrop-blur-sm border-t border-white/10 flex flex-col gap-1">
+                      <p class="text-white/80 text-base font-black text-left">
+                          {postTypeTitle}
+                      </p>
+                      <h3 class="text-white font-bebas truncate text-xl leading-none">
+                        {post.data.title}
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </a>

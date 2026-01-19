@@ -33,6 +33,7 @@ const mapType = (type = "") => {
   <div class="flex flex-col gap-3">
     <h2 class="text-4xl font-bold font-staatliches text-white">Destacados</h2>
     <div class="h-px bg-white/40"></div>
+
   </div>
 
   <ul class="flex flex-col sm:flex-row gap-4 px-3">
@@ -50,10 +51,10 @@ const mapType = (type = "") => {
             <div class="absolute inset-0 bg-black/20"></div>
 
             <div class="absolute inset-x-0 bottom-0 p-2 bg-black/30 backdrop-blur-sm border-t border-white/10 flex flex-col gap-1">
-              <!-- <p class="text-white/80 text-base font-black text-left">
+              <p class="text-white/80 text-base sm:text-sm font-black text-left">
                 {mapType(post.data.type)}
-              </p> -->
-              <h3 class="text-white font-bebas truncate text-lg leading-none">
+              </p>
+              <h3 class="text-white font-bebas truncate text-xl sm:text-lg leading-none">
                 {post.data.title}
               </h3>
             </div>

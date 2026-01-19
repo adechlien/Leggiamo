@@ -58,7 +58,7 @@ const relatedPosts = related
     style={`background-color: ${color}`}
   >
       <!-- Cover -->
-      <div class="relative w-full sm:aspect-[11/4] sm:overflow-hidden">
+      <div class="relative w-full aspect-ratio[2/3] sm:aspect-[11/4] sm:overflow-hidden">
         <img
           src={heroImage}
           alt=""
@@ -80,11 +80,11 @@ const relatedPosts = related
 
 
     <!-- Title -->
-    <div class="flex flex-col pb-2 mt-12 border-b-2 border-white/50 mx-6 sm:w-[500px] sm:mx-auto text-white">
+    <div class="flex flex-col pb-2 mt-12 gap-1 border-b-2 border-white/50 mx-6 sm:w-[500px] sm:mx-auto text-white">
       <h3 class="text-xl capitalize">
         {typeTitle}
       </h3>
-      <h1 class="text-4xl font-bold mb-1">
+      <h1 class="text-4xl font-bebas font-bold">
         {title}
       </h1>
       <div class="flex justify-between self-start text-base">
