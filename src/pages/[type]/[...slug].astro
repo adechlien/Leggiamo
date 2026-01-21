@@ -58,14 +58,18 @@ const relatedPosts = related
     style={`background-color: ${color}`}
   >
       <!-- Cover -->
-      <div class="relative w-full aspect-ratio[2/3] sm:aspect-[11/4] sm:overflow-hidden">
-        <img
-          src={heroImage}
-          alt=""
-          class="relative w-full min-h-[80vh] bg-cover"
-          loading="eager"
-          decoding="async"
-        />
+      <div class="relative w-full aspect-ratio[2/3] sm:aspect-[12/5] sm:overflow-hidden">
+          <img
+              src={heroImage}
+              alt=""
+              class="
+                relative sm:absolute inset-0 w-full h-full
+                object-cover
+                sm:object-center
+              "
+              loading="eager"
+              decoding="async"
+            />
 
         <!-- Gradient encima (solo visual, no afecta ratio) -->
         <div

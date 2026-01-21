@@ -18,8 +18,4 @@ Mosquito ha estado revoloteando mucho últimamente. Me cuenta que tiene nuevos h
 <br><br>
 No. Mejor no.
 <br><br>
-Entonces, Mosquito. A estas alturas, de la vida crees debes acompañarme a cada sitio. No me he ido tan lejos, pero algo privacidad espero. Tus ojos, tus ojos no los puedo ver, no los alcanzo a ver. Pero Mosquito me alcanza a mí, donde sea que vaya, sin importar lo que haga. Cómo trato con él. Es agobiante.
-<br><br>
-¿Me estás acompañando realmente, o solo disfrutas verme sufrir? Si es que por un huequito me pudieras ver. En ese caso, habría algo de piedad, lo puedo apostar. Entenderías Mosquito es un cabrón. Hace chistes peores que los míos. Ya ni parecen chistes. Se burla realmente. Me cuela insultos, ilusiones, mentiras.
-<br><br>
-Las canciones que tararea tampoco ayudan. No es mexicano, ni viene en dupla, y mucho menos tiene mil peinados, pero afecta igual.
+Entonces, Mosquito. A estas alturas, de la vida crees debes acompañarme a cada sitio. No me he ido tan lejos, pero algo privacidad espero. Tus ojos, tus ojos no los puedo ver, no los alcanzo a ver. Pero Mosquito me alcanza a mí, donde sea que vaya, sin importar lo que haga. ¿Cómo trato con él?. Es agobiante.

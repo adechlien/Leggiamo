@@ -7,7 +7,7 @@ pubDate: "Oct 13 2024"
 editDate: "Oct 13 2024"
 edition: "Primera"
 related: []
-color: "#332719"
+color: "#292739"
 ---
 
 Jeremías no habla si no hay alguien más presente. Incluso cuando hay alguien, es muy selectivo. Es como el alma de la fiesta, pero no llega ni a animador malpagado. A veces le digo que me deje hablar, que tengo cosas que decir, que quiero que la gente me escuche y me entienda. Él solo responde: “Cállate, tú no eres interesante”.
