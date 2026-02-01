@@ -1,8 +1,8 @@
 ---
 title: "¿Qué hacemos después?"
 type: "placebo"
-heroImage: "/portrait/despues.JPEG"
-heroSmImage: "/portrait/despues.JPEG"
+heroImage: "/portrait/despues.webp"
+heroSmImage: "/portrait/despues.webp"
 pubDate: "Jan 25 2024"
 editDate: "Jan 25 2024"
 edition: "Primera"

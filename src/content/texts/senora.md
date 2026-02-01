@@ -1,8 +1,8 @@
 ---
 title: "Señora"
 type: "lagrimas"
-heroImage: "/portrait/senora.JPEG"
-heroSmImage: "/portrait/senora.JPEG"
+heroImage: "/portrait/senora.webp"
+heroSmImage: "/portrait/senora.webp"
 pubDate: "Sep 6 2024"
 editDate: "Sep 6 2024"
 edition: "Primera"

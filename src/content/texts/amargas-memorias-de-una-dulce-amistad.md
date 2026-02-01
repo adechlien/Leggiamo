@@ -1,8 +1,8 @@
 ---
 title: "Amargas memorias de una dulce amistad"
 type: "still"
-heroImage: "/portrait/memorias.JPEG"
-heroSmImage: "/portrait/memorias.JPEG"
+heroImage: "/portrait/memorias.webp"
+heroSmImage: "/portrait/memorias.webp"
 pubDate: "Dec 4 2023"
 editDate: "Dec 11 2024"
 edition: "Segunda"

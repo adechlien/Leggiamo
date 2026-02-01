@@ -106,14 +106,14 @@ const relatedPosts = related
 
     <!-- Related Posts -->
     <div class="flex flex-col gap-4 pt-4 border-t-2 border-white/50 mx-6 sm:w-[500px] sm:mx-auto">
-      <h2 class="text-3xl font-bold text-left px-2 py-1 pb-0 font-bebas text-white">Textos relacionados</h2>
+      <h4 class="text-3xl font-bold text-left px-2 py-1 pb-0 font-bebas text-white">Textos relacionados</h4>
       <ul class="flex flex-col gap-6 mx-2">
         {
           relatedPosts.length > 0 ? (
             relatedPosts.map((post: any) => (
               <li class="w-full text-center">
                 <a href={`/${type}/${post.slug}/`} class="">
-                    <div class="relative overflow-hidden rounded-xl aspect-[7/2] border border-black/10">
+                    <div class="relative overflow-hidden rounded-lg aspect-[7/2] border border-black/10">
                         <img src={post.data.heroSmImage} alt={post.data.title}
                         class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
                         loading="lazy"/>

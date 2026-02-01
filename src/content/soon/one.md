@@ -1,8 +1,8 @@
 ---
 title: "One more day"
 type: "lagrimas"
-heroImage: "/portrait/one.jpeg"
-heroSmImage: "/portrait/one.jpeg"
+heroImage: "/portrait/one.webp"
+heroSmImage: "/portrait/one.webp"
 pubDate: "Dec 5 2025"
 editDate: "Dec 5 2025"
 edition: "Primera"

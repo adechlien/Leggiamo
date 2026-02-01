@@ -1,8 +1,8 @@
 ---
 title: "Indeciso por antonomasia"
 type: "still"
-heroImage: "/portrait/indeciso.JPEG"
-heroSmImage: "/portrait/indeciso.JPEG"
+heroImage: "/portrait/indeciso.webp"
+heroSmImage: "/portrait/indeciso.webp"
 pubDate: "Oct 4 2024"
 editDate: "Oct 4 2024"
 edition: "Primera"

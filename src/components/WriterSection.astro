@@ -1,0 +1,91 @@
+---
+const { writer } = Astro.props;
+
+const {
+  name,
+  photo,
+  description,
+  lifeSpan,
+  phrases = [],
+  color
+} = writer.data;
+---
+
+<section class="flex flex-col mx-auto max-w-[500px] sm:max-w-none w-full">
+
+  <!-- HERO IMAGE (igual a posts) -->
+  <div class="relative w-full sm:aspect-[11/4] sm:overflow-hidden">
+    <img
+      src={photo}
+      alt={name}
+      class="relative w-full min-h-[70vh] bg-cover object-bottom sm:absolute inset-0 h-full object-cover sm:object-center"
+      loading="eager"
+      decoding="async"
+    />
+
+    <!-- Gradiente abajo -->
+    <div
+      class="pointer-events-none absolute inset-x-0 bottom-0 h-20"
+      style={`background: linear-gradient(to bottom, rgba(0,0,0,0), ${color});`}
+    ></div>
+
+    <!-- Gradiente arriba -->
+    <div
+      class="pointer-events-none absolute inset-x-0 top-0 h-20"
+      style={`background: linear-gradient(to top, rgba(0,0,0,0), ${color});`}
+    ></div>
+  </div>
+
+
+
+  <!-- Info escritor -->
+  <div class="flex flex-col gap-1 mt-10 border-b-2 border-white/50 mx-6 sm:w-[1100px] sm:mx-auto text-white">
+    <h1 class="text-4xl font-bold font-bebas">
+      {name}
+    </h1>
+    <p class="font-besley text-base opacity-80 pb-3">
+        ({lifeSpan})
+    </p>
+
+    <p class="font-besley text-base opacity-80 pb-3">
+      {description}
+    </p>
+
+  </div>
+
+  <!-- Frases -->
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-5 m-8 mx-10 sm:max-w-[1100px] sm:mx-auto px-2 font-besley text-base  text-white">
+
+    {
+      phrases.map((phrase : any) => (
+        <article
+          class="
+            flex flex-col
+            gap-3
+            p-5
+            rounded-lg
+            bg-black/20 backdrop-blur-sm
+            border border-white/20
+            italic
+            leading-relaxed
+            shadow-md
+          "
+        >
+          <!-- texto -->
+          <p>
+            “{phrase.text}”
+          </p>
+
+          <!-- fuente -->
+          <span
+            class=" text-xs font-bold not-italic opacity-70 self-end tracking-wide"
+          >
+            {phrase.source}
+          </span>
+        </article>
+      ))
+    }
+
+  </div>
+
+</section>

@@ -1,8 +1,8 @@
 ---
 title: "No me quiero ir"
 type: "still"
-heroImage: "/portrait/ir.png"
-heroSmImage: "/portrait/ir.png"
+heroImage: "/portrait/ir.webp"
+heroSmImage: "/portrait/ir.webp"
 pubDate: "Nov 30 2025"
 editDate: "Nov 30 2025"
 edition: "Primera"

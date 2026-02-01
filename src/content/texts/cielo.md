@@ -1,8 +1,8 @@
 ---
 title: "El cielo (deténrayo)"
 type: "still"
-heroImage: "/portrait/cielo.JPEG"
-heroSmImage: "/portrait/cielo.JPEG"
+heroImage: "/portrait/cielo.webp"
+heroSmImage: "/portrait/cielo.webp"
 pubDate: "Oct 11 2025"
 editDate: "Oct 11 2025"
 edition: "Primera"

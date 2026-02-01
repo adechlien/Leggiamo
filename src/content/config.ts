@@ -20,4 +20,21 @@ const texts = defineCollection({
   }),
 });
 
-export const collections = { texts };
+const writers = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    photo: z.string(),
+    description: z.string(),
+    lifeSpan: z.string().optional(),
+    color: z.string().optional(),
+    phrases: z.array(
+         z.object({
+           text: z.string(),
+           source: z.string(),
+         }),
+        ).optional(),
+  }),
+});
+
+export const collections = { texts, writers };

@@ -1,8 +1,8 @@
 ---
 title: "La chica con anillo de mostacillas"
 type: "still"
-heroImage: "/portrait/mostacillas.JPEG"
-heroSmImage: "/portrait/mostacillas.JPEG"
+heroImage: "/portrait/mostacillas.webp"
+heroSmImage: "/portrait/mostacillas.webp"
 pubDate: "Jul 25 2024"
 editDate: "Jul 25 2024"
 edition: "Primera"

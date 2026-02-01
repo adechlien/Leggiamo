@@ -1,8 +1,8 @@
 ---
 title: "Soledad Citadina"
 type: "lagrimas"
-heroImage: "/portrait/soledad2.JPEG"
-heroSmImage: "/portrait/soledad2.JPEG"
+heroImage: "/portrait/soledad2.webp"
+heroSmImage: "/portrait/soledad2.webp"
 pubDate: "Dec 11 2023"
 editDate: "Dec 11 2023"
 edition: "Primera"

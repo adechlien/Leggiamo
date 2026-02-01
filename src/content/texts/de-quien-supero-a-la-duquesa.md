@@ -1,8 +1,8 @@
 ---
 title: "De quien superó a la duquesa"
 type: "still"
-heroImage: "/portrait/duquesa.JPEG"
-heroSmImage: "/portrait/duquesa.JPEG"
+heroImage: "/portrait/duquesa.webp"
+heroSmImage: "/portrait/duquesa.webp"
 pubDate: "Feb 06 2024"
 editDate: "Feb 06 2024"
 edition: "Primera"

@@ -1,8 +1,8 @@
 ---
 title: "Escribo para quien no me quiere leer"
 type: "lagrimas"
-heroImage: "/portrait/escribo.JPEG"
-heroSmImage: "/portrait/escribo.JPEG"
+heroImage: "/portrait/escribo.webp"
+heroSmImage: "/portrait/escribo.webp"
 pubDate: "Oct 11 2024"
 editDate: "Oct 11 2024"
 edition: "Primera"

@@ -1,8 +1,8 @@
 ---
 title: "Huellas en la piel (Anya II)"
 type: "still"
-heroImage: "/portrait/huellas.JPEG"
-heroSmImage: "/portrait/huellas.JPEG"
+heroImage: "/portrait/huellas.webp"
+heroSmImage: "/portrait/huellas.webp"
 pubDate: "Feb 14 2025"
 editDate: "Feb 14 2025"
 edition: "Primera"

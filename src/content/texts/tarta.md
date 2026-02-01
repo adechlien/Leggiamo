@@ -1,8 +1,8 @@
 ---
 title: "Tarta de Queso"
 type: "pintas"
-heroImage: "/portrait/tarta.JPEG"
-heroSmImage: "/portrait/tarta.JPEG"
+heroImage: "/portrait/tarta.webp"
+heroSmImage: "/portrait/tarta.webp"
 pubDate: "Jan 17 2026"
 editDate: "Jan 17 2026"
 edition: "Primera"

@@ -1,8 +1,8 @@
 ---
 title: "Teatro Matacandelas"
 type: "lagrimas"
-heroImage: "/portrait/teatro.JPEG"
-heroSmImage: "/portrait/teatro.JPEG"
+heroImage: "/portrait/teatro.webp"
+heroSmImage: "/portrait/teatro.webp"
 pubDate: "Oct 12 2025"
 editDate: "Oct 12 2025"
 edition: "Primera"

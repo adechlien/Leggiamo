@@ -1,8 +1,8 @@
 ---
 title: "Soy solo yo"
 type: "lagrimas"
-heroImage: "/portrait/yo.JPEG"
-heroSmImage: "/portrait/yo.JPEG"
+heroImage: "/portrait/yo.webp"
+heroSmImage: "/portrait/yo.webp"
 pubDate: "Oct 13 2024"
 editDate: "Oct 13 2024"
 edition: "Primera"

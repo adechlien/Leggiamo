@@ -1,0 +1,26 @@
+---
+interface Props {
+  slug: string;
+  name: string;
+  image: string;
+}
+
+const { slug, name, image } = Astro.props;
+---
+
+<a
+  href={`/writers/${slug}/`}
+  class="group block max-w-sm mx-auto"
+>
+  <div class="relative overflow-hidden rounded-2xl border border-white/10 aspect-[3/4]">
+    <img
+      src={image}
+      alt={name}
+      class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition"
+    />
+
+    <div class="absolute bottom-0 w-full bg-black/50 backdrop-blur-sm text-white p-4 text-center font-staatliches text-xl">
+      {name}
+    </div>
+  </div>
+</a>

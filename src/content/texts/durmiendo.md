@@ -1,8 +1,8 @@
 ---
 title: "Durmiendo se me ocurren los mejores títulos"
 type: "still"
-heroImage: "/portrait/durmiendo.JPEG"
-heroSmImage: "/portrait/durmiendo.JPEG"
+heroImage: "/portrait/durmiendo.webp"
+heroSmImage: "/portrait/durmiendo.webp"
 pubDate: "Feb 14 2025"
 editDate: "Feb 14 2025"
 edition: "Primera"

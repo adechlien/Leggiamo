@@ -1,8 +1,8 @@
 ---
 title: "Anya"
 type: "still"
-heroImage: "/portrait/anya.JPEG"
-heroSmImage: "/portrait/anya.JPEG"
+heroImage: "/portrait/anya.webp"
+heroSmImage: "/portrait/anya.webp"
 pubDate: "Dec 15 2023"
 editDate: "Dec 15 2023"
 edition: "Primera"

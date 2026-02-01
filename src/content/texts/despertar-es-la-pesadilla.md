@@ -1,8 +1,8 @@
 ---
 title: "Despertar es la pesadilla"
 type: "still"
-heroImage: "/portrait/despertar.JPEG"
-heroSmImage: "/portrait/despertar.JPEG"
+heroImage: "/portrait/despertar.webp"
+heroSmImage: "/portrait/despertar.webp"
 pubDate: "Feb 27 2025"
 editDate: "Feb 27 2025"
 edition: "Primera"

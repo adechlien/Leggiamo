@@ -1,8 +1,8 @@
 ---
 title: "Ella"
 type: "still"
-heroImage: "/portrait/ella.JPEG"
-heroSmImage: "/portrait/ella.JPEG"
+heroImage: "/portrait/ella.webp"
+heroSmImage: "/portrait/ella.webp"
 pubDate: "Apr 29 2024"
 editDate: "Apr 29 2024"
 edition: "Primera"

@@ -1,8 +1,8 @@
 ---
 title: "Marco cambia de perspectiva"
 type: "colores"
-heroImage: "/portrait/marco.JPEG"
-heroSmImage: "/portrait/marco.JPEG"
+heroImage: "/portrait/marco.webp"
+heroSmImage: "/portrait/marco.webp"
 pubDate: "Jul 05 2024"
 editDate: "Jul 05 2024"
 edition: "Primera"

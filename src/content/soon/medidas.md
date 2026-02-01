@@ -1,8 +1,8 @@
 ---
 title: "Medidas para (intentar) una nueva reforma"
 type: "still"
-heroImage: "/portrait/medidas.png"
-heroSmImage: "/landscape/medidas.png"
+heroImage: "/portrait/medidas.webp"
+heroSmImage: "/landscape/medidas.webp"
 pubDate: "Sep 28 2025"
 editDate: "Sep 28 2025"
 edition: "Primera"

@@ -1,8 +1,8 @@
 ---
 title: "Para hallar partes de mí"
 type: "lagrimas"
-heroImage: "/portrait/partes.JPEG"
-heroSmImage: "/portrait/partes.JPEG"
+heroImage: "/portrait/partes.webp"
+heroSmImage: "/portrait/partes.webp"
 pubDate: "Dec 5 2025"
 editDate: "Dec 5 2025"
 edition: "Primera"

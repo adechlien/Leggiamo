@@ -1,8 +1,8 @@
 ---
 title: "El no gozo por la espera del sufrimiento"
 type: "lagrimas"
-heroImage: "/portrait/gozo.JPEG"
-heroSmImage: "/portrait/gozo.JPEG"
+heroImage: "/portrait/gozo.webp"
+heroSmImage: "/portrait/gozo.webp"
 pubDate: "Dec 1 2023"
 editDate: "Dec 1 2023"
 edition: "Primera"

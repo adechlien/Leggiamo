@@ -1,8 +1,8 @@
 ---
 title: "Envejecer"
 type: "lagrimas"
-heroImage: "/portrait/envejecer.JPEG"
-heroSmImage: "/portrait/envejecer.JPEG"
+heroImage: "/portrait/envejecer.webp"
+heroSmImage: "/portrait/envejecer.webp"
 pubDate: "Feb 7 2024"
 editDate: "Dec 11 2024"
 edition: "Segunda"

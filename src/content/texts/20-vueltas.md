@@ -1,8 +1,8 @@
 ---
 title: "20 vueltas a la nada"
 type: "lagrimas"
-heroImage: "/portrait/vueltas.JPEG"
-heroSmImage: "/portrait/vueltas.JPEG"
+heroImage: "/portrait/vueltas.webp"
+heroSmImage: "/portrait/vueltas.webp"
 pubDate: "Jan 31 2024"
 editDate: "Jan 31 2024"
 edition: "Primera"

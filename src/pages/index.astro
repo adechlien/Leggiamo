@@ -4,14 +4,15 @@ import Recent from "../components/Recent.astro";
 import Categories from "../components/Categories.astro";
 import Anios from "../components/Anios.astro";
 import Destacados from "../components/Destacados.astro";
+import Writers from "../components/Writers.astro";
 import Footer from "../components/Footer.astro";
 
 const heroBg = "/banner.svg";
-const avatar = "/avatar.jpg";
+const avatar = "/avatar.webp";
 const baseBg = "#024350";
 ---
 
-<Layout title="Inicio">
+<Layout title="Inicio" description="Blog de textos literarios, prosa y reflexiones personales.">
   <main class="w-full max-w-[1100px] sm:max-w-none" style={`background-color:${baseBg};`}>
     <!-- HERO -->
     <section class="relative overflow-hidden">
@@ -45,6 +46,8 @@ const baseBg = "#024350";
           <a class="hover:text-white transition" href="https://www.instagram.com/adcpolo?igsh=OHF5c3A3azFrbGN1&utm_source=qr" target="_blank">Instagram</a>
           <span class="text-white/35">|</span>
           <a class="hover:text-white transition" href="https://vs.co/t0jus7wp" target="_blank">VSCO</a>
+          <span class="text-white/35">|</span>
+          <a class="hover:text-white transition" href="https://pin.it/37CeFyEJI" target="_blank">Pinterest</a>
         </nav>
 
         <p class="font-tangerine text-lg sm:text-2xl text-white/70 leading-relaxed mt-2">
@@ -54,7 +57,7 @@ const baseBg = "#024350";
     </section>
 
     <!-- CONTENIDO -->
-    <section class="w-full px-6 sm:px-0 pb-16">
+    <section class="w-full px-6 pb-16">
       <div class="mx-auto flex flex-col gap-14 sm:max-w-[1100px]">
         <Categories />
 
@@ -65,6 +68,7 @@ const baseBg = "#024350";
         </div>
 
         <Destacados />
+        <Writers />
       </div>
     </section>
     <Footer theme="home" />
