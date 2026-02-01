@@ -11,7 +11,7 @@ const {
 } = writer.data;
 ---
 
-<section class="flex flex-col mx-auto max-w-[500px] sm:max-w-none w-full">
+<section class="flex flex-col mx-auto w-full">
 
   <!-- HERO IMAGE (igual a posts) -->
   <div class="relative w-full sm:aspect-[11/4] sm:overflow-hidden">
@@ -36,8 +36,6 @@ const {
     ></div>
   </div>
 
-
-
   <!-- Info escritor -->
   <div class="flex flex-col gap-1 mt-10 border-b-2 border-white/50 mx-6 sm:w-[1100px] sm:mx-auto text-white">
     <h1 class="text-4xl font-bold font-bebas">
@@ -47,19 +45,36 @@ const {
         ({lifeSpan})
     </p>
 
-    <p class="font-besley text-base opacity-80 pb-3">
+    <!-- <p class="font-besley text-base opacity-80 pb-3">
       {description}
-    </p>
+    </p> -->
 
   </div>
 
   <!-- Frases -->
-  <div class="flex flex-col sm:flex-row justify-center items-center gap-5 m-8 mx-10 sm:max-w-[1100px] sm:mx-auto px-2 font-besley text-base  text-white">
+  <div
+    class="
+      columns-1
+      sm:columns-2
+      lg:columns-3
+      xl:columns-4
+      gap-4
+      m-8
+      sm:px-4
+      sm:max-w-[1100px]
+      sm:mx-auto
+      font-besley
+      text-base
+      text-white
+    "
+  >
+
 
     {
       phrases.map((phrase : any) => (
         <article
           class="
+          break-inside-avoid mb-5
             flex flex-col
             gap-3
             p-5

@@ -19,4 +19,30 @@ const writer = Astro.props;
 <Layout title={writer.data.name} bg={writer.data.color}>
     <WriterSection writer={writer} />
     <Footer />
+
+    <!-- Scroll-to-top button -->
+      <button
+        type="button"
+        aria-label="Volver arriba"
+        class="fixed bottom-5 right-5 z-50 rounded-full px-4 py-3 text-white bg-black/30 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-black/40 transition opacity-0 pointer-events-none"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      >
+          <i class="ti ti-chevron-up"></i>
+      </button>
+
+    <script is:inline>
+        (() => {
+          const btn = document.querySelector('[aria-label="Volver arriba"]');
+          if (!btn) return;
+
+          const toggle = () => {
+            const show = window.scrollY >= 300;
+            btn.classList.toggle("opacity-0", !show);
+            btn.classList.toggle("pointer-events-none", !show);
+          };
+
+          window.addEventListener("scroll", toggle, { passive: true });
+          toggle();
+        })();
+      </script>
 </Layout>
