@@ -14,7 +14,7 @@ phrases:
   - text: "No. No soy feliz, pero hay en mi vida pequeños trozos felices, soplos de dicha que suavizan el permanente estado angustioso. Y esos momentos me permiten vivir."
     source: 7 de agosto de 1955  
     
-  - text: "Solo buscaba un lugar más o menos propicio para vivir, quiero decir: un sitio pequeño donde cantar y poder llorar tranquila a veces. En verdad no quería una casa; Sombra quería un jardín."
+  - text: "Solo buscaba un lugar más o menos propicio para vivir, quiero decir: un sitio pequeño donde cantar y poder llorar tranquila a veces. En verdad no quería una casa; Solo quería un jardín."
     source: Un jardín
     
   - text: "Pierdo los días, la vida, el sueño. Pero yo no tengo la culpa si deseo, a la vez, la muerte y la vida, al mismo tiempo, a la misma hora."

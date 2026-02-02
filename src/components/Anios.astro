@@ -22,7 +22,7 @@ const yearHref = (y: number) => `/${y}/`;
 
 <aside class="w-full flex flex-col gap-3">
   <div class="flex flex-col gap-3">
-    <h3 class="text-4xl font-medium font-staatliches text-white">Historial</h3>
+    <h3 class="text-4xl font-medium font-bebas text-white">Historial</h3>
     <div class="h-px bg-white/40"></div>
   </div>
 
@@ -31,11 +31,11 @@ const yearHref = (y: number) => `/${y}/`;
       <li>
           <a
             href={yearHref(y)}
-            class="flex justify-between items-center text-white text-3xl sm:text-2xl font-staatliches tracking-wide hover:text-white/80 transition"
+            class="flex justify-between items-center text-white text-3xl sm:text-2xl font-bebas tracking-wide hover:text-white/80 transition"
           >
             <span>{y}</span>
 
-            <span class="text-base opacity-60 font-sans">
+            <span class="text-base opacity-60 font-bellota">
               ({yearCount[y]})
             </span>
           </a>
