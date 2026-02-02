@@ -7,7 +7,7 @@ pubDate: "Jan 17 2026"
 editDate: "Jan 17 2026"
 edition: "Primera"
 related: [""]
-color: "#A6ACA8"
+color: "#A2A9A4"
 ---
 
 Me despierto cada día, me levanto, me lavo la cara, me miro al espejo. Camino, respondo a las frases que me lanzan, con desdén, porque no quiero contacto. No quiero sentir. Sentir es la trampa. Sentir es prisión. Desde el día hasta la noche, solo una pregunta se sostiene en mi mente, rondando en mi cabeza.

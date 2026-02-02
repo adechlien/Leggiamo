@@ -9,7 +9,7 @@ edition: "Primera"
 related: []
 color: "#2E211A"
 ---
-En la caminadora, a los casi dos kilómetros de no haberme movido un ápice, encontré la respuesta. O mejor dicho, donde hallarla. Descubrí que no había solo un lugar, que eran cientos, miles de sitios donde hallarme, en las nubes, en las fresas, en las hojas cayendo por la brisa. En una arepa asada con queso rayado, mantequilla y jugo de guayaba del que no alcanza a sentarse porque te lo tomas muy rápido. En un señor con camisa, tomando café y leyendo el periódico, gritando “mija, hallaron otro muerto por allá por donde vive la amiga tuya, la gorda”. 
+En la caminadora, a los casi dos kilómetros de no haberme movido un ápice, encontré la respuesta. O mejor dicho, donde hallarla. Descubrí que no había solo un lugar, que eran cientos, miles de sitios donde hallarme. En las nubes, en las fresas, en las hojas cayendo por la brisa. En una arepa asada con queso rayado, mantequilla y jugo de guayaba del que no alcanza a sentarse porque te lo tomas muy rápido. En un señor con camisa, tomando café y leyendo el periódico, gritando “mija, hallaron otro muerto por allá por donde vive la amiga tuya, la gorda”. 
 <br><br>
 Me hallo también en el cuero, en los edificios, en todos los colores que el humano puede percibir. Hallo partecitas de mí en el transporte público, en caminar por las calles de Barranquilla cuando el sol ya cansado se agacha para decirme que cuidao con ese hombre que viene ahí, que a lo mejó’ e’ un malandro, que me anda mirando mucho la muñeca.
 <br><br>

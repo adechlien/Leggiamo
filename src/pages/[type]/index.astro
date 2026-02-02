@@ -67,11 +67,11 @@ const posts = (await getCollection("texts"))
                   loading="lazy"/>
 
                 <div class="flex flex-col justify-between h-full w-full">
-                  <p class="bg-black/25 backdrop-blur-sm border border-white/20 text-right self-end text-white text-base sm:text-sm p-1 px-2 rounded-b-lg rounded-r-none font-bold">
+                  <p class="bg-[#022A31] backdrop-blur-sm text-right self-end text-white text-base sm:text-sm p-1 px-2 rounded-b-lg rounded-r-none font-bold">
                     <FormattedDate date={post.data.pubDate} format="short"/>
                   </p>
 
-                  <h2 class="bg-black/20 backdrop-blur-sm truncate border-t border-white/20 text-white font-bebas text-start p-2 text-lg rounded-b-lg">
+                  <h2 class="bg-[#022A31] backdrop-blur-sm truncate text-white font-bebas text-start p-2 sm:py-1 text-lg rounded-b-lg">
                     {post.data.title}
                   </h2>
                 </div>

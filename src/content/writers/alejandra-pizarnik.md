@@ -5,7 +5,7 @@ description: Descripcion.
 lifeSpan: 1936 - 1972
 color: "#3A030E"
 phrases:
-  - text: "porque yo no pedí nacer en forma de signo de interrogación."
+  - text: "Porque yo no pedí nacer en forma de signo de interrogación."
     source: 27 de septiembre de 1954
     
   - text: "Le dije cuanto había en mi corazón. Por eso huyó, ¿verdad?"

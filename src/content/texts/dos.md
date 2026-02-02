@@ -7,7 +7,7 @@ pubDate: "Nov 30 2025"
 editDate: "Nov 30 2025"
 edition: "Primera"
 related: ["liberando"]
-color: "#9AABD9"
+color: "#7A8BB9"
 featured: true
 ---
 Llevo días que a donde voy siento el mismo olor. No estoy seguro si es menta o manzanilla. No sé diferenciarlos. Ambos me parecen lo mismo. Con ambos te recuerdo, te maldigo, te pienso, te deseo. Te celo sabiendo que no eres mía, y anhelo tus besos, aún cuando sé que se los das a otro. El olor a manzanilla a diario me maltrata, te trae a mi mente en brazos de quien amas. Y somos tres, porque ese a quien amas no soy yo.

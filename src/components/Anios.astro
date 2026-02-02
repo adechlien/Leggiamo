@@ -3,9 +3,17 @@ import { getCollection } from "astro:content";
 
 const posts = await getCollection("texts");
 
-const years = Array.from(
-  new Set(posts.map((p: any) => new Date(p.data.pubDate).getFullYear()))
-).sort((a, b) => b - a);
+const yearCount: Record<number, number> = {};
+
+posts.forEach((p: any) => {
+  const y = new Date(p.data.pubDate).getFullYear();
+  yearCount[y] = (yearCount[y] || 0) + 1;
+});
+
+const years = Object.keys(yearCount)
+  .map(Number)
+  .sort((a, b) => b - a);
+
 
 // Si aún no tienes ruta /year/[year], puedes dejar href="#" y luego lo conectas
 const yearHref = (y: number) => `/${y}/`;
@@ -21,12 +29,17 @@ const yearHref = (y: number) => `/${y}/`;
   <ul class="flex flex-col gap-2 px-3">
     {years.map((y) => (
       <li>
-        <a
-          href={yearHref(y)}
-          class="text-white text-3xl sm:text-2xl font-staatliches tracking-wide hover:text-white/80 transition"
-        >
-          {y}
-        </a>
+          <a
+            href={yearHref(y)}
+            class="flex justify-between items-center text-white text-3xl sm:text-2xl font-staatliches tracking-wide hover:text-white/80 transition"
+          >
+            <span>{y}</span>
+
+            <span class="text-base opacity-60 font-sans">
+              ({yearCount[y]})
+            </span>
+          </a>
+
       </li>
     ))}
   </ul>

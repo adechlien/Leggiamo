@@ -53,92 +53,115 @@ const relatedPosts = related
   .filter(Boolean); // Elimina los valores `undefined`
 ---
 <Layout title={title} bg={color}>
-  <main
-    class="flex flex-col justify-center w-full max-w-[500px] sm:max-w-none"
-    style={`background-color: ${color}`}
-  >
-      <!-- Cover -->
-      <div class="relative w-full aspect-ratio[2/3] sm:aspect-[12/5] sm:overflow-hidden">
-          <img
-              src={heroImage}
-              alt=""
-              class="
-                relative sm:absolute inset-0 w-full h-full
-                object-cover
-                sm:object-center
-              "
-              loading="eager"
-              decoding="async"
-            />
+    <main
+      class="
+        flex flex-col
+        lg:flex-row
+        w-full
+        min-h-screen
+      "
+      style={`background-color: ${color}`}
+    >
+      <!-- COVER -->
+      <div
+        class="
+          relative
+          w-full
+          aspect-[2/3]
 
-        <!-- Gradient encima (solo visual, no afecta ratio) -->
+          lg:w-[40vw]
+          lg:h-screen
+          lg:sticky
+          lg:top-0
+          lg:aspect-auto
+          lg:overflow-hidden
+          shrink-0
+        "
+      >
+        <img
+          src={heroImage}
+          alt=""
+          class="w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
+        />
+
+        <!-- Gradientes mobile -->
         <div
-          class="pointer-events-none absolute inset-x-0 bottom-0 h-20"
-          style={color ? `background: linear-gradient(to bottom, rgba(0,0,0,0), ${color});` : ""}
+          class="pointer-events-none absolute inset-x-0 bottom-0 h-20 lg:hidden"
+          style={`background: linear-gradient(to bottom, rgba(0,0,0,0), ${color});`}
         ></div>
+
         <div
-          class="pointer-events-none absolute inset-x-0 top-0 h-20"
-          style={color ? `background: linear-gradient(to top, rgba(0,0,0,0), ${color});` : ""}
+          class="pointer-events-none absolute inset-x-0 top-0 h-20 lg:hidden"
+          style={`background: linear-gradient(to top, rgba(0,0,0,0), ${color});`}
+        ></div>
+
+        <!-- Gradiente lateral desktop -->
+        <div
+          class="hidden lg:block pointer-events-none absolute inset-y-0 right-0 w-24"
+          style={`background: linear-gradient(to right, rgba(0,0,0,0), ${color});`}
         ></div>
       </div>
 
+      <!-- TEXTO -->
+      <section
+        class="
+          flex flex-col
+          w-full
+          lg:flex-1
+          text-white
+        "
+      >
+        <!-- WRAPPER COMPARTIDO -->
+        <div
+          class="
+            w-full
+            max-w-[1100px]
+            mx-auto
+            px-6
+            lg:px-20
+            mt-12
+            lg:mt-20
+          "
+        >
+          <!-- Header -->
+          <header class="pb-2 border-b-2 border-white/50">
+            <h3 class="text-xl capitalize">
+              {typeTitle}
+            </h3>
 
-    <!-- Title -->
-    <div class="flex flex-col pb-2 mt-12 gap-1 border-b-2 border-white/50 mx-6 sm:w-[500px] sm:mx-auto text-white">
-      <h3 class="text-xl capitalize">
-        {typeTitle}
-      </h3>
-      <h1 class="text-4xl font-bebas font-bold">
-        {title}
-      </h1>
-      <div class="flex justify-between self-start text-base">
-        <div class="flex items-center gap-1">
-            <!-- <i class="ti ti-clock"></i> -->
+            <h1 class="text-4xl font-bebas font-bold">
+              {title}
+            </h1>
+
             <FormattedDate date={pubDate} format="long" />
+          </header>
+
+          <!-- Content -->
+          <article
+            lang="es"
+            class="
+              py-12
+              font-besley
+              text-base
+              leading-relaxed
+              text-justify
+              hyphens-auto
+            "
+          >
+            <Content />
+          </article>
         </div>
-      </div>
-    </div>
 
-    <!-- Content -->
-    <div lang="es" class="m-8 mx-10 mb-0 font-besley text-base sm:w-[480px] sm:mx-auto text-justify hyphens-auto text-white">
-      <Content />
-    </div>
+        <div class="mt-auto">
+          <Footer theme="text" />
+        </div>
+      </section>
 
-    <!-- Related Posts -->
-    <!-- <div class="flex flex-col gap-4 pt-4 border-t-2 border-white/50 mx-6 sm:w-[500px] sm:mx-auto">
-      <h4 class="text-3xl font-bold text-left px-2 py-1 pb-0 font-bebas text-white">Textos relacionados</h4>
-      <ul class="flex flex-col gap-6 mx-2">
-        {
-          relatedPosts.length > 0 ? (
-            relatedPosts.map((post: any) => (
-              <li class="w-full text-center">
-                <a href={`/${type}/${post.slug}/`} class="">
-                    <div class="relative overflow-hidden rounded-lg aspect-[7/2] border border-black/10">
-                        <img src={post.data.heroSmImage} alt={post.data.title}
-                        class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
-                        loading="lazy"/>
+    </main>
 
-                      <div class="flex flex-col justify-end h-full w-full">
-                        <!-- <p class="bg-black/25 backdrop-blur-sm border border-white/20 text-right self-end text-white text-sm p-1 px-2 rounded-b-lg rounded-r-none font-bold">
-                          <FormattedDate date={post.data.pubDate} format="short"/>
-                        </p>
 
-                        <h2 class="bg-black/20 backdrop-blur-sm border-t border-white/20 text-white font-bebas text-start p-1 px-2 pb-0 text-lg rounded-b-lg">
-                          {post.data.title}
-                        </h2>
-                      </div>
-                    </div>
-                </a>
-              </li>
-            ))
-          ) : (
-            <p class="font-normal text-white">No hay textos relacionados.</p>
-          )
-        }
-      </ul>
-    </div> -->
-<Footer theme="text" />
-  </main>
 
   <!-- Scroll-to-top button -->
     <button
