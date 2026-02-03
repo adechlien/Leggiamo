@@ -123,8 +123,13 @@ const relatedPosts = related
             lg:px-10
             mt-12
             lg:mt-10
+
+            flex
+            flex-col
+            h-full
           "
         >
+
           <!-- Header -->
           <header class="pb-2 border-b-2 border-white/50">
             <h3 class="text-xl capitalize">
@@ -152,7 +157,10 @@ const relatedPosts = related
           >
             <Content />
           </article>
-          <Footer theme="text" />
+          <div class="mt-auto">
+            <Footer theme="text" />
+          </div>
+
         </div>
 
       </section>
@@ -186,22 +194,3 @@ const relatedPosts = related
       })();
     </script>
 </Layout>
-
-<!-- <style is:global>
-.article-body p{
-  text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  text-wrap: pretty;
-}
-
-.article-body p::after{
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-
-@supports (text-align-last: justify){
-  .article-body p::after{ content: none; }
-}
-</style> -->
