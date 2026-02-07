@@ -33,5 +33,29 @@
     </script>
 
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // 16 bytes -> 22 chars base64url (sin "="). Ej: cJ8vQm3sT4eK2x9pN7aB1w
+      function makeShortId() {
+        const bytes = new Uint8Array(16);
+        crypto.getRandomValues(bytes);
+        let str = "";
+        for (const b of bytes) str += String.fromCharCode(b);
+        return btoa(str).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+      }
+
+      // Hook: antes de guardar, si no hay id, lo crea
+      CMS.registerEventListener({
+        name: "preSave",
+        handler: ({ entry }) => {
+          const data = entry.get("data");
+          const id = data.get("id");
+          if (id) return entry; // no sobreescribir
+
+          const newId = makeShortId();
+          return entry.set("data", data.set("id", newId));
+        },
+      });
+    </script>
+
   </body>
 </html>

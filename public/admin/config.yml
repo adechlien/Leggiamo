@@ -14,35 +14,29 @@ collections:
     label: "Texts"
     folder: "src/content/texts"
     create: true
-    identifier_field: title
 
-    slug: "{{uuid}}"
-
+    identifier_field: id
+    slug: "{{fields.id}}"
 
     fields:
-      - { name: title, label: Title, widget: string }
+      - { name: id, label: ID, widget: hidden }
 
+      - { name: title, label: Title, widget: string }
       - name: type
         label: Type
         widget: select
         default: pintas
-        options:
-          - lagrimas
-          - colores
-          - still
-          - placebo
-          - pintas
+        options: [lagrimas, colores, still, placebo, pintas]
 
       - { name: heroImage, label: Hero, widget: image, required: false }
 
       - name: pubDate
         label: Date
         widget: datetime
-        format: "MMM D YYYY"
+        date_format: "MMM D YYYY"
         time_format: false
+        picker_utc: true
 
       - { name: color, label: Color, widget: color, default: "#44150A" }
-
       - { name: featured, label: Featured, widget: boolean, default: false }
-
       - { name: body, label: Body, widget: markdown }
