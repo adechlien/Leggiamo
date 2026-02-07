@@ -3,6 +3,10 @@ site_url: https://adechlien.blog
 backend:
   name: git-gateway
   branch: main
+  commit_messages:
+      create: 'created "{{slug}}"'
+      update: 'updated "{{slug}}"'
+      delete: 'deleted "{{slug}}"'
 
 local_backend: false
 
