@@ -8,5 +8,6 @@ const handler = createHandler({
   scopes: ["repo"],
 });
 
-export const GET = ({ request }) => handler(request);
-export const POST = ({ request }) => handler(request);
+export default function (req, res) {
+  return handler(req, res);
+}
