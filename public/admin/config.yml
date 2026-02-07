@@ -1,11 +1,8 @@
 site_url: https://adechlien.blog
 
 backend:
-  name: github
-  repo: adechlien/Leggiamo
+  name: git-gateway
   branch: main
-  base_url: https://adechlien.blog
-  auth_endpoint: /api/auth
 
 local_backend: false
 
