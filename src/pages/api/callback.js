@@ -4,7 +4,7 @@ const handler = createHandler({
   provider: "github",
   clientID: process.env.GITHUB_CLIENT_ID,
   clientSecret: process.env.GITHUB_CLIENT_SECRET,
-  redirectURI: `${process.env.SITE_URL}/api/callback`,
+  redirectURI: `${process.env.SITE_URL}/admin/#`,
   scopes: ["repo"],
 });
 
