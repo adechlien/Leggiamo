@@ -2,10 +2,8 @@ import { createHandler } from "netlify-cms-oauth-provider-node";
 
 const handler = createHandler({
   provider: "github",
-  // OJO: esto lo pondremos en variables de entorno
   clientID: process.env.GITHUB_CLIENT_ID,
   clientSecret: process.env.GITHUB_CLIENT_SECRET,
-  // Debe coincidir con tu repo
   redirectURI: `${process.env.SITE_URL}/api/callback`,
   scopes: ["repo"],
 });
