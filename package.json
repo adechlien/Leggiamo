@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/mdx": "^3.1.9",
     "@astrojs/rss": "^4.0.4",
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.3.2",
+    "astro": "^5.17.1",
     "astro-decap-cms-oauth": "^0.5.1",
     "decap-cms-backend-github": "^3.5.0",
     "netlify-cms-oauth-provider-node": "^2.0.0",
