@@ -1,7 +1,10 @@
+site_url: https://adechlien.blog
+
 backend:
   name: github
   repo: adechlien/Leggiamo
   branch: main
+  base_url: https://adechlien.blog
   auth_endpoint: /api/auth
 
 local_backend: true
@@ -9,7 +12,6 @@ local_backend: true
 media_folder: "public/images"
 public_folder: "/images"
 
-site_url: http://localhost:4321
 
 collections:
   - name: "texts"
