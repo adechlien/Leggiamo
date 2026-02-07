@@ -6,33 +6,32 @@
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- Netlify Identity widget (esto es lo que maneja invite/recovery tokens) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-      // Si llegamos con #/invite_token=... o #/recovery_token=..., lo normalizamos a #invite_token=...
       (function () {
-        const h = window.location.hash || "";
-        const m = h.match(/(invite_token|recovery_token)=([^&]+)/);
-        if (m) {
-          window.location.hash = `#${m[1]}=${m[2]}`;
-        }
+        const hash = window.location.hash || "";
+        const tokenMatch = hash.match(/(invite_token|recovery_token)=([^&]+)/);
 
-        // Cuando Identity esté listo, abre el modal para que te deje "set password"
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", () => {
-            if (/(invite_token|recovery_token)=/.test(window.location.hash)) {
-              window.netlifyIdentity.open();
-            }
-          });
+        // Solo tocamos cosas si realmente vienes con invite/recovery token
+        if (tokenMatch) {
+          const tokenType = tokenMatch[1];
+          const tokenValue = tokenMatch[2];
 
-          // Después de login/confirmación, vuelve a /admin limpio
-          window.netlifyIdentity.on("login", () => (document.location.href = "/admin/"));
+          // Normaliza "#/invite_token=..." -> "#invite_token=..."
+          window.location.hash = `#${tokenType}=${tokenValue}`;
+
+          // Abre el modal de Identity para setear contraseña
+          window.netlifyIdentity &&
+            window.netlifyIdentity.on("init", () => window.netlifyIdentity.open());
+
+          // Después de completar, limpia la URL (sin hash) una sola vez
+          window.netlifyIdentity &&
+            window.netlifyIdentity.on("login", () => window.location.replace("/admin/"));
         }
       })();
     </script>
 
-    <!-- Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
