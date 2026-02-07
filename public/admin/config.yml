@@ -6,18 +6,18 @@ backend:
 
 local_backend: false
 
-media_folder: "public/images"
-public_folder: "/images"
+media_folder: "public/portrait"
+public_folder: "/portrait"
 
 collections:
   - name: "texts"
     label: "Texts"
     folder: "src/content/texts"
     create: true
+    identifier_field: title
 
     slug: "{{uuid}}"
 
-    preview_path: "preview"
 
     fields:
       - { name: title, label: Title, widget: string }
@@ -25,7 +25,7 @@ collections:
       - name: type
         label: Type
         widget: select
-        default: lagrimas
+        default: pintas
         options:
           - lagrimas
           - colores
@@ -35,9 +35,13 @@ collections:
 
       - { name: heroImage, label: Hero, widget: image, required: false }
 
-      - { name: pubDate, label: Date, widget: datetime, default: "{{now}}" }
+      - name: pubDate
+        label: Date
+        widget: datetime
+        format: "MMM D YYYY"
+        time_format: false
 
-      - { name: color, label: Color, widget: color, default: "#024350" }
+      - { name: color, label: Color, widget: color, default: "#44150A" }
 
       - { name: featured, label: Featured, widget: boolean, default: false }
 
