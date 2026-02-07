@@ -2,6 +2,7 @@ backend:
   name: github
   repo: adechlien/Leggiamo
   branch: main
+  auth_endpoint: /api/auth
 
 local_backend: true
 
