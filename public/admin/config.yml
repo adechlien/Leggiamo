@@ -5,13 +5,12 @@ backend:
   repo: adechlien/Leggiamo
   branch: main
   base_url: https://adechlien.blog
-  auth_endpoint: api
+  auth_endpoint: api/auth
 
 local_backend: false
 
 media_folder: "public/images"
 public_folder: "/images"
-
 
 collections:
   - name: "texts"
