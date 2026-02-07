@@ -1,4 +1,5 @@
 site_url: https://adechlien.blog
+publish_mode: editorial_workflow
 
 backend:
   name: github
@@ -14,19 +15,19 @@ public_folder: "/images"
 
 collections:
   - name: "texts"
-    label: "Texts"
+    label: "Textos"
+    label_singular: "Texto"
     folder: "src/content/texts"
     create: true
-
     slug: "{{uuid}}"
 
-    preview_path: "preview"
+    preview_path: "/preview"
 
     fields:
-      - { name: title, label: Title, widget: string }
+      - { name: title, label: "Título", widget: string }
 
       - name: type
-        label: Type
+        label: Tipo
         widget: select
         default: lagrimas
         options:
@@ -36,12 +37,12 @@ collections:
           - placebo
           - pintas
 
-      - { name: heroImage, label: Hero, widget: image, required: false }
+      - { name: heroImage, label: "Imagen principal", widget: image, required: false }
 
-      - { name: pubDate, label: Date, widget: datetime, default: "{{now}}" }
+      - { name: pubDate, label: Fecha, widget: datetime, default: "{{now}}" }
 
       - { name: color, label: Color, widget: color, default: "#024350" }
 
-      - { name: featured, label: Featured, widget: boolean, default: false }
+      - { name: featured, label: "Destacado", widget: boolean, default: false }
 
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: "Contenido", widget: markdown }
