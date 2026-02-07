@@ -5,7 +5,7 @@ backend:
   repo: adechlien/Leggiamo
   branch: main
   base_url: https://adechlien.blog
-  auth_endpoint: oauth
+  auth_endpoint: api
 
 local_backend: true
 
