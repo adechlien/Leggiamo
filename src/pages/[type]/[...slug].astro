@@ -1,189 +1,161 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
-import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   const posts = await getCollection("texts");
+
   return posts.map((post: any) => ({
     params: { type: post.data.type, slug: post.slug },
-    props: post,
+    props: { post }, // 👈 envuelve para no depender de Astro.props "crudo"
   }));
 }
 
-type Props = CollectionEntry<"texts">;
+const { post } = Astro.props as { post?: any };
 
-const post = Astro.props;
-const {
-  title,
-  type,
-  heroImage,
-  pubDate,
-  color,
-} = post.data;
-const { Content } = await post.render();
-
-let typeTitle = "";
-if (type === "lagrimas") {
-  typeTitle = "Lágrimas de Siddartha";
-} else if (type === "colores") {
-  typeTitle = "En las luces de colores";
-} else if (type === "still") {
-  typeTitle = "Still Prefer Sentir";
-} else if (type === "placebo") {
-  typeTitle = "Placebo Onírico";
-} else if (type === "pintas") {
-    typeTitle = "Pintas Heredadas";
-} else {
-  typeTitle = type;
+// ✅ si por cualquier razón no hay post (SSR/404/ruta rara como /api/auth), no crashear
+if (!post?.data) {
+  return new Response("Not found", { status: 404 });
 }
 
-// Obtener colección de textos
-const allPosts = await getCollection("texts");
+const { title, type, heroImage, pubDate, color } = post.data;
+const { Content } = await post.render();
+
+const mapTypeTitle = (t = "") => {
+  if (t === "lagrimas") return "Lágrimas de Siddartha";
+  if (t === "colores") return "En las luces de colores";
+  if (t === "still") return "Still Prefer Sentir";
+  if (t === "placebo") return "Placebo Onírico";
+  if (t === "pintas") return "Pintas Heredadas";
+  return t;
+};
+
+const typeTitle = mapTypeTitle(type);
 ---
+
 <Layout title={title} bg={color}>
-    <Header />
-    <main
+  <Header />
+
+  <main
+    class="flex flex-col lg:flex-row w-full min-h-screen"
+    style={`background-color: ${color}`}
+  >
+    <!-- COVER -->
+    <div
       class="
-        flex flex-col
-        lg:flex-row
+        relative
         w-full
-        min-h-screen
+        aspect-[2/3]
+        lg:w-[40vw]
+        lg:h-screen
+        lg:sticky
+        lg:top-0
+        lg:aspect-auto
+        lg:overflow-hidden
+        shrink-0
       "
-      style={`background-color: ${color}`}
     >
-      <!-- COVER -->
+      <img
+        src={heroImage}
+        alt=""
+        class="w-full h-full object-cover"
+        loading="eager"
+        decoding="async"
+      />
+
+      <!-- Gradientes mobile -->
+      <div
+        class="pointer-events-none absolute inset-x-0 bottom-0 h-20 lg:hidden"
+        style={`background: linear-gradient(to bottom, rgba(0,0,0,0), ${color});`}
+      ></div>
+
+      <div
+        class="pointer-events-none absolute inset-x-0 top-0 h-20 lg:hidden"
+        style={`background: linear-gradient(to top, rgba(0,0,0,0), ${color});`}
+      ></div>
+
+      <!-- Gradiente lateral desktop -->
+      <div
+        class="hidden lg:block pointer-events-none absolute inset-y-0 right-0 w-24"
+        style={`background: linear-gradient(to right, rgba(0,0,0,0), ${color});`}
+      ></div>
+    </div>
+
+    <!-- TEXTO -->
+    <section class="flex flex-col w-full lg:flex-1 text-white">
+      <!-- WRAPPER COMPARTIDO -->
       <div
         class="
-          relative
           w-full
-          aspect-[2/3]
-
-          lg:w-[40vw]
-          lg:h-screen
-          lg:sticky
-          lg:top-0
-          lg:aspect-auto
-          lg:overflow-hidden
-          shrink-0
+          max-w-[1100px]
+          mx-auto
+          px-6
+          lg:px-10
+          mt-12
+          lg:mt-10
+          flex
+          flex-col
+          min-h-full
         "
       >
-        <img
-          src={heroImage}
-          alt=""
-          class="w-full h-full object-cover"
-          loading="eager"
-          decoding="async"
-        />
+        <!-- Header -->
+        <header class="pb-2 border-b-2 border-white/50">
+          <h3 class="text-xl capitalize">{typeTitle}</h3>
 
-        <!-- Gradientes mobile -->
-        <div
-          class="pointer-events-none absolute inset-x-0 bottom-0 h-20 lg:hidden"
-          style={`background: linear-gradient(to bottom, rgba(0,0,0,0), ${color});`}
-        ></div>
+          <h1 class="text-4xl font-bebas font-bold">{title}</h1>
 
-        <div
-          class="pointer-events-none absolute inset-x-0 top-0 h-20 lg:hidden"
-          style={`background: linear-gradient(to top, rgba(0,0,0,0), ${color});`}
-        ></div>
+          <FormattedDate date={pubDate} format="long" />
+        </header>
 
-        <!-- Gradiente lateral desktop -->
-        <div
-          class="hidden lg:block pointer-events-none absolute inset-y-0 right-0 w-24"
-          style={`background: linear-gradient(to right, rgba(0,0,0,0), ${color});`}
-        ></div>
-      </div>
-
-      <!-- TEXTO -->
-      <section
-        class="
-          flex flex-col
-          w-full
-          lg:flex-1
-          text-white
-        "
-      >
-        <!-- WRAPPER COMPARTIDO -->
-        <div
+        <!-- Content -->
+        <article
+          lang="es"
           class="
-            w-full
-            max-w-[1100px]
-            mx-auto
-            px-6
-            lg:px-10
-            mt-12
-            lg:mt-10
-
-            flex
-            flex-col
-            h-full
+            py-12
+            font-besley
+            text-base
+            leading-relaxed
+            text-justify
+            hyphens-auto
           "
         >
+          <Content />
+        </article>
 
-          <!-- Header -->
-          <header class="pb-2 border-b-2 border-white/50">
-            <h3 class="text-xl capitalize">
-              {typeTitle}
-            </h3>
-
-            <h1 class="text-4xl font-bebas font-bold">
-              {title}
-            </h1>
-
-            <FormattedDate date={pubDate} format="long" />
-          </header>
-
-          <!-- Content -->
-          <article
-            lang="es"
-            class="
-              py-12
-              font-besley
-              text-base
-              leading-relaxed
-              text-justify
-              hyphens-auto
-            "
-          >
-            <Content />
-          </article>
-          <div class="mt-auto">
-            <Footer theme="text" />
-          </div>
-
+        <!-- Footer abajo SIN crear scroll extra -->
+        <div class="mt-auto">
+          <Footer theme="text" />
         </div>
-
-      </section>
-
-    </main>
-
+      </div>
+    </section>
+  </main>
 
   <!-- Scroll-to-top button -->
-    <button
-      type="button"
-      aria-label="Volver arriba"
-      class="fixed bottom-5 right-5 z-50 rounded-full px-4 py-3 text-white bg-black/30 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-black/40 transition opacity-0 pointer-events-none"
-      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-    >
-        <i class="ti ti-chevron-up"></i>
-    </button>
+  <button
+    type="button"
+    aria-label="Volver arriba"
+    class="fixed bottom-5 right-5 z-50 rounded-full px-4 py-3 text-white bg-black/30 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-black/40 transition opacity-0 pointer-events-none"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  >
+    <i class="ti ti-chevron-up"></i>
+  </button>
 
   <script is:inline>
-      (() => {
-        const btn = document.querySelector('[aria-label="Volver arriba"]');
-        if (!btn) return;
+    (() => {
+      const btn = document.querySelector('[aria-label="Volver arriba"]');
+      if (!btn) return;
 
-        const toggle = () => {
-          const show = window.scrollY >= 300;
-          btn.classList.toggle("opacity-0", !show);
-          btn.classList.toggle("pointer-events-none", !show);
-        };
+      const toggle = () => {
+        const show = window.scrollY >= 300;
+        btn.classList.toggle("opacity-0", !show);
+        btn.classList.toggle("pointer-events-none", !show);
+      };
 
-        window.addEventListener("scroll", toggle, { passive: true });
-        toggle();
-      })();
-    </script>
+      window.addEventListener("scroll", toggle, { passive: true });
+      toggle();
+    })();
+  </script>
 </Layout>
