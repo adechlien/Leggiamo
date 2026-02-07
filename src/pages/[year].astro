@@ -30,48 +30,42 @@ const mapTypeTitle = (type = "") => {
 const posts = (await getCollection("texts"))
   .filter((p: any) => new Date(p.data.pubDate).getFullYear() === yearNum)
   .sort((a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const heroBg = "/banner.svg";
+const baseBg = "#024350";
 ---
 
 <Layout title={`${year}`}>
-  <main class="flex flex-col gap-4 mt-32 px-6 w-full sm:max-w-[1100px] sm:mx-auto">
-    <h1 class="text-4xl font-bebas text-white">{year}</h1>
-
-    <ul class="flex flex-col sm:grid sm:grid-cols-5 w-full gap-4">
-      {posts.length ? (
-        posts.map((post: any) => {
-          const postTypeTitle = mapTypeTitle(post.data.type);
-
-          return (
-            <li class="w-full">
-              <a href={`/${post.data.type}/${post.slug}/`} class="block group">
-                <div class="relative overflow-hidden rounded-lg aspect-[2/3] border border-white/10">
-                  <img
-                    src={post.data.heroSmImage}
-                    alt={post.data.title}
-                    class="absolute inset-0 h-full w-full object-cover"
-                    loading="lazy"
-                  />
-
-                  <div class="flex flex-col justify-between h-full w-full">
-                    <div class="absolute inset-x-0 bottom-0 p-2 bg-[#022A31] flex flex-col gap-1">
-                      <p class="text-white/80 text-base font-black text-left">
-                          {postTypeTitle}
-                      </p>
-                      <h3 class="text-white font-bebas truncate text-lg leading-none">
-                        {post.data.title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          );
-        })
-      ) : (
-        <li class="text-white/80">No hay textos en este año.</li>
-      )}
-    </ul>
-
-  </main>
-    <Footer theme="home" />
+    <main class="w-full max-w-[1100px] sm:max-w-none flex flex-col gap-16"}>
+        <section class="relative overflow-hidden">
+            <div class="relative w-full min-h-[70vh] bg-cover bg-bottom" style={`background-image: url(${heroBg});`}>
+                <div class="sm:hidden pointer-events-none absolute inset-x-0 top-0 h-8" style={`background: linear-gradient(to top, rgba(0,0,0,0), ${baseBg});`}></div>
+                <div class="pointer-events-none absolute inset-x-0 bottom-0 h-4" style={`background: linear-gradient(to bottom, rgba(0,0,0,0), ${baseBg});`}></div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-8 px-6 w-full max-w-6xl mx-auto">
+            <h1 class="text-4xl font-bebas mb-10">{year}</h1>
+            <ul class="grid gap-5 grid-cols-1 sm:grid-cols-4 md:grid-cols-5">
+                {posts.length ? (posts.map((post: any) => {
+                const postTypeTitle = mapTypeTitle(post.data.type);
+                return (
+                    <li>
+                        <a href={`/${post.data.type}/${post.slug}/`} class="block group">
+                            <div class="relative overflow-hidden rounded-lg aspect-[2/3]">
+                                <img src={post.data.heroImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover" loading="lazy"/>
+                                <div class="absolute inset-x-0 bottom-0 p-2 sm:pb-1 bg-[#022A31] flex flex-col">
+                                    <p class="text-white/70 truncate text-sm font-bold">{postTypeTitle}</p>
+                                    <h3 class="font-bebas truncate text-lg">{post.data.title}</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    );})
+                      ) : (
+                        <li>No hay textos en este año.</li>
+                    )}
+            </ul>
+            <Footer theme="home" />
+        </section>
+    </main>
 </Layout>

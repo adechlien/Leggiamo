@@ -2,8 +2,6 @@
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("texts");
-
-// Ordenar por fecha (más reciente primero)
 const sortedPosts = posts.sort(
   (a: any, b: any) =>
     new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
@@ -20,67 +18,37 @@ const mapType = (type = "") => {
   return type;
 };
 
-const cleanPreview = (html = "") =>
-  html
-    .replaceAll("<br>", " ")
-    .replace(/<\/?[^>]+>/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
+const cleanPreview = (html = "") => html.replaceAll("<br>", " ").replace(/<\/?[^>]+>/g, "").replace(/\s+/g, " ").trim();
 ---
 
 <section class="w-full min-w-0 flex flex-col gap-3">
-  <div class="flex flex-col gap-3">
-    <h3 class="text-4xl font-medium text-left font-bebas text-white">
-      Recientes
-    </h3>
-    <div class="h-px bg-white/40"></div>
-  </div>
-
-  {recentPosts.length > 0 ? (
-    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-3">
-      {recentPosts.map((post: any) => {
-        const previewContent = cleanPreview(post.body ?? "");
-        const typeLabel = mapType(post.data.type);
-
-        return (
-          <li class="snap-start flex-none">
-            <a href={`/${post.data.type}/${post.slug}`} class="block group">
-              <div class="relative isolate overflow-hidden rounded-lg aspect-[2/1] w-full border border-white/10">
-                <img
-                  src={post.data.heroSmImage}
-                  alt={post.data.title}
-                  class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
-                  loading="lazy"
-                />
-
-                {/* overlay */}
-                <div class="absolute inset-0 bg-black/25 backdrop-blur-sm [-webkit-backdrop-filter:blur(12px)] [transform:translateZ(0)]"></div>
-
-                {/* content */}
-                <div class="relative flex h-full flex-col px-3 py-3 min-w-0">
-                  <h3 class="text-white font-bebas text-start text-2xl leading-none">
-                    {post.data.title}
-                  </h3>
-
-                  <p
-                    lang="es"
-                    class="mt-2 text-xs leading-snug text-white/90 text-justify hyphens-auto
-                           [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical] overflow-hidden"
-                  >
-                    {previewContent}
-                  </p>
-
-                  <p class="mt-auto pt-2 text-white font-black text-right">
-                    {typeLabel}
-                  </p>
-                </div>
-              </div>
-            </a>
-          </li>
-        );
-      })}
+    <h3 class="text-4xl font-medium text-left font-bebas text-white border-b-white/40 border-b-2">Recientes</h3>
+    {recentPosts.length > 0 ? (
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3">
+        {recentPosts.map((post: any) => {
+          const previewContent = cleanPreview(post.body ?? "");
+          const typeLabel = mapType(post.data.type);
+          return (
+            <li class="snap-start flex-none">
+                <a href={`/${post.data.type}/${post.slug}`} class="block group">
+                    <div class="relative isolate overflow-hidden rounded-lg aspect-[2/1] w-full">
+                        <img src={post.data.heroImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none" loading="lazy"/>
+                        <div class="absolute inset-0 bg-black/25 backdrop-blur-sm [-webkit-backdrop-filter:blur(12px)] [transform:translateZ(0)]"></div>
+                        <div class="relative flex h-full flex-col px-3 py-3 min-w-0">
+                            <h3 class="text-white font-bebas text-start text-2xl leading-none">{post.data.title}</h3>
+                            <p lang="es" class="mt-2 text-xs leading-snug text-white/90 text-justify hyphens-auto [display:-webkit-box] [-webkit-line-clamp:4] [-webkit-box-orient:vertical] overflow-hidden">
+                                {previewContent}
+                            </p>
+                            <p class="mt-auto pt-2 text-white font-black text-right">
+                                {typeLabel}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        );})}
     </ul>
-  ) : (
-    <p class="mt-4 text-sm text-white/80">No hay textos aún.</p>
-  )}
+    ) : (
+      <p class="mt-4 text-sm text-white/80">No hay textos aún.</p>
+    )}
 </section>

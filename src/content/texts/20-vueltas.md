@@ -2,12 +2,9 @@
 title: "20 vueltas a la nada"
 type: "lagrimas"
 heroImage: "/portrait/vueltas.webp"
-heroSmImage: "/portrait/vueltas.webp"
 pubDate: "Jan 31 2024"
-editDate: "Jan 31 2024"
-edition: "Primera"
-related: ["rendicion", "estante", "envejecer"]
 color: "#545427"
+featured: false
 ---
 
 El agua la pintan de azul pero es transparente. Qué tiene el cielo de relevante e imponente si el rey fue obligado a quitarse la vida en una vuelta par. En la cuarta posición, vestido de blanco fue dejado a la intemperie. A sus espaldas gotas transparentes dejaron una huella imborrable.

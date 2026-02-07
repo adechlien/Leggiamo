@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: adechlien/Leggiamo
+  branch: main
+
+local_backend: true
+
+media_folder: "public/images"
+public_folder: "/images"
+
+site_url: http://localhost:4321
+
+collections:
+  - name: "texts"
+    label: "Texts"
+    folder: "src/content/texts"
+    create: true
+
+    slug: "{{uuid}}"
+
+    preview_path: "preview"
+
+    fields:
+      - { name: title, label: Title, widget: string }
+
+      - name: type
+        label: Type
+        widget: select
+        default: lagrimas
+        options:
+          - lagrimas
+          - colores
+          - still
+          - placebo
+          - pintas
+
+      - { name: heroImage, label: Hero, widget: image, required: false }
+
+      - { name: pubDate, label: Date, widget: datetime, default: "{{now}}" }
+
+      - { name: color, label: Color, widget: color, default: "#024350" }
+
+      - { name: featured, label: Featured, widget: boolean, default: false }
+
+      - { name: body, label: Body, widget: markdown }

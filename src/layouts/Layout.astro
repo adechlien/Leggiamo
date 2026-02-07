@@ -1,6 +1,5 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import Header from "../components/Header.astro";
 
 interface Props {
   title?: string;
@@ -8,8 +7,8 @@ interface Props {
   image?: string;
   bg?: string;
 }
-const { title, description, image = "/texts-placeholder-1.jpg", bg } = Astro.props;
 
+const { title, description, image = "/texts-placeholder-1.jpg", bg } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -56,8 +55,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <!-- View Transitions -->
     <ViewTransitions />
   </head>
+
   <body class="font-bellota flex flex-col justify-between items-center min-h-screen">
-    <Header />
     <slot />
   </body>
+
 </html>

@@ -3,52 +3,25 @@ const writers = [
   {
     slug: "alejandra-pizarnik",
     name: "Alejandra Pizarnik",
-    image: "/writers/pizarnik.webp", // coloca la foto aquí
-  },
+    image: "/writers/pizarnik.webp"
+  }
 ];
 ---
 
 <section class="w-full">
-  <div class="flex flex-col gap-3 sm:mx-auto">
-
-    <!-- Header -->
-    <div class="flex flex-col gap-3">
-      <h3 class="text-4xl font-medium font-bebas text-white">De escritores</h3>
-      <div class="h-px bg-white/40"></div>
+    <div class="flex flex-col gap-3 sm:mx-auto">
+        <h3 class="text-4xl font-medium text-left font-bebas text-white border-b-white/40 border-b-2">De escritores</h3>
+        <ul class="flex flex-col sm:flex-row gap-4 px-3">
+            {writers.map((w) => (
+            <li class="min-w-[160px]">
+                <a href={`/writers/${w.slug}/`} class="group block">
+                    <article class="flex justify-center relative aspect-[3/4] rounded-lg overflow-hidden">
+                        <img src={w.image} alt={w.name} class="absolute inset-0 w-full h-full object-cover"/>
+                        <p class="absolute top-3 font-bebas text-3xl sm:text-xl text-white">{w.name}</p>
+                    </article>
+                </a>
+            </li>
+            ))}
+        </ul>
     </div>
-
-    <!-- Cards -->
-    <ul class="flex flex-col sm:flex-row gap-4 px-3">
-      {writers.map((w) => (
-        <li class="min-w-[160px]">
-          <a
-            href={`/writers/${w.slug}/`}
-            class="group block"
-          >
-            <article
-              class="
-              flex justify-center
-                relative
-                aspect-[3/4]
-                rounded-lg
-                overflow-hidden
-                border border-white/15
-              "
-            >
-                <img src={w.image} alt={w.name}
-                class="
-                  absolute inset-0 w-full h-full object-cover
-                "
-              />
-
-
-              <p class="absolute top-3 font-bebas text-3xl sm:text-xl text-white">
-                {w.name}
-              </p>
-            </article>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
 </section>

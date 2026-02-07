@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("texts");
-
 const yearCount: Record<number, number> = {};
 
 posts.forEach((p: any) => {
@@ -10,37 +9,20 @@ posts.forEach((p: any) => {
   yearCount[y] = (yearCount[y] || 0) + 1;
 });
 
-const years = Object.keys(yearCount)
-  .map(Number)
-  .sort((a, b) => b - a);
-
-
-// Si aún no tienes ruta /year/[year], puedes dejar href="#" y luego lo conectas
+const years = Object.keys(yearCount).map(Number).sort((a, b) => b - a);
 const yearHref = (y: number) => `/${y}/`;
-
 ---
 
 <aside class="w-full flex flex-col gap-3">
-  <div class="flex flex-col gap-3">
-    <h3 class="text-4xl font-medium font-bebas text-white">Historial</h3>
-    <div class="h-px bg-white/40"></div>
-  </div>
-
-  <ul class="flex flex-col gap-2 px-3">
-    {years.map((y) => (
-      <li>
-          <a
-            href={yearHref(y)}
-            class="flex justify-between items-center text-white text-3xl sm:text-2xl font-bebas tracking-wide hover:text-white/80 transition"
-          >
-            <span>{y}</span>
-
-            <span class="text-base opacity-60 font-bellota">
-              ({yearCount[y]})
-            </span>
-          </a>
-
-      </li>
-    ))}
-  </ul>
+    <h3 class="text-4xl font-medium text-left font-bebas text-white border-b-white/40 border-b-2">Historial</h3>
+    <ul class="flex flex-col gap-2 px-3">
+        {years.map((y) => (
+        <li>
+            <a href={yearHref(y)} class="flex justify-between items-center text-white text-3xl sm:text-2xl font-bebas tracking-wide hover:text-white/80 transition">
+                <span>{y}</span>
+                <span class="text-base opacity-60 font-bellota">({yearCount[y]})</span>
+            </a>
+        </li>
+        ))}
+    </ul>
 </aside>

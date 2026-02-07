@@ -2,13 +2,14 @@
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
+import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 
 const { type } = Astro.params;
 
 export async function getStaticPaths() {
   const posts = await getCollection("texts");
-  const types = [...new Set(posts.map((post: any) => post.data.type))]; // Obtener tipos únicos
+  const types = [...new Set(posts.map((post: any) => post.data.type))];
   return types.map((type) => ({
     params: { type },
   }));
@@ -45,43 +46,39 @@ if (type === "lagrimas") {
 const posts = (await getCollection("texts"))
   .sort((a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .filter((post: any) => post.data.type === type);
+
+const heroBg = "/banner.svg";
+const baseBg = "#024350";
 ---
 
 <Layout title={typeTitle}>
-  <main class="flex flex-col gap-4 mt-32 px-6 w-full sm:max-w-[1100px] sm:mx-auto">
-    <h1 class="text-4xl font-bold text-left font-bebas">
-      {typeTitle}
-    </h1>
-    <p class="text-left text-3xl font-normal font-tangerine">
-        {typeDescription}
-    </p>
-    <ul class="flex flex-col sm:grid sm:grid-cols-5 w-full gap-4 text-center justify-center">
-      {
-        posts.map((post: any) => (
-
-          <li class="w-full text-center">
-            <a href={`/${type}/${post.slug}/`} class="">
-              <div class="relative overflow-hidden rounded-lg aspect-[2/3] border border-black/10">
-                  <img src={post.data.heroSmImage} alt={post.data.title}
-                  class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
-                  loading="lazy"/>
-
-                <div class="flex flex-col justify-between h-full w-full">
-                  <p class="bg-[#022A31] backdrop-blur-sm text-right self-end text-white text-base sm:text-sm p-1 px-2 rounded-b-lg rounded-r-none font-bold">
-                    <FormattedDate date={post.data.pubDate} format="short"/>
-                  </p>
-
-                  <h2 class="bg-[#022A31] backdrop-blur-sm truncate text-white font-bebas text-start p-2 sm:py-1 text-lg rounded-b-lg">
-                    {post.data.title}
-                  </h2>
-                </div>
-              </div>
-            </a>
-
-          </li>
-        ))
-      }
-    </ul>
-  <Footer theme="home" />
-  </main>
+    <Header />
+    <main class="w-full max-w-[1100px] sm:max-w-none flex flex-col gap-16"}>
+        <section class="relative overflow-hidden">
+            <div class="relative w-full min-h-[70vh] bg-cover bg-bottom" style={`background-image: url(${heroBg});`}>
+                <div class="sm:hidden pointer-events-none absolute inset-x-0 top-0 h-8" style={`background: linear-gradient(to top, rgba(0,0,0,0), ${baseBg});`}></div>
+                <div class="pointer-events-none absolute inset-x-0 bottom-0 h-4" style={`background: linear-gradient(to bottom, rgba(0,0,0,0), ${baseBg});`}></div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-6 px-6 w-full max-w-6xl mx-auto">
+            <header class="mb-10">
+                <h1 class="text-4xl font-bebas">{typeTitle}</h1>
+                <p class="text-3xl font-tangerine opacity-80">{typeDescription}</p>
+            </header>
+            <ul class="grid gap-5 grid-cols-1 md:grid-cols-4 lg:grid-cols-5">
+                {posts.map((post: any) => (
+                  <li>
+                    <a href={`/${type}/${post.slug}/`} class="block group">
+                        <div class="relative overflow-hidden rounded-lg aspect-[2/3]">
+                            <img src={post.data.heroImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover" loading="lazy"/>
+                            <p class="absolute top-0 right-0 bg-[#024350] text-xs px-2 py-1 rounded-bl-lg font-bold"><FormattedDate date={post.data.pubDate} format="short"/></p>
+                            <h2 class="absolute inset-x-0 bottom-0 bg-[#022A31] truncate font-bebas p-2 sm:pb-1">{post.data.title}</h2>
+                        </div>
+                    </a>
+                </li>
+                ))}
+            </ul>
+            <Footer theme="home" />
+        </section>
+    </main>
 </Layout>

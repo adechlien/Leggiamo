@@ -2,11 +2,7 @@
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("texts");
-
-// 1) intentamos destacados por frontmatter (featured: true)
 const featured = posts.filter((p: any) => p.data.featured === true);
-
-// 2) fallback: recientes
 const sorted = posts.sort(
   (a: any, b: any) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
 );
@@ -30,37 +26,21 @@ const mapType = (type = "") => {
 ---
 
 <section class="w-full flex flex-col gap-3">
-  <div class="flex flex-col gap-3">
-    <h3 class="text-4xl font-medium font-bebas text-white">Destacados</h3>
-    <div class="h-px bg-white/40"></div>
-
-  </div>
-
-  <ul class="flex flex-col sm:flex-row gap-4 px-3">
-    {featuredPosts.map((post: any) => (
-      <li class="w-full">
-        <a href={`/${post.data.type}/${post.slug}`} class="block">
-          <div class="relative isolate overflow-hidden rounded-lg aspect-[2/3] border border-white/10">
-            <img
-              src={post.data.heroSmImage}
-              alt={post.data.title}
-              class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
-              loading="lazy"
-            />
-
-            <div class="absolute inset-0 bg-black/20"></div>
-
-            <div class="absolute inset-x-0 bottom-0 p-2 sm:p-1 sm:px-2 text-white bg-[#022A31] flex flex-col gap-1 sm:gap-0 sm:0">
-              <p class="text-white/80 text-base sm:text-sm font-black text-left">
-                {mapType(post.data.type)}
-              </p>
-              <h3 class="text-white font-bebas truncate text-xl sm:text-lg leading-none">
-                {post.data.title}
-              </h3>
-            </div>
-          </div>
-        </a>
-      </li>
-    ))}
-  </ul>
+    <h3 class="text-4xl font-medium text-left font-bebas text-white border-b-white/40 border-b-2">Destacados</h3>
+    <ul class="flex flex-col sm:flex-row gap-3 px-3">
+        {featuredPosts.map((post: any) => (
+        <li class="w-full">
+            <a href={`/${post.data.type}/${post.slug}`} class="block">
+                <div class="relative isolate overflow-hidden rounded-lg aspect-[2/3]">
+                    <img src={post.data.heroImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none" loading="lazy"/>
+                    <div class="absolute inset-0 bg-black/20"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-2 sm:pb-1 text-white bg-[#022A31] flex flex-col">
+                        <p class="text-white/80 text-base sm:text-sm font-black text-left">{mapType(post.data.type)}</p>
+                        <h3 class="text-white font-bebas truncate text-xl sm:text-lg leading-none">{post.data.title}</h3>
+                    </div>
+                </div>
+            </a>
+        </li>
+        ))}
+    </ul>
 </section>

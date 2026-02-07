@@ -12,24 +12,16 @@ const baseBg = "#024350";
 ---
 
 <Layout title="Inicio" description="Blog de textos literarios, prosa y reflexiones personales.">
-  <main class="w-full max-w-[1100px] sm:max-w-none" style={`background-color:${baseBg};`}>
-      <About />
-
-    <!-- CONTENIDO -->
-    <section class="w-full px-6 pb-16">
-      <div class="mx-auto flex flex-col gap-14 sm:max-w-[1100px]">
-        <Categories />
-
-        <!-- Recientes + Años -->
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-12 items-start">
-          <Recent />
-          <Anios />
-        </div>
-
-        <Destacados />
-        <Writers />
-      </div>
-    </section>
-  </main>
+    <main class="w-full max-w-[1100px] sm:max-w-none" style={`background-color:${baseBg};`}>
+        <About />
+        <section class="w-full px-6">
+            <div class="mx-auto flex flex-col gap-14 sm:max-w-[1100px]">
+                <Categories />
+                <div class="grid grid-cols-1 lg:grid-cols-[1fr_250px] gap-12 items-start"><Recent /><Anios /></div>
+                <Destacados />
+                <Writers />
+            </div>
+        </section>
+    </main>
     <Footer theme="home" />
 </Layout>
