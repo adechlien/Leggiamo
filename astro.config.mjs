@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://adechlien.blog",
-  output: "server",
+  output: "static",
   integrations: [
     mdx(),
     sitemap(),
