@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -36,6 +37,7 @@ const baseBg = "#024350";
 ---
 
 <Layout title={`${year}`}>
+    <Header />
     <main class="w-full max-w-[1100px] sm:max-w-none flex flex-col gap-16"}>
         <section class="relative overflow-hidden">
             <div class="relative w-full min-h-[70vh] bg-cover bg-bottom" style={`background-image: url(${heroBg});`}>

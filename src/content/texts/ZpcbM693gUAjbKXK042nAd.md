@@ -1,5 +1,5 @@
 ---
-id: "_ZpcbM693gUAjbKXK042nA"
+id: "ZpcbM693gUAjbKXK042nAd"
 title: "De quien superó a la duquesa"
 type: "still"
 heroImage: "/portrait/duquesa.webp"
