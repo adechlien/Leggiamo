@@ -1,0 +1,30 @@
+---
+id: mSp64Ro0XGec5AvFtetaaw
+title: El arte de respirar
+type: lagrimas
+heroImage: /portrait/placeholder.svg
+pubDate: Jan 12 2026
+color: "#7dabc6"
+featured: false
+---
+A diario, desde que despierto y hasta que duermo, muchas veces incluso mientras duermo, debo concentrar mi mirada, enfocar mi mente en saber qué tiene al frente, pero más que ello, intentar ver más allá. Saber que no es suficiente, no es lo único.
+
+<br>
+
+Saber que ese jugo que tengo frente a mí, si bien pensé que era de parchita y al probarlo me llevé la ingrata sensación de que era de piña, allá afuera sigue habiendo parchita. Puedo llegar a ella.
+
+<br>
+
+Saber que si bien hoy aquello que me preocupa influye tanto en mí como para, siendo tan insignificante, seguir marcando mis pasos años después, es algo que puedo superar. Poco a poco, sin apuros, caminando despacio, pero consistente.
+
+<br>
+
+Saber que soy un ignorante pero que nadie me está obligando a no serlo. Que puedo ignorar la mayoría de las cosas que me rodean y simplemente enfocarme en ellas cuando llegue el momento en que sea necesario.
+
+<br>
+
+Saber que está bien sentir lo que siento, siempre y cuando eso no afecte realmente a nadie. Siempre y cuando me permita sentir, intensamente y sin arrepentimientos todo eso que me produce este mundo en el que me encuentro. Este mundo del que me siento ajeno.
+
+<br>
+
+Quizá es que no sé caminar. Nunca he sabido. Camino al revés, con las rodillas hacia adentro y los músculos contraídos. Camino al revés, como huyendo de mi destino. Camino al revés, como quien dice: virado hacia adelante, doblado origami.
