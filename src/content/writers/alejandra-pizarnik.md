@@ -19,6 +19,9 @@ phrases:
     
   - text: "Pierdo los días, la vida, el sueño. Pero yo no tengo la culpa si deseo, a la vez, la muerte y la vida, al mismo tiempo, a la misma hora."
     source: 28 de abril de 1958
+  
+  - text: "Sólo siento un abandono absoluto. Una soledad absoluta. Me siento muy pequeña, muy niña, y me van abandonando todos. Absolutamente todos."
+    source: 3 de enero de 1959
     
   - text: "Como si aceptarme en mis circunstancias actuales llevara implícito un renunciamiento a algo fabuloso. Es el viejo problema. De todos modos, yo no existo. Soy un ser evanescente: la hija del aire, enamorada del viento."
     source: 2 de enero de 1961
@@ -27,5 +30,8 @@ phrases:
     source: La mesa verde
     
   - text: "Y le dije: por favor, no me hagas daño, por favor, no te rías de mi amor. Y luego le dije: por favor, acéptame como alguien cuya sola alegría es tu existencia en este lugar miserable."
-    source: 23 de diciembre de 1963    
+    source: 23 de diciembre de 1963 
+  
+  - text: "En esta hora inocente yo y la que fui nos sentamos en el umbral de mi mirada."
+    source: Árbol de diana    
 ---
