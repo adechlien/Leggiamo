@@ -4,14 +4,10 @@ title: El arte de respirar
 type: lagrimas
 heroImage: /portrait/placeholder.svg
 pubDate: Jan 12 2026
-color: "#7dabc6"
+color: "#8cafbe"
 featured: false
 ---
 A diario, desde que despierto y hasta que duermo, muchas veces incluso mientras duermo, debo concentrar mi mirada, enfocar mi mente en saber qué tiene al frente, pero más que ello, intentar ver más allá. Saber que no es suficiente, no es lo único.
-
-<br>
-
-Saber que ese jugo que tengo frente a mí, si bien pensé que era de parchita y al probarlo me llevé la ingrata sensación de que era de piña, allá afuera sigue habiendo parchita. Puedo llegar a ella.
 
 <br>
 
