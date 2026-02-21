@@ -34,9 +34,9 @@ const mapType = (type = "") => {
                 <div class="relative isolate overflow-hidden rounded-lg aspect-[2/3]">
                     <img src={post.data.heroImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none" loading="lazy"/>
                     <div class="absolute inset-0 bg-black/20"></div>
-                    <div class="absolute inset-x-0 bottom-0 p-2 sm:pb-1 text-white bg-[#022A31] flex flex-col">
-                        <p class="text-white/80 text-base sm:text-sm font-black text-left">{mapType(post.data.type)}</p>
-                        <h3 class="text-white font-bebas truncate text-xl sm:text-lg leading-none">{post.data.title}</h3>
+                    <div class="absolute inset-x-0 bottom-0 p-2 text-white bg-[#022A31] flex flex-col gap-1">
+                        <p class="text-white/80 text-sm font-black text-left">{mapType(post.data.type)}</p>
+                        <h3 class="text-white font-bebas truncate text-lg leading-none">{post.data.title}</h3>
                     </div>
                 </div>
             </a>

@@ -1,7 +1,6 @@
 ---
 id: yk6EIuH7_zKKkgCZa7HL0g
-title: Meditaciones en una noche oscura en la que lo único que quiero es llorar
-  como si eso solucionase algo
+title: Meditaciones en una noche oscura en la que lo único que quiero hacer es llorar como si eso solucionase algo
 type: lagrimas
 heroImage: /portrait/llorar.webp
 pubDate: Feb 9 2026
