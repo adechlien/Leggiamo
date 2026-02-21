@@ -19,7 +19,7 @@ Saber que soy un ignorante pero que nadie me está obligando a no serlo. Que pue
 
 <br>
 
-Saber que está bien sentir lo que siento, siempre y cuando eso no afecte realmente a nadie. Siempre y cuando me permita sentir, intensamente y sin arrepentimientos todo eso que me produce este mundo en el que me encuentro. Este mundo del que me siento ajeno.
+Saber que está bien sentir lo que siento, siempre y cuando eso no afecte realmente a nadie. Siempre y cuando me permita sentir intensamente y sin arrepentimientos todo eso que me produce este mundo en el que me encuentro. Este mundo del que me siento ajeno.
 
 <br>
 

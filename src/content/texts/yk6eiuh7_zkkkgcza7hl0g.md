@@ -11,7 +11,7 @@ Siendo la calma mi mayor virtud, es también una ayudante poco versátil.
 
 <br>
 
-Por momentos olvido quien soy, quien he sido. Miro el presente, el futuro distorsionado por mi mente distópica. Culpa a mi padre, pero cómo va a ser él el culpable de mis desgracias, si él no hizo nada.
+Por momentos olvido quién soy, quién he sido. Miro el presente, el futuro distorsionado por mi mente distópica. Culpa a mi padre, pero cómo va a ser él el culpable de mis desgracias, si él no hizo nada.
 
 <br>
 
@@ -19,7 +19,7 @@ Supongo es ese el problema, no hizo nada. No estuvo ahí cuando nací, cuando cr
 
 <br>
 
-En la búsqueda de las nubes con sabor a fresa me perdí, no supe hallar mi camino de regreso y terminé aterrizando en un lugar desconocido para mí. Las personas a mi alrededor le llaman tierra. Yo le llamo infierno. Cada día me levanta el retumbar de mis pesadillas vividas en las que solo repito una y otra vez todos mis pesares, todos mis arrepentimientos. Cada día de mi vida desde que nací. Cada día que acepto nuevamente intentarlo, darle una sonrisa a la tierra, impulsándole a dar una vuelta más, a seguir girando mientras yo solo envejezco a paso de tortuga, como un Benjamin Button funcional que se niega a desconectarse de un cable ficticio y poner fin a este sufrimiento.
+En la búsqueda de las nubes con sabor a fresa me perdí, no supe hallar mi camino de regreso y terminé aterrizando en un lugar desconocido para mí. Las personas a mi alrededor le llaman tierra. Yo le llamo infierno. Cada día me levanta el retumbar de mis pesadillas vívidas en las que solo repito una y otra vez todos mis pesares, todos mis arrepentimientos. Cada día de mi vida desde que nací. Cada día que acepto nuevamente intentarlo, darle una sonrisa a la tierra, impulsándole a dar una vuelta más, a seguir girando mientras yo solo envejezco a paso de tortuga, como un Benjamin Button funcional que se niega a desconectarse de un cable ficticio y poner fin a este sufrimiento.
 
 <br>
 
@@ -27,4 +27,4 @@ Si ser masoquista fuese un hecho, sería esto un evento.
 
 <br>
 
-Siempre que no sé expresar con palabras cuan mal me siento, termino adornándolas con retazos de mi subconsciente dañado, herido que intenta de alguna forma ayudarme a pedir ayuda allá afuera, como si alguien pudiera venir a ayudarme. A brindarme socorro en este arroyo que me arrastra y del que con tanta fuerza me intento aferrar a una roca para que no me lleve hasta el fondo de mis lagrimas y me deje ahí, ahogándome en mi miseria. Triste, porque para aferrarme a la roca escribo, escribo para olvidar, para recordar y para al menos por un instante, mientras corrijo comas y tildes, olvidar que este mundo no es para mí. Que no debí haber nacido.
+Siempre que no sé expresar con palabras cuán mal me siento, termino adornándolas con retazos de mi subconsciente dañado, herido que intenta de alguna forma ayudarme a pedir ayuda allá afuera, como si alguien pudiera venir a ayudarme. A brindarme socorro en este arroyo que me arrastra y del que con tanta fuerza me intento aferrar a una roca para que no me lleve hasta el fondo de mis lágrimas y me deje ahí, ahogándome en mi miseria. Triste, porque para aferrarme a la roca escribo, escribo para olvidar, para recordar y para al menos por un instante, mientras corrijo comas y tildes, ignorar que este mundo no es para mí. Que no debí haber nacido.
