@@ -10,6 +10,7 @@ const sortedPosts = posts.sort(
 const recentPosts = sortedPosts.slice(0, 3);
 
 const mapType = (type = "") => {
+  if (type === "consciencia") return "Consciencia colménica";
   if (type === "lagrimas") return "Lágrimas de Siddartha";
   if (type === "colores") return "En las luces de colores";
   if (type === "still") return "Still Prefer Sentir";

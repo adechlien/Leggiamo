@@ -30,7 +30,7 @@ collections:
         label: Type
         widget: select
         default: pintas
-        options: [lagrimas, colores, still, placebo, pintas]
+        options: [consciencia, lagrimas, colores, still, placebo, pintas]
 
       - { name: heroImage, label: Hero, widget: image, required: false }
 

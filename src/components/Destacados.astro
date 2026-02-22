@@ -16,6 +16,7 @@ const featuredPosts = (featured.length ? featured : sorted)
 
 
 const mapType = (type = "") => {
+  if (type === "consciencia") return "Consciencia colménica";
   if (type === "lagrimas") return "Lágrimas de Siddartha";
   if (type === "colores") return "En las luces de colores";
   if (type === "still") return "Still Prefer Sentir";
@@ -35,7 +36,7 @@ const mapType = (type = "") => {
                     <img src={post.data.heroImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none" loading="lazy"/>
                     <div class="absolute inset-0 bg-black/20"></div>
                     <div class="absolute inset-x-0 bottom-0 p-2 text-white bg-[#022A31] flex flex-col gap-1">
-                        <p class="text-white/80 text-sm font-black text-left">{mapType(post.data.type)}</p>
+                        <p class="text-white/80 text-xs font-black text-left">{mapType(post.data.type)}</p>
                         <h3 class="text-white font-bebas truncate text-lg leading-none">{post.data.title}</h3>
                     </div>
                 </div>

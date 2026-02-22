@@ -16,7 +16,10 @@ export async function getStaticPaths() {
 }
 
 let typeTitle: any = "";
-if (type === "lagrimas") {
+
+if (type === "consciencia") {
+  typeTitle = "Consciencia colménica";
+} else if (type === "lagrimas") {
   typeTitle = "Lágrimas de Siddartha";
 } else if (type === "colores") {
   typeTitle = "En las luces de colores";
@@ -31,7 +34,9 @@ if (type === "lagrimas") {
 }
 
 let typeDescription: any = "";
-if (type === "lagrimas") {
+if (type === "consciencia") {
+  typeDescription = '"Se necesita una razón para odiar a alguien, y querer odiarlo es una razón válida."';
+} else if (type === "lagrimas") {
   typeDescription = '"Cuando miro a las nubes, no hay nadie más. Soy solo yo."';
 } else if (type === "colores") {
     typeDescription = '"A través de mis sueños y añoranzas empezó la búsqueda del sentido."';

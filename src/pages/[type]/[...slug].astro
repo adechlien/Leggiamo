@@ -24,6 +24,7 @@ const { title, type, heroImage, pubDate, color } = post.data;
 const { Content } = await post.render();
 
 const mapTypeTitle = (t = "") => {
+  if (t === "consciencia") return "Consciencia colménica";
   if (t === "lagrimas") return "Lágrimas de Siddartha";
   if (t === "colores") return "En las luces de colores";
   if (t === "still") return "Still Prefer Sentir";
@@ -49,7 +50,7 @@ const typeTitle = mapTypeTitle(type);
             <div class="w-full max-w-[1100px] mx-auto px-6 lg:px-10 mt-12 lg:mt-10 flex flex-col h-full">
                 <header class="pb-2 border-b-2 border-white/50">
                     <h3 class="text-xl capitalize">{typeTitle}</h3>
-                    <h1 class="text-4xl font-bebas font-bold">{title}</h1>
+                    <h1 class="text-4xl font-bebas font-medium">{title}</h1>
                     <FormattedDate date={pubDate} format="long" />
                 </header>
                 <article lang="es" class="py-12 font-besley text-base leading-relaxed text-justify hyphens-auto">
