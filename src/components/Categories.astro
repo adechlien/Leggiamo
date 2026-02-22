@@ -9,8 +9,9 @@ const categories = [
 ];
 ---
 
-<div class="flex flex-col gap-6 border-2 rounded-lg sm:rounded-none sm:border-y-2 sm:border-x-0 border-white/40 sm:mx-0 p-4 sm:py-4 sm:px-0">
-    <div class="flex flex-col sm:flex-row w-full justify-around gap-4 sm:gap-0">
+<div class="flex flex-col">
+    <h3 class="text-4xl font-medium text-left font-bebas text-white">Colecciones</h3>
+    <div class="flex flex-col sm:flex-row w-full justify-around gap-4 sm:gap-0  border-2 rounded-lg sm:rounded-none sm:border-y-2 sm:border-x-0 border-white/40 sm:mx-0 p-4 sm:py-4 sm:px-0">
         {categories.map((category) => (
         <a href={`/${category.slug}`} class="w-fit">
             <article class="overflow-hidden flex flex-row items-center">
