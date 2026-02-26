@@ -11,8 +11,8 @@ Despierto, acostado, porque para dejar de darle vueltas a la cabeza toca inmovil
 
 <br>
 
-Soy esclavo de mis errores, pero más que eso, de mis decisiones. De en quien me he convertido, buscando siempre hallar a alguien más. Sin saber que en el proceso me perdí a mí mismo. Quizá, solo quizá y el quizá es la esperanza, nunca me había hallado. Es entonces cuando solo queda preguntarse por qué buscar afuera algo que puede estar dentro.
+Soy esclavo de mis errores, pero más que eso, de mis decisiones. De en quien me he convertido, buscando siempre hallar a alguien más sin saber que en el proceso me perdí a mí mismo. Quizá, solo quizá y el quizá es la esperanza, nunca me había hallado. Es entonces cuando solo queda preguntarse por qué buscar afuera algo que puede estar dentro.
 
 <br>
 
-Por qué me atrae, entonces, lo externo, lo desconocido, aquello que no es mío. Por qué no entiendo que dentro de mí yace la completitud de un alma triste y desamparada que solo busca calma y cariño.
+¿Por qué me atrae, entonces, lo externo, lo desconocido, aquello que no es mío? ¿Por qué no entiendo que dentro de mí yace la completitud de un alma triste y desamparada que solo busca calma y cariño?
