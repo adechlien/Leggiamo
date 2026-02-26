@@ -15,4 +15,8 @@ Soy esclavo de mis errores, pero más que eso, de mis decisiones. De en quien me
 
 <br>
 
-¿Por qué me atrae, entonces, lo externo, lo desconocido, aquello que no es mío? ¿Por qué no entiendo que dentro de mí yace la completitud de un alma triste y desamparada que solo busca calma y cariño?
+¿Por qué me atrae, entonces, lo externo, lo desconocido, aquello que no es mío?
+
+<br>
+
+¿Por qué no entiendo que dentro de mí yace la completitud de un alma triste y desamparada que solo busca calma y cariño?
