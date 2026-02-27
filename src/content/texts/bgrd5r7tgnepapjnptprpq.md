@@ -1,10 +1,10 @@
 ---
-id: bGrd5R7tGNepAPJNptPRpQ
+id: bgrd5r7tgnepapjnptprpq
 title: Ter (Consciencia colménica)
 type: consciencia
 heroImage: /portrait/ter.webp
 pubDate: Feb 21 2026
-color: "#121205"
+color: "khaki"
 featured: false
 ---
 "Soy la arquitecta de mi propia desdicha."

@@ -1,11 +1,10 @@
 ---
-id: bG4kRCR7-WxVycGNi6quaw
-title: Mi alegría la guarde en la gaveta (Mil horas de reflexión después.
-  Soledad Citadina II)
+id: bg4krcr7wxvycgni6quaw
+title: Mi alegría la guarde en la gaveta (Mil horas de reflexión después. Soledad Citadina II)
 type: lagrimas
 heroImage: /portrait/soledad-2.webp
 pubDate: Feb 6 2026
-color: "#09023b"
+color: "dark"
 featured: false
 ---
 Desde pequeño, nunca me ha gustado la vida rural. Los pueblos, con su silencio, su paz incesante y desesperante donde nada ocurre, nada pasa. Todo está como congelado en un espacio de tiempo aleatorio. Solo avanzando lentamente. Hoy creo que lo necesito.

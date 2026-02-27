@@ -1,10 +1,10 @@
 ---
-id: 3jygkNPDZcVsR13BqTM3wQ
+id: 3jygknpdzcvsr13bqtm3wq
 title: La inexactitud del sentir
 type: lagrimas
 heroImage: /portrait/inexactitud.webp
 pubDate: Nov 27 2025
-color: "#172a32"
+color: "evergreen"
 featured: false
 ---
 Despierto, acostado, porque para dejar de darle vueltas a la cabeza toca inmovilizarse. Me dices cosas al oído. No te escucho, estás muy lejos de mí. Quizá soy yo quien no se acerca a ti. Quizá soy yo quien debe tomar una decisión y acoplarse a ello. A abandonar una parte de mí para aceptar otra que sin la otra no puede vivir, pues solo sería otra parte más que, reprimida, busca cómo hacerse entender. Expresarse y relatar con sus acciones lo que siente, lo que piensa. Demostrar quién es realmente.

@@ -1,10 +1,10 @@
 ---
-id: mSp64Ro0XGec5AvFtetaaw
+id: msp64ro0xgec5avftetaaw
 title: El arte de respirar
 type: lagrimas
 heroImage: /portrait/respirar.webp
 pubDate: Jan 12 2026
-color: "#1f1f1f"
+color: "dark"
 featured: true
 ---
 A diario, desde que despierto y hasta que duermo, muchas veces incluso mientras duermo, debo concentrar mi mirada, enfocar mi mente en saber qué tiene al frente, pero más que ello, intentar ver más allá. Saber que no es suficiente, no es lo único.

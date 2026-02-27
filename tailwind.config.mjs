@@ -4,7 +4,17 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      colors: { },
+      colors: {
+        textbg: {
+          mahogany: "#331717",
+          coffee: "#332217",
+          khaki: "#292812",
+          evergreen: "#0E1B0C",
+          jet: "#172433",
+          indigo: "#171733",
+          dark: "#080809",
+        },
+      },
       fontFamily: {
         bellota: ["Bellota Text", "cursive"],
         besley: ["Besley", "serif"],

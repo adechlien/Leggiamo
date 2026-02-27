@@ -1,10 +1,10 @@
 ---
-id: ctO-w5sXcbF1BUe17X-guA
+id: ctow5sxcbf1bue17xgua
 title: Las mejores frases se me ocurren en el bus
 type: still
 heroImage: /portrait/buses.webp
 pubDate: Oct 5 2025
-color: "#171733"
+color: "mahogany"
 featured: false
 ---
 Las mejores frases se me ocurren en el bus.

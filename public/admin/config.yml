@@ -20,10 +20,10 @@ collections:
     create: true
 
     identifier_field: title
-    slug: "{{fields.id}}"
+    slug: "{{id}}"
 
     fields:
-      - { name: id, label: ID, widget: hidden }
+      - { name: id, label: ID, widget: hidden, required: false }
 
       - { name: title, label: Title, widget: string }
       - name: type
@@ -41,6 +41,17 @@ collections:
         time_format: false
         picker_utc: true
 
-      - { name: color, label: Color, widget: color, default: "#44150A" }
+      - name: color
+        label: Background
+        widget: select
+        default: dark
+        options:
+          - { label: Rich Mahogany, value: mahogany }
+          - { label: Dark Coffee,   value: coffee }
+          - { label: Dark Khaki,    value: khaki }
+          - { label: Evergreen,     value: evergreen }
+          - { label: Jet Black,     value: jet }
+          - { label: Space Indigo,  value: indigo }
+          - { label: Black,         value: dark }
       - { name: featured, label: Featured, widget: boolean, default: false }
       - { name: body, label: Body, widget: markdown }

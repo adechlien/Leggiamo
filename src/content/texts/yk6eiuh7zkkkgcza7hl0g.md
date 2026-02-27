@@ -1,10 +1,10 @@
 ---
-id: yk6EIuH7_zKKkgCZa7HL0g
+id: yk6eiuh7zkkkgcza7hl0g
 title: Meditaciones en una noche oscura en la que lo único que quiero hacer es llorar como si eso solucionase algo
 type: lagrimas
 heroImage: /portrait/llorar.webp
 pubDate: Feb 9 2026
-color: "#090909"
+color: "dark"
 featured: false
 ---
 Siendo la calma mi mayor virtud, es también una ayudante poco versátil.
