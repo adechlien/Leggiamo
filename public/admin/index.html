@@ -8,31 +8,8 @@
   <body>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-    <script>
-      (function () {
-        const hash = window.location.hash || "";
-        const tokenMatch = hash.match(/(invite_token|recovery_token)=([^&]+)/);
-
-        // Solo tocamos cosas si realmente vienes con invite/recovery token
-        if (tokenMatch) {
-          const tokenType = tokenMatch[1];
-          const tokenValue = tokenMatch[2];
-
-          // Normaliza "#/invite_token=..." -> "#invite_token=..."
-          window.location.hash = `#${tokenType}=${tokenValue}`;
-
-          // Abre el modal de Identity para setear contraseña
-          window.netlifyIdentity &&
-            window.netlifyIdentity.on("init", () => window.netlifyIdentity.open());
-
-          // Después de completar, limpia la URL (sin hash) una sola vez
-          window.netlifyIdentity &&
-            window.netlifyIdentity.on("login", () => window.location.replace("/admin/"));
-        }
-      })();
-    </script>
-
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
     <script>
       // solo minúsculas + números
       function makeId(len = 12) {

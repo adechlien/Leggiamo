@@ -4,7 +4,7 @@ title: Curitas
 type: consciencia
 heroImage: /portrait/curitas.JPEG
 pubDate: Feb 23 2026
-color: dark
+color: indigo
 featured: false
 ---
 Pinchándome continuamente con agujas en pajares, he empezado a dejar de buscar aquello que no necesito. Aquello que solo sabe hacer daño por naturaleza.
@@ -15,11 +15,11 @@ Mis dedos ya cansados por la masacre me han empezado a reprochar. A preguntarme 
 
 <br>
 
-Quizá el problema no sea buscar la aguja, sino el no estar preparado para cuando la encuentre. Quizá no sé terminar de encontrarla y tomarla con determinación, dispuesto a que no me haga daño, simplemente espero que no lo haga, pero no estoy dispuesto a sufrir cuando claramente lo hace.
+Aúno recursos, contengo multitudes.
 
 <br>
 
-**Aúno recursos, contengo multitudes.**
+Quizá el problema no sea buscar la aguja, sino el no estar preparado para cuando la encuentre. Quizá no sé terminar de encontrarla y tomarla con determinación, dispuesto a que no me haga daño, simplemente espero que no lo haga, pero no estoy dispuesto a sufrir cuando claramente lo hace.
 
 <br>
 
