@@ -19,7 +19,7 @@ Deshacerse voluntariamente de los grilletes deja una ligereza en los pies, pero 
 
 <br>
 
-Y es entonces cuando se necesita solo la visión de un cineasta griego para cambiar el rumbo de mi día, de darme una sonrisa tímida y penosa, como si para sonreír tuviese que pedir permiso. Como si para sonreír tuviese que llenar un formulario y hacer trámites llevándolo a una de las tantas sedes de una empresa maldita que me pudiese rechazar el tener la capacidad de ser feliz con un hecho tan simple como el siempre haber tenido la razón. El haber visto algo que muchos también pudieron ver. Pero yo no soy los demás. Yo soy yo. Soy inexpresivo, pero lo sabía desde un comienzo.
+Y es entonces cuando se necesita solo la visión de un cineasta griego para cambiar el rumbo de mi día, de darme una sonrisa tímida y penosa, como si para sonreír tuviese que pedir permiso. Como si para sonreír tuviese que llenar un formulario y hacer trámites llevándolo a una de las tantas sedes de una empresa maldita que me pudiese rechazar el tener la capacidad de ser feliz con un hecho tan simple como el siempre haber tenido la razón. El haber visto algo que muchos también pudieron ver. Pero yo no soy los demás. Yo soy yo. Soy inexpresivo, pero lo sabía desde un principio.
 
 <br>
 
