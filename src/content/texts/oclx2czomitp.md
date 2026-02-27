@@ -1,0 +1,26 @@
+---
+id: oclx2czomitp
+title: Curitas
+type: consciencia
+heroImage: /portrait/curitas.JPEG
+pubDate: Feb 23 2026
+color: dark
+featured: false
+---
+Pinchándome continuamente con agujas en pajares, he empezado a dejar de buscar aquello que no necesito. Aquello que solo sabe hacer daño por naturaleza.
+
+<br>
+
+Mis dedos ya cansados por la masacre me han empezado a reprochar. A preguntarme si es que yo no siento. Si es que no soy consciente del daño que me hace buscar eso que no quiero encontrar. Si es que soy masoquista acaso. Yo me remito a tratar de ignorarlos, a decirles que resistan, que quizá la próxima aguja no me hiere. Que quizá la próxima aguja va a ser la buena.
+
+<br>
+
+Quizá el problema no sea buscar la aguja, sino el no estar preparado para cuando la encuentre. Quizá no sé terminar de encontrarla y tomarla con determinación, dispuesto a que no me haga daño, simplemente espero que no lo haga, pero no estoy dispuesto a sufrir cuando claramente lo hace.
+
+<br>
+
+**Aúno recursos, contengo multitudes.**
+
+<br>
+
+Y aquí me encuentro, escribiendo esto con curitas en los dedos, descansando los ojos para pronto seguir mi búsqueda de la aguja sin filo. Esa que no me hiera.
