@@ -9,28 +9,27 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-      (function () {
-        const hash = window.location.hash || "";
-        const tokenMatch = hash.match(/(invite_token|recovery_token)=([^&]+)/);
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            // Si vienes desde recovery/invite, abre el modal automáticamente
+            const hash = window.location.hash || "";
 
-        // Solo tocamos cosas si realmente vienes con invite/recovery token
-        if (tokenMatch) {
-          const tokenType = tokenMatch[1];
-          const tokenValue = tokenMatch[2];
+            if (hash.includes("recovery_token") || hash.includes("invite_token")) {
+              window.netlifyIdentity.open();
+            }
+          });
 
-          // Normaliza "#/invite_token=..." -> "#invite_token=..."
-          window.location.hash = `#${tokenType}=${tokenValue}`;
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
 
-          // Abre el modal de Identity para setear contraseña
-          window.netlifyIdentity &&
-            window.netlifyIdentity.on("init", () => window.netlifyIdentity.open());
+          window.netlifyIdentity.on("logout", () => {
+            document.location.href = "/admin/";
+          });
 
-          // Después de completar, limpia la URL (sin hash) una sola vez
-          window.netlifyIdentity &&
-            window.netlifyIdentity.on("login", () => window.location.replace("/admin/"));
+          window.netlifyIdentity.init();
         }
-      })();
-    </script>
+      </script>
 
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>

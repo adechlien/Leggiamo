@@ -61,7 +61,7 @@ const bgHex = bgColorMap[bgColor] ?? bgColorMap.jet;
 const bgClass = bgClassMap[bgColor] ?? bgClassMap.dark;
 ---
 
-<Layout title={title}>
+<Layout title={title} bg={bgHex}>
     <Header />
     <main class={`flex flex-col lg:flex-row w-full min-h-screen ${bgClass}`}>
         <div class="relative w-full aspect-[2/3] lg:w-[40vw] lg:h-screen lg:sticky lg:top-0 lg:aspect-auto lg:overflow-hidden shrink-0">
