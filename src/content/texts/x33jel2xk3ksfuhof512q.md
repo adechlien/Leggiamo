@@ -6,7 +6,7 @@ heroImage: "/portrait/huellas.webp"
 pubDate: "Feb 14 2025"
 color: "dark"
 ---
-Con el corazón en su apellido, ansiosa por el disfrute, por el gozo, por la algarabía ardiente y desaforada, inocente se quedó encerrada en su empaque, apartada del cariño que esperaba recibir. Verla dolió.
+Con el corazón en su apellido, ansiosa por sonreír, por el gozo, por la algarabía ardiente y desaforada, inocente se quedó encerrada en su empaque, apartada del cariño que esperaba recibir.
 
 <br>
 

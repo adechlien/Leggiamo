@@ -2,7 +2,7 @@
 id: oclx2czomitp
 title: Curitas
 type: consciencia
-heroImage: /portrait/curitas.JPEG
+heroImage: /portrait/curitas.webp
 pubDate: Feb 23 2026
 color: indigo
 featured: false
@@ -11,7 +11,7 @@ Pinchándome continuamente con agujas en pajares, he empezado a dejar de buscar 
 
 <br>
 
-Mis dedos ya cansados por la masacre me han empezado a reprochar. A preguntarme si es que yo no siento. Si es que no soy consciente del daño que me hace buscar eso que no quiero encontrar. Si es que soy masoquista acaso. Yo me remito a tratar de ignorarlos, a decirles que resistan, que quizá la próxima aguja no me hiere. Que quizá la próxima aguja va a ser la buena.
+Mis dedos ya cansados por la masacre me han empezado a reprochar. A preguntarme si es que yo no siento. Si es que no soy consciente del daño que me hace buscar aquello que no quiero encontrar. Si es que soy masoquista acaso. Yo me remito a tratar de ignorarlos, a decirles que resistan, que quizá la próxima aguja no me hiere. Que quizá la próxima aguja va a ser la buena.
 
 <br>
 
@@ -19,7 +19,7 @@ Aúno recursos, contengo multitudes.
 
 <br>
 
-Quizá el problema no sea buscar la aguja, sino el no estar preparado para cuando la encuentre. Quizá no sé terminar de encontrarla y tomarla con determinación, dispuesto a que no me haga daño, simplemente espero que no lo haga, pero no estoy dispuesto a sufrir cuando claramente lo hace.
+Quizá el problema no sea buscar la aguja, sino el no estar preparado para cuando la encuentre. Quizá no sé terminar de encontrarla y tomarla con determinación, dispuesto a que no me haga daño, simplemente espero que no lo haga, pero no estoy dispuesto a sufrir cuando lo hace.
 
 <br>
 
