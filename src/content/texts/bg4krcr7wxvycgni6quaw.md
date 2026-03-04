@@ -5,7 +5,7 @@ type: lagrimas
 heroImage: /portrait/soledad-2.webp
 pubDate: Feb 6 2026
 color: "dark"
-featured: false
+featured: true
 ---
 Desde pequeño, nunca me ha gustado la vida rural. Los pueblos, con su silencio, su paz incesante y desesperante donde nada ocurre, nada pasa. Todo está como congelado en un espacio de tiempo aleatorio. Solo avanzando lentamente. Hoy creo que lo necesito.
 

@@ -5,7 +5,7 @@ type: still
 heroImage: /portrait/buses.webp
 pubDate: Oct 5 2025
 color: "mahogany"
-featured: false
+featured: true
 ---
 Las mejores frases se me ocurren en el bus.
 

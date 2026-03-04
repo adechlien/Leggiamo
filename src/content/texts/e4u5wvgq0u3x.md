@@ -11,7 +11,7 @@ Humano. Recientemente la parte de mi cerebro que se enfoca en los detalles ha su
 
 <br>
 
-“Es deshumanizante” suscita alguien a través de la pantalla, haciendo alusión a un acto proporcionado por una persona que claramente no encaja dentro de lo considerado “humano”. No encaja dentro de lo que se considera que uno debe hacer. Pero no tener empatía es humano. Gritarle a alguien y golpearle también es humano. No sentir también es humano, cierto?
+“Es deshumanizante” suscita alguien a través de la pantalla, haciendo alusión a un acto proporcionado por una persona que claramente no encaja dentro de lo considerado “humano”. No encaja dentro de lo que se considera que uno debe hacer. Pero no tener empatía es humano. Gritar a alguien y golpearle es humano. No sentir también es humano, cierto?
 
 <br>
 
@@ -23,4 +23,4 @@ No puedo negar que te extraño. Pero yo lo hago en serio. Yo sí te extraño de 
 
 <br>
 
-Tomas mi lápiz y haces garabatos en la hoja. Conviertes este escrito en tuyo, porque lo que siento por ti es lo más humano que puedo describir. Es lo que me hace cantar, Maná y 440 por igual. Lo que me hace levantar mas peso del que mi lumbar puede soportar. Lo que me hace exagerar mi acciones, sin éxito alguno, y simplemente quedarme viendo el cielo despejado y azul, rogándole un poco de compasión.
+Tomas mi lápiz y haces garabatos en la hoja. Conviertes este escrito en tuyo, porque lo que siento por ti es lo más humano que puedo escribir. Es lo que me hace cantar, Maná y 4.40 por igual. Lo que me hace levantar mas peso del que mi lumbar puede soportar. Lo que me hace exagerar mi acciones, sin éxito alguno, y simplemente quedarme viendo el cielo despejado y azul, rogándole un poco de compasión.

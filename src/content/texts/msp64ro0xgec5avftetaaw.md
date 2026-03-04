@@ -5,7 +5,7 @@ type: lagrimas
 heroImage: /portrait/respirar.webp
 pubDate: Jan 12 2026
 color: "dark"
-featured: true
+featured: false
 ---
 A diario, desde que despierto y hasta que duermo, muchas veces incluso mientras duermo, debo concentrar mi mirada, enfocar mi mente en saber qué tiene al frente, pero más que ello, intentar ver más allá. Saber que no es suficiente, no es lo único.
 
