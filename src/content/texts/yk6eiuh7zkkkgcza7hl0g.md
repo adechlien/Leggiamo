@@ -5,7 +5,7 @@ type: lagrimas
 heroImage: /portrait/llorar.webp
 pubDate: Feb 9 2026
 color: "dark"
-featured: false
+featured: true
 ---
 Siendo la calma mi mayor virtud, es también una ayudante poco versátil.
 

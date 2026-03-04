@@ -12,6 +12,18 @@ const texts = defineCollection({
   }),
 });
 
+const soon = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    type: z.string(),
+    heroImage: z.string().optional(),
+    pubDate: z.coerce.date(),
+    color: z.string().optional(),
+    featured: z.boolean().optional(),
+  }),
+});
+
 const writers = defineCollection({
   type: "content",
   schema: z.object({
@@ -29,4 +41,4 @@ const writers = defineCollection({
   }),
 });
 
-export const collections = { texts, writers };
+export const collections = { texts, soon, writers };

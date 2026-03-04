@@ -54,10 +54,25 @@ const baseBg = "#024350";
                 return (
                     <li>
                         <a href={`/${post.data.type}/${post.slug}/`} class="block group">
-                            <div class="relative overflow-hidden rounded-lg aspect-[2/3]">
-                                <img src={post.data.heroImage} alt={post.data.title} class="absolute inset-0 h-full w-full object-cover" loading="lazy"/>
-                                <p class="text-[#d8f7fe] truncate absolute top-0 right-0 bg-[#024350] text-sm sm:text-xs px-2 py-1 rounded font-bold m-2">{postTypeTitle}</p>
-                                <h3 class="absolute inset-x-0 bottom-0 font-bebas truncate text-lg sm:text-base bg-[#024350] px-2 py-1 m-2 rounded">{post.data.title}</h3>
+                            <div class="relative isolate overflow-hidden rounded-lg aspect-[2/3]">
+                              <img
+                                src={post.data.heroImage}
+                                alt={post.data.title}
+                                class="absolute inset-0 h-full w-full object-cover pointer-events-none select-none"
+                                loading="lazy"
+                              />
+
+                              <div class="absolute inset-0 bg-black/25"></div>
+
+                              <div class="relative flex h-full flex-col px-3 py-3 min-w-0">
+                                <h3 class="text-white font-bebas text-start text-xl sm:text-lg leading-none">
+                                  {post.data.title}
+                                </h3>
+
+                                <p class="mt-auto pt-2 text-sm sm:text-xs text-white font-black text-right truncate">
+                                  {postTypeTitle}
+                                </p>
+                              </div>
                             </div>
                         </a>
                     </li>

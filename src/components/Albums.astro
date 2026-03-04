@@ -1,0 +1,74 @@
+---
+const tier1 = [
+  { title: "Quizá no es para tanto", artist: "Jaze", cover: "qnept.png", link: "https://www.youtube.com/watch?v=ZblFXnv8eAA&list=PLSC2ZIlwOzm54UAfQk9XgSxxEaYHRS_vw"},
+  { title: "Data", artist: "Tainy", cover: "data.png", link: "" },
+  { title: "We are not your kind", artist: "Slipknot", cover: "wearenotyourkind.png", link: "" },
+  { title: "La novena Batalla", artist: "Silvestre Dangond", cover: "novena.png", link: ""},
+  { title: "Blanco", artist: "Ricardo Arjona", cover: "blanco.png", link: ""},
+  { title: "Estopa", artist: "Estopa", cover: "estopa.png", link: "" },
+];
+
+const tier2 = [
+  { title: "Don KBRON", artist: "Eladio Carrión", cover: "donkbron.png", link: ""},
+  { title: "Retrofuturismopsicotropical", artist: "Motherflowers", cover: "retro.png", link: "" },
+  { title: "Cracker Island", artist: "Gorillaz", cover: "cracker.png", link: "" },
+  { title: "Por si alguien nos escucha", artist: "Kapo", cover: "psane.png", link: ""},
+  { title: "Wings", artist: "BTS", cover: "wings.png", link: "" },
+  { title: "Muerte", artist: "Canserbero", cover: "muerte.png", link: "" },
+];
+---
+
+<section class="w-full">
+  <div class="flex flex-col gap-4 sm:mx-auto">
+      <div class="flex items-center justify-between text-[#d8f7fe] border-b-white/40 border-b-2">
+          <h3 class="text-4xl font-medium text-left font-bebas">Álbumes favoritos</h3>
+          <a href="https://musicboard.app/adechlien/list/albumes-favoritos/" target="_blank" class="hover:text-white transition px-2 underline">
+              Musicboard
+          </a>
+      </div>
+
+    <!-- TIER 1: 6 columnas -->
+    <ul class="grid grid-cols-2 sm:grid-cols-6 gap-3 px-3">
+      {tier1.map((album) => (
+        <li>
+          <a href={album.link} target="_blank" class="group block">
+            <article class="flex flex-col justify-center gap-0 overflow-hidden">
+              <div class="overflow-hidden mb-1">
+                  <img src={`/albums/${album.cover}`} alt={album.title} class="w-full h-full object-cover"/>
+              </div>
+              <span class="font-bebas text-xl text-[#d8f7fe] leading-none truncate">{album.title}</span>
+              <span class="font-bellota text-xs text-[#d8f7fe]">{album.artist}</span>
+            </article>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- TIER 2: 12 columnas -->
+    {tier2.length > 0 && (
+      <ul class="grid grid-cols-3 sm:grid-cols-6 gap-3 px-3">
+        {tier2.map((album) => (
+          <li>
+            <a href={album.link} target="_blank" class="group block">
+              <article class="flex flex-col justify-center gap-0 overflow-hidden">
+                <div class="overflow-hidden mb-1">
+                  <img
+                    src={`/albums/${album.cover}`}
+                    alt={album.title}
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <span class="font-bebas text-lg text-[#d8f7fe] leading-none truncate">
+                  {album.title}
+                </span>
+                <span class="font-bellota text-[11px] text-[#d8f7fe]">
+                  {album.artist}
+                </span>
+              </article>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</section>

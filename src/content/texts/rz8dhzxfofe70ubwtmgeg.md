@@ -5,7 +5,7 @@ type: "lagrimas"
 heroImage: "/portrait/escribo.webp"
 pubDate: "Oct 11 2024"
 color: "coffee"
-featured: true
+featured: false
 ---
 Mientras me alistaba, me miré en el reflejo de la cuchara y me vi perfectamente. Era yo: deformado, trastornado, burlado, humillado. Era yo en mi máxima expresión, visto por mí mismo a través de un artefacto que reflejaba a la perfección lo más profundo de mi ser, solitario y olvidado.
 

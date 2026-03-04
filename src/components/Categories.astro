@@ -21,16 +21,16 @@ const countsByType = posts.reduce<Record<string, number>>((acc, p) => {
 ---
 
 <div class="flex flex-col">
-  <h3 class="text-4xl font-medium text-left font-bebas text-white">Colecciones</h3>
+  <h3 class="text-4xl font-medium text-left font-bebas text-[#d8f7fe]">Colecciones</h3>
 
-  <div class="flex flex-col sm:flex-row w-full justify-around gap-4 sm:gap-0 border-2 rounded-lg sm:rounded-none sm:border-y-2 sm:border-x-0 border-white/40 sm:mx-0 p-4 sm:py-4 sm:px-0">
+  <div class="flex flex-col sm:flex-row w-full justify-around gap-3 sm:gap-0 border-2 rounded sm:rounded-none sm:border-y-2 sm:border-x-0 border-white/40 sm:mx-0 p-4 sm:py-4 sm:px-0">
     {categories.map((category) => {
       const count = countsByType[category.slug] ?? 0;
 
       return (
         <a href={`/${category.slug}`} class="">
           <article class="overflow-hidden flex flex-row items-center justify-between gap-2 w-full">
-            <h2 class="font-bebas font-normal text-xl text-center text-white">
+            <h2 class="font-bebas font-normal text-xl text-center text-[#d8f7fe]">
               {category.name}
             </h2>
 
